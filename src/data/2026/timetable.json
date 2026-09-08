@@ -1,0 +1,543 @@
+[
+  {
+    "id": "2026-second-prototyping-practicum-A",
+    "courseId": "prototyping-practicum",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "slots": [
+      { "day": "mon", "period": 1 },
+      { "day": "mon", "period": 2 }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-project-introduction-A",
+    "courseId": "project-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "slots": [{ "day": "tue", "period": 1 }],
+    "scheduleExceptions": [
+      {
+        "type": "special_date",
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "note": "11月7日は終日授業"
+      },
+      {
+        "type": "variable_schedule",
+        "startDate": "2026-11-30",
+        "endDate": "2027-02-01",
+        "note": "11月30日〜2月1日は変則日程"
+      }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-corporate-law-basics-A",
+    "courseId": "corporate-law-basics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "slots": [{ "day": "tue", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-accounting-introduction-A",
+    "courseId": "accounting-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "slots": [{ "day": "wed", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-basic-mathematics-A",
+    "courseId": "basic-mathematics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "slots": [{ "day": "thu", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-A-normal",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "englishTrack": "normal",
+    "slots": [{ "day": "tue", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-A-normal",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "englishTrack": "normal",
+    "slots": [{ "day": "thu", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-A-normal",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "A",
+    "englishTrack": "normal",
+    "slots": [{ "day": "fri", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-prototyping-practicum-B",
+    "courseId": "prototyping-practicum",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "slots": [
+      { "day": "mon", "period": 3 },
+      { "day": "mon", "period": 4 }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-project-introduction-B",
+    "courseId": "project-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "slots": [{ "day": "thu", "period": 2 }],
+    "scheduleExceptions": [
+      {
+        "type": "special_date",
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "note": "11月7日は終日授業"
+      },
+      {
+        "type": "variable_schedule",
+        "startDate": "2026-11-30",
+        "endDate": "2027-02-01",
+        "note": "11月30日〜2月1日は変則日程"
+      }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-corporate-law-basics-B",
+    "courseId": "corporate-law-basics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "slots": [{ "day": "wed", "period": 1 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-accounting-introduction-B",
+    "courseId": "accounting-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "slots": [{ "day": "fri", "period": 1 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-basic-mathematics-B",
+    "courseId": "basic-mathematics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "slots": [{ "day": "tue", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-B-normal",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "englishTrack": "normal",
+    "slots": [{ "day": "tue", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-B-normal",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "englishTrack": "normal",
+    "slots": [{ "day": "thu", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-B-normal",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "B",
+    "englishTrack": "normal",
+    "slots": [{ "day": "wed", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-prototyping-practicum-C",
+    "courseId": "prototyping-practicum",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "slots": [
+      { "day": "thu", "period": 3 },
+      { "day": "thu", "period": 4 }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-project-introduction-C",
+    "courseId": "project-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "slots": [{ "day": "tue", "period": 3 }],
+    "scheduleExceptions": [
+      {
+        "type": "special_date",
+        "startDate": "2026-11-07",
+        "endDate": "2026-11-07",
+        "note": "11月7日は終日授業"
+      },
+      {
+        "type": "variable_schedule",
+        "startDate": "2026-11-30",
+        "endDate": "2027-02-01",
+        "note": "11月30日〜2月1日は変則日程"
+      }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-corporate-law-basics-C",
+    "courseId": "corporate-law-basics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "slots": [{ "day": "wed", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-accounting-introduction-C",
+    "courseId": "accounting-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "slots": [{ "day": "thu", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-basic-mathematics-C",
+    "courseId": "basic-mathematics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "slots": [{ "day": "mon", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-C-normal",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "englishTrack": "normal",
+    "slots": [{ "day": "tue", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-C-normal",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "englishTrack": "normal",
+    "slots": [{ "day": "thu", "period": 1 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-C-normal",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "C",
+    "englishTrack": "normal",
+    "slots": [{ "day": "fri", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-prototyping-practicum-D",
+    "courseId": "prototyping-practicum",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "slots": [
+      { "day": "wed", "period": 1 },
+      { "day": "wed", "period": 2 }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-project-introduction-D",
+    "courseId": "project-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "slots": [{ "day": "thu", "period": 3 }],
+    "scheduleExceptions": [
+      {
+        "type": "special_date",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-08",
+        "note": "11月8日は終日授業"
+      },
+      {
+        "type": "variable_schedule",
+        "startDate": "2026-11-30",
+        "endDate": "2027-02-01",
+        "note": "11月30日〜2月1日は変則日程"
+      }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-corporate-law-basics-D",
+    "courseId": "corporate-law-basics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "slots": [{ "day": "tue", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-accounting-introduction-D",
+    "courseId": "accounting-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "slots": [{ "day": "fri", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-basic-mathematics-D",
+    "courseId": "basic-mathematics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "slots": [{ "day": "mon", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-D-normal",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "englishTrack": "normal",
+    "slots": [{ "day": "tue", "period": 1 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-D-normal",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "englishTrack": "normal",
+    "slots": [{ "day": "thu", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-D-normal",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "D",
+    "englishTrack": "normal",
+    "slots": [{ "day": "tue", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-prototyping-practicum-E",
+    "courseId": "prototyping-practicum",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "slots": [
+      { "day": "tue", "period": 1 },
+      { "day": "tue", "period": 2 }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-project-introduction-E",
+    "courseId": "project-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "slots": [{ "day": "thu", "period": 4 }],
+    "scheduleExceptions": [
+      {
+        "type": "special_date",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-08",
+        "note": "11月8日は終日授業"
+      },
+      {
+        "type": "variable_schedule",
+        "startDate": "2026-11-30",
+        "endDate": "2027-02-01",
+        "note": "11月30日〜2月1日は変則日程"
+      }
+    ],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-corporate-law-basics-E",
+    "courseId": "corporate-law-basics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "slots": [{ "day": "thu", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-accounting-introduction-E",
+    "courseId": "accounting-introduction",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "slots": [{ "day": "wed", "period": 1 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-basic-mathematics-E",
+    "courseId": "basic-mathematics",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "slots": [{ "day": "mon", "period": 4 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-E-normal",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "englishTrack": "normal",
+    "slots": [{ "day": "mon", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-E-normal",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "englishTrack": "normal",
+    "slots": [{ "day": "fri", "period": 3 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-E-normal",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "E",
+    "englishTrack": "normal",
+    "slots": [{ "day": "thu", "period": 2 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2a-ALL-advanced",
+    "courseId": "business-english-practicum-2a",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "ALL",
+    "englishTrack": "advanced",
+    "slots": [{ "day": "mon", "period": 5 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-business-english-practicum-2b-ALL-advanced",
+    "courseId": "business-english-practicum-2b",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "ALL",
+    "englishTrack": "advanced",
+    "slots": [{ "day": "tue", "period": 4 }],
+    "registrationMethod": "automatic"
+  },
+  {
+    "id": "2026-second-english-core-skills-2-ALL-advanced",
+    "courseId": "english-core-skills-2",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "ALL",
+    "englishTrack": "advanced",
+    "slots": [{ "day": "wed", "period": 4 }],
+    "registrationMethod": "automatic"
+  },
+  { "id": "2026-second-market-innovation-A", "courseId": "market-innovation", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "fri", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-market-innovation-B", "courseId": "market-innovation", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "mon", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-market-innovation-C", "courseId": "market-innovation", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "fri", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-market-innovation-D", "courseId": "market-innovation", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "mon", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-market-innovation-E", "courseId": "market-innovation", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "fri", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-operating-systems-intro-A", "courseId": "operating-systems-intro", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "fri", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-operating-systems-intro-B", "courseId": "operating-systems-intro", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "fri", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-operating-systems-intro-C", "courseId": "operating-systems-intro", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "fri", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-operating-systems-intro-D", "courseId": "operating-systems-intro", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "fri", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-operating-systems-intro-E", "courseId": "operating-systems-intro", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "fri", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-applied-information-mathematics-b-A", "courseId": "applied-information-mathematics-b", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "mon", "period": 3 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-applied-information-mathematics-b-B", "courseId": "applied-information-mathematics-b", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "mon", "period": 2 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-applied-information-mathematics-b-C", "courseId": "applied-information-mathematics-b", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "mon", "period": 3 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-applied-information-mathematics-b-D", "courseId": "applied-information-mathematics-b", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "mon", "period": 2 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-applied-information-mathematics-b-E", "courseId": "applied-information-mathematics-b", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "mon", "period": 2 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-database-A", "courseId": "database", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "thu", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-database-B", "courseId": "database", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "thu", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-database-C", "courseId": "database", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "mon", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-database-D", "courseId": "database", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "thu", "period": 4 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-database-E", "courseId": "database", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "mon", "period": 1 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-network-technology-A", "courseId": "network-technology", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "thu", "period": 1 }], "registrationMethod": "lottery", "notes": ["対面授業 + VOD形式", "初回授業は対面"] },
+  { "id": "2026-second-network-technology-B", "courseId": "network-technology", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "tue", "period": 1 }], "registrationMethod": "lottery", "notes": ["対面授業 + VOD形式", "初回授業は対面"] },
+  { "id": "2026-second-network-technology-C", "courseId": "network-technology", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "tue", "period": 1 }], "registrationMethod": "lottery", "notes": ["対面授業 + VOD形式", "初回授業は対面"] },
+  { "id": "2026-second-network-technology-D", "courseId": "network-technology", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "thu", "period": 1 }], "registrationMethod": "lottery", "notes": ["対面授業 + VOD形式", "初回授業は対面"] },
+  { "id": "2026-second-network-technology-E", "courseId": "network-technology", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "thu", "period": 1 }], "registrationMethod": "lottery", "notes": ["対面授業 + VOD形式", "初回授業は対面"] },
+  { "id": "2026-second-social-research-methods-A", "courseId": "social-research-methods", "academicYear": 2026, "semester": "second", "model": "A", "slots": [{ "day": "fri", "period": 2 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-social-research-methods-B", "courseId": "social-research-methods", "academicYear": 2026, "semester": "second", "model": "B", "slots": [{ "day": "fri", "period": 2 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-social-research-methods-C", "courseId": "social-research-methods", "academicYear": 2026, "semester": "second", "model": "C", "slots": [{ "day": "fri", "period": 3 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-social-research-methods-D", "courseId": "social-research-methods", "academicYear": 2026, "semester": "second", "model": "D", "slots": [{ "day": "fri", "period": 3 }], "registrationMethod": "lottery" },
+  { "id": "2026-second-social-research-methods-E", "courseId": "social-research-methods", "academicYear": 2026, "semester": "second", "model": "E", "slots": [{ "day": "fri", "period": 2 }], "registrationMethod": "lottery" },
+  {
+    "id": "2026-second-interaction-design-intro-ALL",
+    "courseId": "interaction-design-intro",
+    "academicYear": 2026,
+    "semester": "second",
+    "model": "ALL",
+    "slots": [],
+    "scheduleOptions": [
+      {
+        "id": "wed3",
+        "label": "水曜3限",
+        "slots": [{ "day": "wed", "period": 3 }]
+      },
+      {
+        "id": "tue4",
+        "label": "火曜4限",
+        "slots": [{ "day": "tue", "period": 4 }]
+      }
+    ],
+    "registrationMethod": "lottery"
+  }
+]

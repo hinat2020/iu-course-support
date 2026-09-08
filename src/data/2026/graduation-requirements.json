@@ -1,0 +1,47 @@
+{
+  "academicYear": 2026,
+  "requirements": [
+    {
+      "id": "modern-society",
+      "symbol": "◆",
+      "label": "現代社会理解",
+      "requiredCredits": 4
+    },
+    {
+      "id": "management-primary",
+      "symbol": "▲",
+      "label": "経営科目",
+      "requiredCredits": 10
+    },
+    {
+      "id": "ict-primary",
+      "symbol": "■",
+      "label": "情報通信技術科目",
+      "requiredCredits": 8
+    },
+    {
+      "id": "ict-secondary",
+      "symbol": "□",
+      "label": "情報通信技術科目",
+      "requiredCredits": 2
+    },
+    {
+      "id": "international-communication",
+      "symbol": "◎",
+      "label": "国際コミュニケーション",
+      "requiredCredits": 4
+    },
+    {
+      "id": "multicultural-primary",
+      "symbol": "★",
+      "label": "多文化・国際化社会理解",
+      "requiredCredits": 6
+    },
+    {
+      "id": "multicultural-secondary",
+      "symbol": "☆",
+      "label": "多文化・国際化社会理解",
+      "requiredCredits": 2
+    }
+  ]
+}

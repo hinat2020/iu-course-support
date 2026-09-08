@@ -1,0 +1,21 @@
+{
+  "academicYear": 2026,
+  "semester": "second",
+  "schedule": {
+    "timezone": "Asia/Tokyo",
+    "applicationStartsAt": "2026-09-15T18:00:00+09:00",
+    "applicationDeadline": "2026-09-18T23:59:00+09:00",
+    "resultPublishedAt": "2026-09-21T18:00:00+09:00",
+    "confirmationStartsAt": "2026-09-21T18:00:00+09:00",
+    "confirmationDeadline": "2026-09-22T18:00:00+09:00"
+  },
+  "courses": [
+    { "courseId": "market-innovation", "maxPreferences": 1 },
+    { "courseId": "operating-systems-intro", "maxPreferences": 1 },
+    { "courseId": "applied-information-mathematics-b", "maxPreferences": 1 },
+    { "courseId": "database", "maxPreferences": 1 },
+    { "courseId": "interaction-design-intro", "maxPreferences": 2 },
+    { "courseId": "network-technology", "maxPreferences": 1 },
+    { "courseId": "social-research-methods", "maxPreferences": 1 }
+  ]
+}

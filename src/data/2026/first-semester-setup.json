@@ -1,0 +1,57 @@
+{
+  "academicYear": 2026,
+  "admissionYear": 2026,
+  "institutionName": "iU",
+  "applicationName": "iU 履修サポート",
+  "target": {
+    "grade": 1,
+    "semester": "second"
+  },
+  "basicSetup": {
+    "timetableModels": ["A", "B", "C", "D", "E"],
+    "englishTracks": [
+      { "value": "normal", "label": "通常" },
+      { "value": "advanced", "label": "Advanced" }
+    ]
+  },
+  "innovationMethod": {
+    "courseLabel": "イノベーション技法a/b",
+    "moduleTypes": [
+      { "value": "lecture", "label": "講座系" },
+      { "value": "event", "label": "イベント系" },
+      { "value": "unknown", "label": "わからない" }
+    ]
+  },
+  "firstSemester": {
+    "requiredCourses": [
+      { "courseId": "innovation-spirit", "credits": 2 },
+      { "courseId": "business-introduction", "credits": 2 },
+      { "courseId": "english-core-skills-1", "credits": 2 },
+      { "courseId": "study-skills", "credits": 2 },
+      { "courseId": "management-foundations", "credits": 2 },
+      { "courseId": "marketing-foundations", "credits": 2 },
+      { "courseId": "ict-introduction", "credits": 2 },
+      { "courseId": "programming-fundamentals-practicum", "credits": 2 },
+      { "courseId": "business-english-practicum-1a", "credits": 1 },
+      { "courseId": "business-english-practicum-1b", "credits": 1 }
+    ],
+    "electiveCourses": [
+      { "courseId": "computer-architecture", "credits": 2 },
+      { "courseId": "data-structures-and-processing", "credits": 2 },
+      { "courseId": "applied-information-mathematics-a", "credits": 2 },
+      { "courseId": "design-introduction", "credits": 2 },
+      { "courseId": "esports", "credits": 2 }
+    ],
+    "electiveCoursesDataStatus": "confirmed_by_phase_3_specification"
+  },
+  "sources": [
+    {
+      "label": "iU 2026年度カリキュラム",
+      "url": "https://www.i-u.ac.jp/academics/curriculum/"
+    },
+    {
+      "label": "iU 2026年度シラバス",
+      "url": "https://www.i-u.ac.jp/academics/syllabus/"
+    }
+  ]
+}

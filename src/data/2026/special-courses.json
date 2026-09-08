@@ -1,0 +1,182 @@
+{
+  "academicYear": 2026,
+  "semester": "second",
+  "specialLottery": {
+    "registrationMethod": "special_lottery",
+    "schedule": {
+      "timezone": "Asia/Tokyo",
+      "applicationStartsAt": "2026-09-15T18:00:00+09:00",
+      "applicationDeadline": "2026-09-18T18:00:00+09:00",
+      "resultPublishedAt": "2026-09-21T18:00:00+09:00"
+    },
+    "correctionPeriods": [
+      {
+        "id": "september-correction",
+        "startsAt": "2026-09-28T10:00:00+09:00",
+        "endsAt": "2026-09-29T18:00:00+09:00"
+      },
+      {
+        "id": "winter-correction",
+        "startsAt": "2026-11-30T10:00:00+09:00",
+        "endsAt": "2026-12-07T12:00:00+09:00"
+      }
+    ]
+  },
+  "innovationLecture": {
+    "courseIds": ["innovation-lecture-a", "innovation-lecture-b"],
+    "registrationMethod": "special_lottery",
+    "classes": [
+      {
+        "id": "2026-second-innovation-lecture-kang-hanna",
+        "instructor": "康翰娜",
+        "label": "康翰娜 先生のクラス",
+        "schedule": null
+      },
+      {
+        "id": "2026-second-innovation-lecture-takahara-koichiro",
+        "instructor": "髙原幸一郎",
+        "label": "髙原幸一郎 先生のクラス",
+        "schedule": null
+      }
+    ]
+  },
+  "innovationMethod": {
+    "courseIds": ["innovation-method-a", "innovation-method-b"],
+    "registrationMethod": "special_lottery",
+    "lecture": {
+      "newSecondSemesterAvailable": true,
+      "requiredPassedSessionCount": 8,
+      "miniCourses": [
+        {
+          "id": "academic-writing",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "Academic Writing",
+          "instructor": "加藤大弥",
+          "slots": [{ "day": "wed", "period": 5 }, { "day": "wed", "period": 6 }],
+          "sessionCount": 2,
+          "dates": ["2026-11-25"]
+        },
+        {
+          "id": "document-processing",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "文書処理",
+          "instructor": "加藤大弥",
+          "slots": [{ "day": "thu", "period": 5 }, { "day": "thu", "period": 6 }],
+          "sessionCount": 2,
+          "dates": ["2026-11-26"]
+        },
+        {
+          "id": "viral-short-video-planning",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "バズる！ショート動画企画講座",
+          "instructor": "駒場舜",
+          "slots": [{ "day": "wed", "period": 5 }, { "day": "wed", "period": 6 }],
+          "sessionCount": 2,
+          "dates": ["2026-11-11"]
+        },
+        {
+          "id": "map-literacy-social-change",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "“地図力”で社会を変える！",
+          "instructor": "奥野守",
+          "slots": [{ "day": "wed", "period": 5 }, { "day": "wed", "period": 6 }],
+          "sessionCount": 2,
+          "dates": ["2026-11-18"]
+        },
+        {
+          "id": "dx-consultant-foundations",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "DX活用コンサルタント基礎講座",
+          "instructor": "五十嵐俊行",
+          "slots": [{ "day": "tue", "period": 5 }],
+          "sessionCount": 4,
+          "dates": ["2026-11-24", "2026-12-01", "2026-12-08", "2026-12-15"]
+        },
+        {
+          "id": "regional-revitalization-innovation",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "地域創生とイノベーション",
+          "instructor": "今井豪",
+          "slots": [{ "day": "thu", "period": 5 }],
+          "sessionCount": 4,
+          "dates": ["2026-10-22", "2026-11-12", "2026-11-26", "2026-12-10"]
+        },
+        {
+          "id": "boga-lms-innovation",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "忘我LMSによるイノベーション創出",
+          "instructor": "矢追良太",
+          "slots": [{ "day": "wed", "period": 6 }],
+          "sessionCount": 4,
+          "dates": null,
+          "scheduleNote": "日程未確定"
+        },
+        {
+          "id": "empathetic-corporate-communication",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "共感型コーポレートコミュニケーション戦略",
+          "instructor": "登坂泰斗 他",
+          "slots": [{ "day": "tue", "period": 5 }],
+          "sessionCount": 4,
+          "dates": ["2026-10-06", "2026-11-10", "2026-12-01", "2027-01-12"]
+        },
+        {
+          "id": "sns-marketing-foundations",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "SNSマーケティング基礎",
+          "instructor": "神山季己",
+          "slots": [{ "day": "wed", "period": 5 }, { "day": "wed", "period": 6 }],
+          "sessionCount": 2,
+          "dates": ["2026-12-02"]
+        },
+        {
+          "id": "visual-expression-techniques",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "映像表現技法",
+          "instructor": "有馬俊",
+          "slots": [{ "day": "wed", "period": 5 }, { "day": "wed", "period": 6 }],
+          "sessionCount": 4,
+          "dates": ["2026-10-14", "2026-10-21"]
+        },
+        {
+          "id": "global-innovator-mindset-1",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "Global Innovator Mindset ①",
+          "instructor": "平野麻紀子",
+          "slots": [{ "day": "tue", "period": 5 }],
+          "sessionCount": 3,
+          "dates": ["2026-10-27", "2026-11-17", "2026-12-01"]
+        },
+        {
+          "id": "global-innovator-mindset-2",
+          "academicYear": 2026,
+          "semester": "second",
+          "name": "Global Innovator Mindset ②",
+          "instructor": "平野麻紀子",
+          "slots": [{ "day": "tue", "period": 5 }],
+          "sessionCount": 3,
+          "dates": ["2026-12-15", "2027-01-05", "2027-01-19"]
+        }
+      ]
+    },
+    "event": {
+      "newSecondSemesterAvailable": false,
+      "requiredEstimatedHours": 45,
+      "events": [
+        { "id": "iutopia", "name": "iUtopia" },
+        { "id": "blab-marche", "name": "BLabマルシェ" }
+      ]
+    }
+  }
+}

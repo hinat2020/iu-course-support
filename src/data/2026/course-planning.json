@@ -1,0 +1,18 @@
+{
+  "academicYear": 2026,
+  "grade": 1,
+  "semester": "second",
+  "candidateCourseIds": [
+    "market-innovation",
+    "operating-systems-intro",
+    "applied-information-mathematics-b",
+    "database",
+    "interaction-design-intro",
+    "network-technology",
+    "social-research-methods"
+  ],
+  "excludedSpecialCourseTypes": [
+    "innovation_lecture",
+    "innovation_method"
+  ]
+}

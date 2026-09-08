@@ -1,0 +1,346 @@
+[
+  {
+    "id": "innovation-spirit",
+    "name": "イノベーションの志",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "基礎科目", "middle": "イノベーション" }
+  },
+  {
+    "id": "business-introduction",
+    "name": "ビジネス入門",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["management-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "専門科目", "middle": "経営" }
+  },
+  {
+    "id": "english-core-skills-1",
+    "name": "英語コア・スキルズⅠ",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "語学科目", "middle": "英語" }
+  },
+  {
+    "id": "study-skills",
+    "name": "スタディスキル",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "基礎科目", "middle": "学修基礎" }
+  },
+  {
+    "id": "management-foundations",
+    "name": "マネジメント（経営学基礎）",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["management-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "専門科目", "middle": "経営" }
+  },
+  {
+    "id": "marketing-foundations",
+    "name": "マーケティング基礎",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["management-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "専門科目", "middle": "経営" }
+  },
+  {
+    "id": "ict-introduction",
+    "name": "ICT入門",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "programming-fundamentals-practicum",
+    "name": "プログラミング基礎実習",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "business-english-practicum-1a",
+    "name": "ビジネス英語実習Ⅰa",
+    "credits": 1,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "語学科目", "middle": "英語実習" }
+  },
+  {
+    "id": "business-english-practicum-1b",
+    "name": "ビジネス英語実習Ⅰb",
+    "credits": 1,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "語学科目", "middle": "英語実習" }
+  },
+  {
+    "id": "computer-architecture",
+    "name": "コンピュータアーキテクチャ",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "未設定" }
+  },
+  {
+    "id": "data-structures-and-processing",
+    "name": "データ構造と処理法",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "未設定" }
+  },
+  {
+    "id": "applied-information-mathematics-a",
+    "name": "情報系数学応用A",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "未設定" }
+  },
+  {
+    "id": "design-introduction",
+    "name": "デザイン入門",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "未設定" }
+  },
+  {
+    "id": "esports",
+    "name": "eスポーツ",
+    "credits": 2,
+    "requirementType": "elective",
+    "requirementGroups": ["modern-society"],
+    "grade": 1,
+    "semester": "first",
+    "category": { "major": "未設定" }
+  },
+  {
+    "id": "english-core-skills-2",
+    "name": "英語コア・スキルズⅡ",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "語学科目", "middle": "英語" }
+  },
+  {
+    "id": "basic-mathematics",
+    "name": "数学基礎",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "基礎科目", "middle": "数理" }
+  },
+  {
+    "id": "corporate-law-basics",
+    "name": "企業法務基礎",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["modern-society"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "経営", "minor": "法務" }
+  },
+  {
+    "id": "accounting-introduction",
+    "name": "アカウンティング入門",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["management-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "経営", "minor": "会計" }
+  },
+  {
+    "id": "prototyping-practicum",
+    "name": "プロトタイピング実習",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "project-introduction",
+    "name": "プロジェクト入門",
+    "credits": 2,
+    "requirementType": "required",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "基礎科目", "middle": "プロジェクト" }
+  },
+  {
+    "id": "business-english-practicum-2a",
+    "name": "ビジネス英語実習Ⅱa",
+    "credits": 1,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "語学科目", "middle": "英語実習" }
+  },
+  {
+    "id": "business-english-practicum-2b",
+    "name": "ビジネス英語実習Ⅱb",
+    "credits": 1,
+    "requirementType": "required",
+    "requirementGroups": ["international-communication"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "語学科目", "middle": "英語実習" }
+  },
+  {
+    "id": "market-innovation",
+    "name": "マーケット・イノベーション",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["management-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "経営" }
+  },
+  {
+    "id": "operating-systems-intro",
+    "name": "OS入門",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "applied-information-mathematics-b",
+    "name": "情報系数学応用B",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術", "minor": "数理" }
+  },
+  {
+    "id": "database",
+    "name": "データベース",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "interaction-design-intro",
+    "name": "インタラクションデザイン入門",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術", "minor": "デザイン" }
+  },
+  {
+    "id": "network-technology",
+    "name": "ネットワーク技術",
+    "credits": 2,
+    "requirementType": "required_elective",
+    "requirementGroups": ["ict-primary"],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "専門科目", "middle": "情報通信技術" }
+  },
+  {
+    "id": "social-research-methods",
+    "name": "社会調査法",
+    "credits": 2,
+    "requirementType": "elective",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "教養科目", "middle": "現代社会" }
+  },
+  {
+    "id": "innovation-lecture-a",
+    "name": "イノベーション特講a",
+    "credits": 1,
+    "requirementType": "elective",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "特殊科目", "middle": "イノベーション特講" },
+    "specialCourseType": "innovation_lecture"
+  },
+  {
+    "id": "innovation-lecture-b",
+    "name": "イノベーション特講b",
+    "credits": 1,
+    "requirementType": "elective",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "特殊科目", "middle": "イノベーション特講" },
+    "specialCourseType": "innovation_lecture"
+  },
+  {
+    "id": "innovation-method-a",
+    "name": "イノベーション技法a",
+    "credits": 1,
+    "requirementType": "elective",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "特殊科目", "middle": "イノベーション技法" },
+    "specialCourseType": "innovation_method"
+  },
+  {
+    "id": "innovation-method-b",
+    "name": "イノベーション技法b",
+    "credits": 1,
+    "requirementType": "elective",
+    "requirementGroups": [],
+    "grade": 1,
+    "semester": "second",
+    "category": { "major": "特殊科目", "middle": "イノベーション技法" },
+    "specialCourseType": "innovation_method"
+  }
+]
