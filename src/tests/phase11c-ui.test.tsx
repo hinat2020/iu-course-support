@@ -41,8 +41,9 @@ describe("Phase 11C graduation planning UI", () => {
     });
     renderPlanner(earned);
     const spring = screen.getByRole("heading", { name: "1年前期" }).closest("section");
-    expect(within(spring!).getByText("修得済み 2単位")).toBeInTheDocument();
-    expect(within(spring!).getByText("将来予定 16単位")).toBeInTheDocument();
+    expect(within(spring!).getByText("計画単位 18単位")).toBeInTheDocument();
+    expect(within(spring!).getByText("✓ 修得済み")).toBeInTheDocument();
+    expect(within(spring!).getAllByText("？ 必修・状態未確認").length).toBeGreaterThan(0);
     expect(within(spring!).queryByRole("button", { name: "計画から外す" })).not.toBeInTheDocument();
   });
 
@@ -113,14 +114,16 @@ describe("Phase 11C graduation planning UI", () => {
       },
     };
     renderPlanner(initial);
-    fireEvent.change(screen.getByLabelText("データサイエンス基礎の配置学期"), {
-      target: { value: "year1-spring" },
-    });
+    let card = screen.getByText("データサイエンス基礎").closest("li")!;
+    fireEvent.click(within(card).getByRole("button", { name: "学期を変更" }));
+    fireEvent.click(screen.getByRole("button", { name: "1年前期" }));
     expect(screen.getByText(/2年次配当/)).toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText("データサイエンス基礎の配置学期"), {
-      target: { value: "year2-fall" },
-    });
+    fireEvent.click(screen.getByRole("button", { name: "確認して移動" }));
+    card = screen.getByText("データサイエンス基礎").closest("li")!;
+    fireEvent.click(within(card).getByRole("button", { name: "学期を変更" }));
+    fireEvent.click(screen.getByRole("button", { name: "2年後期" }));
     expect(screen.getByText("公式資料では前期科目です。")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "確認して移動" }));
     expect(screen.getAllByText("データサイエンス基礎")).toHaveLength(1);
   });
 

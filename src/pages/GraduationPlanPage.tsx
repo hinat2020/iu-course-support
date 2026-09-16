@@ -8,6 +8,7 @@ import {
   type CurriculumRequirementSymbol,
   type CurriculumRequirementType,
   type CurriculumSemester,
+  type GraduationBoardCourse,
   type GraduationCourseStatus,
   type GraduationSemesterId,
 } from "../domain/graduationPlanning";
@@ -141,12 +142,110 @@ function PrerequisiteDetails({ result }: { result: PrerequisiteCheckResult }) {
   );
 }
 
-function CapResultCard({ result }: { result: GraduationYearCapResult }) {
+function GraduationSemesterCourseCard({
+  entry,
+  prerequisiteResult,
+  onMove,
+  onRemove,
+}: {
+  entry: GraduationBoardCourse;
+  prerequisiteResult?: PrerequisiteCheckResult;
+  onMove: (trigger: HTMLButtonElement) => void;
+  onRemove: (trigger: HTMLButtonElement) => void;
+}) {
+  const entryWarnings = getPlacementWarnings(entry.course, entry.semesterId);
+  const statusLabel = entry.source === "current_registration"
+    ? entry.registrationEvidence === "unipa_confirmed"
+      ? "● 今学期の履修対象"
+      : "● 今学期の必修"
+    : entry.source === "required_auto"
+      ? entry.firstSemesterStatus === "failed"
+        ? "△ 必修・未修得"
+        : entry.firstSemesterStatus === "not_taken"
+          ? "□ 必修・未履修"
+          : entry.firstSemesterStatus === "unknown"
+            ? "？ 必修・状態未確認"
+            : "▣ 必修・将来予定（自動表示）"
+      : statusLabels[entry.status];
+  const prerequisiteHasWarning = prerequisiteResult &&
+    prerequisiteResult.status !== "not_applicable" &&
+    prerequisiteResult.status !== "satisfied";
+  const warningCount = entryWarnings.length + (prerequisiteHasWarning ? 1 : 0);
+
+  return (
+    <li
+      className={`graduation-course-card graduation-course-card--${entry.editable ? "planned" : "required"}`}
+      id={`graduation-course-${entry.course.courseId}`}
+      tabIndex={-1}
+    >
+      <div className="graduation-course-card__topline">
+        <span className={`status-text status-text--${entry.source === "current_registration" ? "current" : entry.status}`}>
+          {statusLabel}
+        </span>
+        {warningCount > 0 && <strong className="graduation-course-warning-count">⚠ {warningCount}件</strong>}
+      </div>
+      {courseMasterIds.has(entry.course.courseId) ? (
+        <Link className="graduation-course-name" to={`/courses/${entry.course.courseId}`}>
+          {entry.course.name}
+        </Link>
+      ) : (
+        <strong className="graduation-course-name">{entry.course.name}</strong>
+      )}
+      <p>
+        {entry.course.credits}単位
+        {entry.course.requirementGroups.length > 0
+          ? ` / ${entry.course.requirementGroups.join("・")}`
+          : ""}
+      </p>
+      {entry.registrationEvidence === "unipa_confirmed" && (
+        <p className="muted-note">UNIPA登録確認済み（修得済みではありません）</p>
+      )}
+      {entryWarnings.length > 0 && (
+        <details className="graduation-placement-warning">
+          <summary>⚠ 公式の配当情報と異なる配置です</summary>
+          <ul>{entryWarnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>
+        </details>
+      )}
+      {(entry.source === "graduation_plan" || entry.source === "required_auto") && prerequisiteResult && (
+        <PrerequisiteDetails result={prerequisiteResult} />
+      )}
+      {!courseMasterIds.has(entry.course.courseId) && (
+        <p className="muted-note">科目詳細は卒業設計データのみです。</p>
+      )}
+      {entry.editable ? (
+        <div className="graduation-course-actions">
+          <button className="text-button" type="button" onClick={(event) => onMove(event.currentTarget)}>
+            学期を変更
+          </button>
+          <button className="text-button text-button--danger" type="button" onClick={(event) => onRemove(event.currentTarget)}>
+            計画から外す
+          </button>
+        </div>
+      ) : entry.status === "earned" ? (
+        <p className="graduation-source-note">修得状況は<Link to="/settings">前期設定</Link>から変更できます。</p>
+      ) : entry.source === "required_auto" && entry.semesterId === "year1-spring" ? (
+        <p className="graduation-source-note">修得状況は前期設定から変更できます。</p>
+      ) : entry.source === "required_auto" ? (
+        <p className="graduation-source-note">公式curriculumから自動表示しています。</p>
+      ) : (
+        <p className="graduation-source-note">1年後期の状態は<Link to="/registration/2026-fall">履修登録</Link>から確認できます。</p>
+      )}
+    </li>
+  );
+}
+
+function CapResultCard({
+  result,
+  withTargetId = true,
+}: {
+  result: GraduationYearCapResult;
+  withTargetId?: boolean;
+}) {
   return (
     <li
       className={`graduation-cap-card graduation-cap-card--${result.status}`}
-      id={`graduation-cap-year-${result.grade}`}
-      tabIndex={-1}
+      id={withTargetId ? `graduation-cap-year-${result.grade}` : undefined}
+      tabIndex={withTargetId ? -1 : undefined}
     >
       <div className="graduation-cap-card__heading">
         <strong>{result.grade}年次</strong>
@@ -366,6 +465,10 @@ export function PlanCheckSection({
   const visibleCategories = Object.entries(summary.countsByCategory).filter(
     ([, count]) => count > 0,
   );
+  const groupedChecks = visibleCategories.map(([category]) => ({
+    category: category as keyof typeof graduationPlanCheckCategoryLabels,
+    checks: summary.checks.filter((check) => check.category === category),
+  }));
   return (
     <section
       className="graduation-plan-checks"
@@ -418,49 +521,53 @@ export function PlanCheckSection({
       {summary.checks.length > 0 && (
         <details className="graduation-plan-checks__details">
           <summary>確認事項の詳細を見る（{summary.checks.length}件）</summary>
-          <ol className="graduation-plan-checks__list">
-            {summary.checks.map((check: GraduationPlanCheck) => (
-              <li
-                className={`graduation-plan-check graduation-plan-check--${check.severity}`}
-                key={check.id}
-              >
-                <div>
-                  <span>{planCheckSeverityLabels[check.severity]}</span>
-                  <small>{graduationPlanCheckCategoryLabels[check.category]}</small>
-                </div>
-                <strong>{check.title}</strong>
-                <p>{check.message}</p>
-                {check.target && (
-                  <button
-                    className="text-button"
-                    type="button"
-                    onClick={() => onNavigate(check.target!.id)}
+          {groupedChecks.map((group) => (
+            <section className="graduation-plan-checks__group" key={group.category}>
+              <h3>{graduationPlanCheckCategoryLabels[group.category]}</h3>
+              <ol className="graduation-plan-checks__list">
+                {group.checks.map((check: GraduationPlanCheck) => (
+                  <li
+                    className={`graduation-plan-check graduation-plan-check--${check.severity}`}
+                    key={check.id}
                   >
-                    該当箇所を見る
-                  </button>
-                )}
-                {check.category === "requirement" &&
-                  check.requirementId &&
-                  candidateRequirementIds.has(check.requirementId) &&
-                  onViewCandidates && (
-                    <button
-                      className="text-button"
-                      type="button"
-                      onClick={(event) =>
-                        onViewCandidates(check.requirementId!, event.currentTarget)
-                      }
-                    >
-                      候補を見る
-                    </button>
-                  )}
-              </li>
-            ))}
-          </ol>
+                    <div>
+                      <span>{planCheckSeverityLabels[check.severity]}</span>
+                    </div>
+                    <strong>{check.title}</strong>
+                    <p>{check.message}</p>
+                    {check.target && (
+                      <button
+                        className="text-button"
+                        type="button"
+                        onClick={() => onNavigate(check.target!.id)}
+                      >
+                        該当箇所を見る
+                      </button>
+                    )}
+                    {check.category === "requirement" &&
+                      check.requirementId &&
+                      candidateRequirementIds.has(check.requirementId) &&
+                      onViewCandidates && (
+                        <button
+                          className="text-button"
+                          type="button"
+                          onClick={(event) =>
+                            onViewCandidates(check.requirementId!, event.currentTarget)
+                          }
+                        >
+                          候補を見る
+                        </button>
+                      )}
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ))}
         </details>
       )}
 
       <p className="muted-note">
-        この表示は卒業可能を保証するものではありません。判定には2026年度学生便覧、2026年度curriculum、CAPルール、卒業要件を利用しています。最新の学生便覧・UNIPA等も確認してください。
+        この表示は卒業可能を保証するものではありません。最新の学生便覧・UNIPA等も確認してください。
       </p>
     </section>
   );
@@ -480,7 +587,16 @@ export function GraduationPlanPage() {
   const [semesterId, setSemesterId] =
     useState<GraduationSemesterId>("year2-spring");
   const searchRef = useRef<HTMLInputElement>(null);
-  const openButtonRef = useRef<HTMLButtonElement>(null);
+  const pickerTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const [movingCourseId, setMovingCourseId] = useState<string | null>(null);
+  const [moveSemesterId, setMoveSemesterId] =
+    useState<GraduationSemesterId>("year2-spring");
+  const moveTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const moveCloseRef = useRef<HTMLButtonElement>(null);
+  const [removingCourseId, setRemovingCourseId] = useState<string | null>(null);
+  const removeTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const removeCancelRef = useRef<HTMLButtonElement>(null);
+  const pendingFocusCourseIdRef = useRef<string | null>(null);
   const [candidateRequirementId, setCandidateRequirementId] = useState<string | null>(null);
   const [candidateQuery, setCandidateQuery] = useState("");
   const [candidateYear, setCandidateYear] = useState<number | null>(null);
@@ -613,6 +729,14 @@ export function GraduationPlanPage() {
   const selectedCourse = availableCourses.find(
     (course) => course.courseId === courseId,
   );
+  const movingEntry = movingCourseId
+    ? board.flatMap((item) => item.courses).find(
+        (entry) => entry.course.courseId === movingCourseId,
+      )
+    : undefined;
+  const movePreview = movingCourseId
+    ? selectGraduationCandidatePreview(state, movingCourseId, moveSemesterId)
+    : null;
   const placementWarnings = selectedCourse
     ? getPlacementWarnings(selectedCourse, semesterId)
     : [];
@@ -666,10 +790,38 @@ export function GraduationPlanPage() {
     if (candidateRequirementId) candidateCloseRef.current?.focus();
   }, [candidateRequirementId]);
 
+  useEffect(() => {
+    if (movingCourseId) moveCloseRef.current?.focus();
+  }, [movingCourseId]);
+
+  useEffect(() => {
+    if (removingCourseId) removeCancelRef.current?.focus();
+  }, [removingCourseId]);
+
+  useEffect(() => {
+    const pendingFocusCourseId = pendingFocusCourseIdRef.current;
+    if (!pendingFocusCourseId) return;
+    const target = document.getElementById(`graduation-course-${pendingFocusCourseId}`);
+    if (!target) return;
+    target.scrollIntoView?.({ behavior: "smooth", block: "center" });
+    target.focus({ preventScroll: true });
+    pendingFocusCourseIdRef.current = null;
+  }, [board]);
+
+  function openPicker(
+    initialSemesterId: GraduationSemesterId,
+    trigger: HTMLButtonElement,
+  ) {
+    pickerTriggerRef.current = trigger;
+    setSemesterId(initialSemesterId);
+    setCourseId("");
+    setPickerOpen(true);
+  }
+
   function closePicker() {
     setPickerOpen(false);
     setCourseId("");
-    openButtonRef.current?.focus();
+    pickerTriggerRef.current?.focus();
   }
 
   function addCourse() {
@@ -678,7 +830,49 @@ export function GraduationPlanPage() {
       type: "ADD_GRADUATION_PLAN_COURSE",
       payload: { courseId: selectedCourse.courseId, semesterId },
     });
+    pendingFocusCourseIdRef.current = selectedCourse.courseId;
     closePicker();
+  }
+
+  function openMoveDialog(
+    courseId: string,
+    currentSemesterId: GraduationSemesterId,
+    trigger: HTMLButtonElement,
+  ) {
+    moveTriggerRef.current = trigger;
+    setMoveSemesterId(currentSemesterId);
+    setMovingCourseId(courseId);
+  }
+
+  function closeMoveDialog() {
+    setMovingCourseId(null);
+    moveTriggerRef.current?.focus();
+  }
+
+  function commitMove() {
+    if (!movingCourseId) return;
+    dispatch({
+      type: "MOVE_GRADUATION_PLAN_COURSE",
+      payload: { courseId: movingCourseId, semesterId: moveSemesterId },
+    });
+    pendingFocusCourseIdRef.current = movingCourseId;
+    setMovingCourseId(null);
+  }
+
+  function openRemoveDialog(courseId: string, trigger: HTMLButtonElement) {
+    removeTriggerRef.current = trigger;
+    setRemovingCourseId(courseId);
+  }
+
+  function closeRemoveDialog() {
+    setRemovingCourseId(null);
+    removeTriggerRef.current?.focus();
+  }
+
+  function commitRemove() {
+    if (!removingCourseId) return;
+    dispatch({ type: "REMOVE_GRADUATION_PLAN_COURSE", payload: removingCourseId });
+    setRemovingCourseId(null);
   }
 
   function openCandidatePanel(
@@ -708,6 +902,7 @@ export function GraduationPlanPage() {
       type: "ADD_GRADUATION_PLAN_COURSE",
       payload: { courseId, semesterId: candidatePlacementSemesterId },
     });
+    pendingFocusCourseIdRef.current = courseId;
     closeCandidatePanel();
   }
 
@@ -725,7 +920,9 @@ export function GraduationPlanPage() {
   function navigateWithinPlan(targetId: string) {
     const target = document.getElementById(targetId);
     if (!target) return;
-    target.scrollIntoView({ behavior: "smooth", block: "center" });
+    const collapsedParent = target.closest("details");
+    if (collapsedParent) collapsedParent.open = true;
+    target.scrollIntoView?.({ behavior: "smooth", block: "center" });
     target.focus({ preventScroll: true });
   }
 
@@ -759,7 +956,7 @@ export function GraduationPlanPage() {
           <div>
             <p className="eyebrow">Graduation planning</p>
             <h1>卒業設計</h1>
-            <p>卒業までに履修する科目を学期ごとに整理します。</p>
+            <p>必修科目は自動表示されています。選択必修・選択科目を各学期へ追加して、4年間の履修計画を組み立てます。</p>
           </div>
           <Link className="button button--secondary" to="/graduation">
             卒業設計の説明へ戻る
@@ -767,18 +964,15 @@ export function GraduationPlanPage() {
         </header>
 
         <aside className="graduation-notice" role="note">
-          <strong>予定に追加しただけでは単位修得にはなりません</strong>
-          <p>
-            修得済み・現在の1年後期履修対象・将来予定を分けて表示しています。将来予定は履修登録済み・単位修得済みを意味しません。この画面は卒業を保証しません。実際の開講状況・履修条件は学生便覧・UNIPA等の公式情報を確認してください。
-          </p>
+          <strong>非公式の計画支援ツールです</strong>
+          <p>計画上の表示は履修登録・単位修得・卒業を保証するものではありません。最新情報は学生便覧・UNIPA等で確認してください。</p>
         </aside>
 
         <nav className="graduation-section-nav" aria-label="卒業設計内の移動">
+          <button type="button" onClick={() => navigateWithinPlan("semester-board-heading")}>履修計画</button>
           <button type="button" onClick={() => navigateWithinPlan("graduation-plan-checks-heading")}>計画チェック</button>
-          <button type="button" onClick={() => navigateWithinPlan("credit-summary-heading")}>単位サマリー</button>
           <button type="button" onClick={() => navigateWithinPlan("graduation-requirements-heading")}>卒業要件</button>
           <button type="button" onClick={() => navigateWithinPlan("graduation-cap-heading")}>CAP</button>
-          <button type="button" onClick={() => navigateWithinPlan("semester-board-heading")}>8学期</button>
           <button type="button" onClick={() => navigateWithinPlan("graduation-unresolved-required-heading")}>未確定事項</button>
         </nav>
 
@@ -790,7 +984,8 @@ export function GraduationPlanPage() {
           onViewCandidates={openCandidatePanel}
         />
 
-        <section className="graduation-credit-summary" aria-labelledby="credit-summary-heading">
+        <div className="graduation-dashboard-grid">
+        <section className="graduation-credit-summary graduation-dashboard-summary" aria-labelledby="credit-summary-heading">
           <h2 id="credit-summary-heading" tabIndex={-1}>計画単位の内訳</h2>
           <dl>
             <div><dt>修得済み</dt><dd>{summary.earnedCredits}単位</dd></div>
@@ -798,27 +993,153 @@ export function GraduationPlanPage() {
             <div><dt>将来予定</dt><dd>{summary.plannedCredits}単位</dd></div>
             <div><dt>計画上の合計</dt><dd>{summary.totalPlannedCredits}単位</dd></div>
           </dl>
-          <p className="muted-note">今学期の必修は対象科目として計上しますが、UNIPAでの登録済み・単位修得済みを意味しません。通常抽選は当選かつUNIPA確認済みのみ対象に含めます。特殊科目は集計対象外です。</p>
+          <p className="muted-note">修得済み・今学期対象・将来予定を分けた試算です。特殊科目は集計対象外です。</p>
         </section>
 
-        <section className="graduation-overview-section" aria-labelledby="graduation-cap-heading">
-          <h2 id="graduation-cap-heading" tabIndex={-1}>学年別CAP（履修登録単位の計画）</h2>
-          <p>
-            前期と後期を学年ごとに合算した年間の試算です。将来予定は実際に履修登録済みであることを意味しません。
-          </p>
-          <ul className="graduation-cap-grid">
+        <section className="graduation-overview-section graduation-cap-section" aria-labelledby="graduation-cap-heading">
+          <div className="graduation-section-heading">
+            <div>
+              <p className="section-kicker">Annual registration credits</p>
+              <h2 id="graduation-cap-heading" tabIndex={-1}>学年別CAP</h2>
+            </div>
+            <span>前期＋後期</span>
+          </div>
+          <ul className="graduation-year-summary" aria-label="学年別CAPサマリー">
             {capResults.map((result) => (
-              <CapResultCard key={result.grade} result={result} />
+              <li
+                className={`graduation-year-summary__item graduation-year-summary__item--${result.status}`}
+                id={`graduation-cap-year-${result.grade}`}
+                key={result.grade}
+                tabIndex={-1}
+              >
+                <strong>{result.grade}年次</strong>
+                <span>{result.annualCredits ?? "未確認"} / {result.limit ?? "上限未確認"}単位</span>
+                <small>{capStatusLabels[result.status]}</small>
+              </li>
             ))}
           </ul>
-          <p className="muted-note">
-            通常上限は1年次46単位、2〜4年次42単位です。必修再履修・優秀成績者の例外は、申請や適用条件をこのアプリで確認できないため自動適用していません。特殊科目もこのCAP試算に含めていません。
-          </p>
+          <details className="graduation-section-details">
+            <summary>CAP詳細を見る</summary>
+            <p>前期と後期を学年ごとに合算した履修登録単位の試算です。</p>
+            <ul className="graduation-cap-grid">
+              {capResults.map((result) => (
+                <CapResultCard key={result.grade} result={result} withTargetId={false} />
+              ))}
+            </ul>
+            <p className="muted-note">必修再履修・優秀成績者の例外と特殊科目は自動適用・集計していません。</p>
+          </details>
+        </section>
+        </div>
+
+        <section aria-labelledby="semester-board-heading">
+          <div className="graduation-board-heading">
+            <div>
+              <p className="section-kicker">Eight semesters</p>
+              <h2 id="semester-board-heading" tabIndex={-1}>8学期ボード</h2>
+              <p>4年間の学期を見比べて、選択必修・選択科目を配置します。</p>
+            </div>
+            <button
+              className="button"
+              type="button"
+              onClick={(event) => openPicker("year2-spring", event.currentTarget)}
+            >
+              科目を追加
+            </button>
+          </div>
+
+          <div className="graduation-board">
+            {board.map((semesterBoard) => {
+              const requiredCourses = semesterBoard.courses.filter(
+                (entry) => entry.source !== "graduation_plan",
+              );
+              const plannedCourses = semesterBoard.courses.filter(
+                (entry) => entry.source === "graduation_plan",
+              );
+              const semesterDefinition = graduationSemesters.find(
+                (item) => item.id === semesterBoard.id,
+              );
+              const yearCap = capResults.find(
+                (result) => result.grade === semesterDefinition?.year,
+              );
+              const warningCount = semesterBoard.courses.filter((entry) => {
+                const prerequisite = prerequisiteChecks.get(entry.course.courseId);
+                return getPlacementWarnings(entry.course, entry.semesterId).length > 0 ||
+                  (prerequisite && prerequisite.status !== "satisfied" && prerequisite.status !== "not_applicable");
+              }).length;
+              return (
+                <section
+                  className="graduation-semester-card"
+                  id={`graduation-semester-${semesterBoard.id}`}
+                  key={semesterBoard.id}
+                  aria-labelledby={`${semesterBoard.id}-heading`}
+                  tabIndex={-1}
+                >
+                  <header>
+                    <div>
+                      <h3 id={`${semesterBoard.id}-heading`}>{semesterBoard.label}</h3>
+                      {warningCount > 0 && <span className="graduation-semester-warning">⚠ {warningCount}件</span>}
+                    </div>
+                    <div className="graduation-semester-credits">
+                      <strong>計画単位 {semesterBoard.credits.total}単位</strong>
+                      <span>CAP学年合計 {yearCap?.annualCredits ?? "未確認"} / {yearCap?.limit ?? "上限未確認"}</span>
+                    </div>
+                  </header>
+
+                  <section className="graduation-semester-group" aria-labelledby={`${semesterBoard.id}-required-heading`}>
+                    <h4 id={`${semesterBoard.id}-required-heading`}>必修</h4>
+                    {requiredCourses.length === 0 ? (
+                      <p className="graduation-empty">この学期の必修科目はありません。</p>
+                    ) : (
+                      <ul className="graduation-course-list graduation-course-list--required">
+                        {requiredCourses.map((entry) => (
+                          <GraduationSemesterCourseCard
+                            entry={entry}
+                            key={entry.course.courseId}
+                            prerequisiteResult={prerequisiteChecks.get(entry.course.courseId)}
+                            onMove={() => undefined}
+                            onRemove={() => undefined}
+                          />
+                        ))}
+                      </ul>
+                    )}
+                  </section>
+
+                  <section className="graduation-semester-group graduation-semester-group--planned" aria-labelledby={`${semesterBoard.id}-planned-heading`}>
+                    <h4 id={`${semesterBoard.id}-planned-heading`}>自分で選んだ科目</h4>
+                    {plannedCourses.length === 0 ? (
+                      <p className="graduation-empty">履修予定の科目はまだありません。</p>
+                    ) : (
+                      <ul className="graduation-course-list graduation-course-list--planned">
+                        {plannedCourses.map((entry) => (
+                          <GraduationSemesterCourseCard
+                            entry={entry}
+                            key={entry.course.courseId}
+                            prerequisiteResult={prerequisiteChecks.get(entry.course.courseId)}
+                            onMove={(trigger) => openMoveDialog(entry.course.courseId, entry.semesterId, trigger)}
+                            onRemove={(trigger) => openRemoveDialog(entry.course.courseId, trigger)}
+                          />
+                        ))}
+                      </ul>
+                    )}
+                    <button
+                      className="graduation-semester-add"
+                      type="button"
+                      aria-label={`${semesterBoard.label}に科目を追加`}
+                      onClick={(event) => openPicker(semesterBoard.id, event.currentTarget)}
+                    >
+                      ＋ 科目を追加
+                    </button>
+                  </section>
+                </section>
+              );
+            })}
+          </div>
+          <p className="muted-note graduation-board-note">必修は公式curriculumから自動表示され、移動・削除できません。</p>
         </section>
 
         {candidateSituations.length > 0 && (
-          <section className="graduation-overview-section" aria-labelledby="graduation-candidates-heading">
-            <h2 id="graduation-candidates-heading">今学期の履修候補・通常抽選</h2>
+          <details className="graduation-overview-section graduation-section-details">
+            <summary>今学期の履修候補・通常抽選を確認</summary>
             <p>検討中・応募済み・結果待ち・落選・当選後のUNIPA未確認は、今学期の履修対象単位に含めません。</p>
             <ul className="graduation-overview-list">
               {candidateSituations.map((item) => (
@@ -829,7 +1150,7 @@ export function GraduationPlanPage() {
               ))}
             </ul>
             <Link to="/lottery">通常抽選を確認する</Link>
-          </section>
+          </details>
         )}
 
         {supersededEntries.length > 0 && (
@@ -857,192 +1178,47 @@ export function GraduationPlanPage() {
           </aside>
         )}
 
-        <section aria-labelledby="semester-board-heading">
-          <div className="graduation-board-heading">
-            <div>
-              <p className="section-kicker">Eight semesters</p>
-              <h2 id="semester-board-heading" tabIndex={-1}>8学期ボード</h2>
-            </div>
-            <button
-              ref={openButtonRef}
-              className="button"
-              type="button"
-              onClick={() => setPickerOpen(true)}
-            >
-              科目を追加
-            </button>
-          </div>
-          <p className="muted-note">必修科目は公式curriculumの配当年次・学期に基づいて自動表示され、追加候補には表示されません。</p>
-
-          <div className="graduation-board">
-            {board.map((semesterBoard) => (
-              <section
-                className="graduation-semester-card"
-                id={`graduation-semester-${semesterBoard.id}`}
-                key={semesterBoard.id}
-                aria-labelledby={`${semesterBoard.id}-heading`}
-                tabIndex={-1}
-              >
-                <header>
-                  <h3 id={`${semesterBoard.id}-heading`}>{semesterBoard.label}</h3>
-                  <div className="graduation-semester-credits">
-                    <span>修得済み {semesterBoard.credits.earned}単位</span>
-                    <span>今学期対象 {semesterBoard.credits.current}単位</span>
-                    <strong>将来予定 {semesterBoard.credits.planned}単位</strong>
-                  </div>
-                </header>
-                {semesterBoard.courses.length === 0 ? (
-                  <p className="graduation-empty">表示する科目はまだありません。</p>
-                ) : (
-                  <ul className="graduation-course-list">
-                    {semesterBoard.courses.map((entry) => {
-                      const entryWarnings = getPlacementWarnings(
-                        entry.course,
-                        entry.semesterId,
-                      );
-                      const semesterYear = graduationSemesters.find(
-                        (item) => item.id === entry.semesterId,
-                      )?.year;
-                      const entryCapResult = capResults.find(
-                        (result) => result.grade === semesterYear,
-                      );
-                      return (
-                      <li
-                        className="graduation-course-card"
-                        id={`graduation-course-${entry.course.courseId}`}
-                        key={entry.course.courseId}
-                        tabIndex={-1}
-                      >
-                        <span className={`status-text status-text--${entry.source === "current_registration" ? "current" : entry.status}`}>
-                          {entry.source === "current_registration"
-                            ? entry.registrationEvidence === "unipa_confirmed"
-                              ? "● 今学期の履修対象"
-                              : "● 今学期の必修"
-                            : entry.source === "required_auto"
-                              ? entry.firstSemesterStatus === "failed"
-                                ? "△ 必修・未修得"
-                                : entry.firstSemesterStatus === "not_taken"
-                                  ? "□ 必修・未履修"
-                                  : entry.firstSemesterStatus === "unknown"
-                                    ? "？ 必修・状態未確認"
-                                    : "▣ 必修・将来予定（自動表示）"
-                            : statusLabels[entry.status]}
-                        </span>
-                        {entry.registrationEvidence === "unipa_confirmed" && (
-                          <p className="muted-note">UNIPA登録確認済み（単位修得済みの判定ではありません）</p>
-                        )}
-                        {courseMasterIds.has(entry.course.courseId) ? (
-                          <Link className="graduation-course-name" to={`/courses/${entry.course.courseId}`}>
-                            {entry.course.name}
-                          </Link>
-                        ) : (
-                          <strong className="graduation-course-name">{entry.course.name}</strong>
-                        )}
-                        <p>
-                          {entry.course.credits}単位
-                          {entry.course.requirementGroups.length > 0
-                            ? ` / ${entry.course.requirementGroups.join("・")}`
-                            : ""}
-                        </p>
-                        {entry.course.recommendedYears.length > 0 && (
-                          <p>配当年次: {entry.course.recommendedYears.join("・")}年</p>
-                        )}
-                        {entryWarnings.length > 0 && (
-                          <aside className="graduation-placement-warning" role="note">
-                            <strong>公式の配当情報と異なる配置です</strong>
-                            <ul>
-                              {entryWarnings.map((warning) => (
-                                <li key={warning}>{warning}</li>
-                              ))}
-                            </ul>
-                          </aside>
-                        )}
-                        {(entry.source === "graduation_plan" || entry.source === "required_auto") && (
-                          <PrerequisiteDetails
-                            result={
-                              prerequisiteChecks.get(entry.course.courseId) ?? {
-                                courseId: entry.course.courseId,
-                                status: "not_applicable",
-                                requirements: [],
-                              }
-                            }
-                          />
-                        )}
-                        {(entry.source === "graduation_plan" || entry.source === "required_auto") &&
-                          entryCapResult?.status === "over_limit" && (
-                            <aside className="graduation-cap-warning" role="note">
-                              <strong>⚠ CAPを確認</strong>
-                              <p>
-                                {entryCapResult.grade}年次の計画上の履修登録単位は
-                                {entryCapResult.annualCredits} / {entryCapResult.limit}単位です。
-                              </p>
-                            </aside>
-                          )}
-                        {!courseMasterIds.has(entry.course.courseId) && (
-                          <p className="muted-note">科目詳細は卒業設計データのみです。</p>
-                        )}
-                        {entry.editable ? (
-                          <div className="graduation-course-actions">
-                            <label>
-                              配置学期
-                              <select
-                                aria-label={`${entry.course.name}の配置学期`}
-                                value={entry.semesterId}
-                                onChange={(event) =>
-                                  dispatch({
-                                    type: "MOVE_GRADUATION_PLAN_COURSE",
-                                    payload: {
-                                      courseId: entry.course.courseId,
-                                      semesterId: event.target.value as GraduationSemesterId,
-                                    },
-                                  })
-                                }
-                              >
-                                {graduationSemesters.map((item) => (
-                                  <option key={item.id} value={item.id}>{item.label}</option>
-                                ))}
-                              </select>
-                            </label>
-                            <button
-                              className="text-button text-button--danger"
-                              type="button"
-                              onClick={() => dispatch({ type: "REMOVE_GRADUATION_PLAN_COURSE", payload: entry.course.courseId })}
-                            >
-                              計画から外す
-                            </button>
-                          </div>
-                        ) : entry.status === "earned" ? (
-                          <p className="graduation-source-note">
-                            修得状況は<Link to="/settings">前期設定</Link>から変更できます。
-                          </p>
-                        ) : entry.source === "required_auto" && entry.semesterId === "year1-spring" ? (
-                          <p className="graduation-source-note">
-                            修得状況は前期設定から変更できます。
-                          </p>
-                        ) : entry.source === "required_auto" ? (
-                          <p className="graduation-source-note">
-                            公式curriculumから自動表示しています。卒業設計から移動・削除はできません。
-                          </p>
-                        ) : (
-                          <p className="graduation-source-note">
-                            1年後期の状態は<Link to="/registration/2026-fall">履修登録</Link>から確認できます。
-                          </p>
-                        )}
-                      </li>
-                      );
-                    })}
-                  </ul>
-                )}
-              </section>
-            ))}
-          </div>
-        </section>
-
         <section className="graduation-overview-section graduation-requirements" aria-labelledby="graduation-requirements-heading">
           <h2 id="graduation-requirements-heading" tabIndex={-1}>卒業要件の進捗</h2>
           <p>
             「計画上到達」は、現在履修対象・履修予定の科目をすべて修得した場合の試算です。修得済みを意味せず、卒業を保証するものではありません。
           </p>
+
+          <div className="graduation-requirement-main-summary" aria-label="卒業要件主要サマリー">
+            <article>
+              <span>総単位</span>
+              <strong>{requirementProgress.totalCredits.plannedIncludedCredits} / {requirementProgress.totalCredits.requiredCredits}</strong>
+              <small>{requirementStatusLabels[requirementProgress.totalCredits.status]}</small>
+            </article>
+            <article>
+              <span>必修</span>
+              <strong>{requirementProgress.requiredCourses.plannedIncludedCredits} / {requirementProgress.requiredCourses.requiredCredits}</strong>
+              <small>{requirementStatusLabels[requirementProgress.requiredCourses.status]}</small>
+            </article>
+            <article>
+              <span>選択必修</span>
+              <strong>{requirementProgress.selectableRequired.plannedIncludedCredits} / {requirementProgress.selectableRequired.requiredCredits}</strong>
+              <small>{requirementStatusLabels[requirementProgress.selectableRequired.status]}</small>
+            </article>
+            <article>
+              <span>選択</span>
+              <strong>
+                {requirementProgress.electiveRequirements.reduce((total, item) => total + item.plannedIncludedCredits, 0)} / {requirementProgress.electiveRequirements.reduce((total, item) => total + item.requiredCredits, 0)}
+              </strong>
+              <small>区分別の詳細を確認</small>
+            </article>
+          </div>
+
+          {requirementShortfalls.length > 0 && (
+            <ul className="graduation-requirement-shortfall-chips" aria-label="計画上不足している要件">
+              {requirementShortfalls.map((item) => (
+                <li key={item.id}>⚠ {item.label} あと{item.amount}{item.unit}</li>
+              ))}
+            </ul>
+          )}
+
+          <details className="graduation-section-details graduation-requirement-details">
+            <summary>記号別要件・選択区分の詳細を見る</summary>
 
           {requirementProgress.warnings.length > 0 && (
             <aside className="graduation-requirement-notice" role="note">
@@ -1135,6 +1311,7 @@ export function GraduationPlanPage() {
             </p>
             <p>{requirementProgress.selectableRequiredExcess.note}</p>
           </aside>
+          </details>
         </section>
 
         <section className="graduation-overview-section" aria-labelledby="graduation-unresolved-required-heading">
@@ -1169,6 +1346,111 @@ export function GraduationPlanPage() {
         </section>
       </div>
 
+      {movingEntry && movePreview && (
+        <div className="graduation-dialog-backdrop">
+          <section
+            className="graduation-dialog graduation-move-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="move-course-heading"
+            onKeyDown={(event) => {
+              if (event.key === "Escape") closeMoveDialog();
+              if (event.key !== "Tab") return;
+              const focusable = Array.from(event.currentTarget.querySelectorAll<HTMLElement>(
+                'button:not([disabled]), input:not([disabled]), select:not([disabled]), a[href]',
+              ));
+              const first = focusable[0];
+              const last = focusable.at(-1);
+              if (!first || !last) return;
+              if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+              } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+              }
+            }}
+          >
+            <header>
+              <div>
+                <p className="section-kicker">Move planned course</p>
+                <h2 id="move-course-heading">学期を変更</h2>
+                <p><strong>{movingEntry.course.name}</strong></p>
+              </div>
+              <button ref={moveCloseRef} className="icon-button" type="button" onClick={closeMoveDialog} aria-label="学期変更を閉じる">×</button>
+            </header>
+
+            <p>現在：{graduationSemesters.find((item) => item.id === movingEntry.semesterId)?.label}</p>
+            <fieldset className="graduation-semester-choice-grid">
+              <legend>移動先</legend>
+              {graduationSemesters.map((item) => (
+                <button
+                  className={moveSemesterId === item.id ? "is-selected" : ""}
+                  type="button"
+                  aria-pressed={moveSemesterId === item.id}
+                  key={item.id}
+                  onClick={() => setMoveSemesterId(item.id)}
+                >
+                  {item.label}{item.id === movingEntry.semesterId ? "（現在）" : ""}
+                </button>
+              ))}
+            </fieldset>
+
+            <section className={`graduation-move-preview graduation-move-preview--${movePreview.status}`} aria-labelledby="move-preview-heading">
+              <h3 id="move-preview-heading">移動preview</h3>
+              <ul>
+                <li>{movePreview.yearPlacement === "match" ? "✓ 配当年次一致" : movePreview.yearPlacement === "mismatch" ? "⚠ 配当年次を確認" : "? 配当年次未確認"}</li>
+                <li>{movePreview.semesterPlacement === "match" ? "✓ 開講学期一致" : movePreview.semesterPlacement === "mismatch" ? "⚠ 開講学期を確認" : "? 開講学期未確認"}</li>
+                <li>{movePreview.prerequisite === "clear" ? "✓ 前提科目上のwarningなし" : movePreview.prerequisite === "attention" ? "⚠ 前提科目を確認" : "? 前提科目の修得状況を確認"}</li>
+                <li>
+                  {movePreview.cap.status === "over_limit" ? "⚠" : movePreview.cap.status === "unknown" ? "?" : "○"} CAP {movePreview.cap.beforeCredits ?? "未確認"} → {movePreview.cap.afterCredits ?? "未確認"} / {movePreview.cap.limit ?? "上限未確認"}
+                </li>
+              </ul>
+              {movePreview.messages.length > 0 && (
+                <aside className="warning-card" role="status">
+                  <strong>移動するときの確認事項</strong>
+                  <ul>{movePreview.messages.map((message) => <li key={message}>{message}</li>)}</ul>
+                </aside>
+              )}
+            </section>
+
+            <div className="graduation-dialog-actions">
+              <button className="button button--secondary" type="button" onClick={closeMoveDialog}>キャンセル</button>
+              <button className="button" type="button" disabled={moveSemesterId === movingEntry.semesterId} onClick={commitMove}>
+                {movePreview.status === "clear" ? "移動" : "確認して移動"}
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
+
+      {removingCourseId && (
+        <div className="graduation-dialog-backdrop">
+          <section
+            className="graduation-dialog graduation-confirm-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="remove-course-heading"
+            onKeyDown={(event) => {
+              if (event.key === "Escape") closeRemoveDialog();
+            }}
+          >
+            <header>
+              <div>
+                <p className="section-kicker">Remove from plan</p>
+                <h2 id="remove-course-heading">計画から外しますか？</h2>
+              </div>
+            </header>
+            <p>この科目を卒業設計の計画から外します。</p>
+            <p className="muted-note">単位修得記録を削除する操作ではありません。</p>
+            <div className="graduation-dialog-actions">
+              <button ref={removeCancelRef} className="button button--secondary" type="button" onClick={closeRemoveDialog}>キャンセル</button>
+              <button className="button text-button--danger" type="button" onClick={commitRemove}>計画から外す</button>
+            </div>
+          </section>
+        </div>
+      )}
+
       {isPickerOpen && (
         <div className="graduation-dialog-backdrop">
           <section
@@ -1199,7 +1481,8 @@ export function GraduationPlanPage() {
             <header>
               <div>
                 <p className="section-kicker">Unplaced courses</p>
-                <h2 id="course-picker-heading">未配置の科目を探す</h2>
+                <h2 id="course-picker-heading">科目を追加</h2>
+                <p className="graduation-dialog-destination">配置先：<strong>{graduationSemesters.find((item) => item.id === semesterId)?.label}</strong></p>
               </div>
               <button className="icon-button" type="button" onClick={closePicker} aria-label="科目選択を閉じる">×</button>
             </header>

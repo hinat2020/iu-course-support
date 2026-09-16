@@ -961,6 +961,258 @@ input:focus-visible {
   margin-top: 0.7rem;
 }
 
+.graduation-plan-checks__group + .graduation-plan-checks__group {
+  margin-top: 1rem;
+}
+
+.graduation-plan-checks__group h3 {
+  margin: 0 0 0.45rem;
+  color: #29475b;
+  font-size: 0.95rem;
+}
+
+.graduation-section-heading,
+.graduation-course-card__topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.graduation-dashboard-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.graduation-dashboard-grid > section {
+  margin-bottom: 0;
+}
+
+.graduation-section-heading h2 {
+  margin: 0;
+}
+
+.graduation-year-summary,
+.graduation-requirement-main-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-year-summary__item,
+.graduation-requirement-main-summary article {
+  display: grid;
+  min-width: 0;
+  gap: 0.2rem;
+  border: 1px solid #d3dee6;
+  border-left: 0.3rem solid #367994;
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+  background: #f6fafc;
+}
+
+.graduation-year-summary__item--over_limit {
+  border-left-color: #a33e34;
+  background: #fff3f1;
+}
+
+.graduation-year-summary__item--unknown {
+  border-left-color: #717783;
+  background: #f5f6f7;
+}
+
+.graduation-year-summary__item span,
+.graduation-requirement-main-summary strong {
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.graduation-year-summary__item small,
+.graduation-requirement-main-summary small {
+  color: #526578;
+  font-weight: 750;
+}
+
+.graduation-section-details {
+  margin-top: 0.8rem;
+}
+
+.graduation-section-details > summary {
+  min-height: 2.75rem;
+  color: #174e70;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.graduation-requirement-shortfall-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-requirement-shortfall-chips li {
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  color: #743025;
+  background: #fff0ed;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.graduation-requirement-details {
+  border-top: 1px solid #d8e1e8;
+  padding-top: 0.7rem;
+}
+
+.graduation-board-heading > p {
+  margin: 0;
+  color: #526578;
+}
+
+.graduation-semester-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.graduation-semester-card > header > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.graduation-semester-warning,
+.graduation-course-warning-count {
+  color: #7b4c0a;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.graduation-semester-group {
+  padding-top: 0.8rem;
+}
+
+.graduation-semester-group + .graduation-semester-group {
+  margin-top: 0.75rem;
+  border-top: 2px solid #d7e2e9;
+}
+
+.graduation-semester-group h4 {
+  margin: 0;
+  color: #355164;
+  font-size: 0.85rem;
+  letter-spacing: 0.035em;
+}
+
+.graduation-semester-group--planned {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.graduation-course-list--required {
+  gap: 0.45rem;
+}
+
+.graduation-course-card--required {
+  padding: 0.65rem;
+  background: #f3f7f9;
+}
+
+.graduation-course-card--required .graduation-source-note {
+  margin-bottom: 0;
+  font-size: 0.78rem;
+}
+
+.graduation-course-card--planned {
+  border-color: #bdd3de;
+  border-left: 0.3rem solid #327894;
+  background: #fff;
+}
+
+.graduation-course-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.graduation-semester-add {
+  width: 100%;
+  margin-top: auto;
+  border-style: dashed;
+  color: #174e70;
+  background: #f7fbfd;
+}
+
+.graduation-board-note {
+  margin-top: 0.75rem;
+}
+
+.graduation-dialog-destination {
+  margin: 0.4rem 0 0;
+}
+
+.graduation-semester-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0;
+  border: 1px solid #d2dde5;
+  border-radius: 0.8rem;
+  padding: 0.75rem;
+}
+
+.graduation-semester-choice-grid legend {
+  padding: 0 0.3rem;
+  font-weight: 850;
+}
+
+.graduation-semester-choice-grid button {
+  min-width: 0;
+}
+
+.graduation-semester-choice-grid button.is-selected {
+  border-color: #174e70;
+  color: #fff;
+  background: #174e70;
+}
+
+.graduation-move-preview {
+  border: 1px solid #cfdae2;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  background: #f7fafc;
+}
+
+.graduation-move-preview h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.graduation-move-preview > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-move-preview > ul li {
+  border-radius: 0.55rem;
+  padding: 0.55rem;
+  background: #fff;
+}
+
+.graduation-confirm-dialog {
+  width: min(34rem, 100%);
+}
+
 @media (min-width: 640px) {
   .graduation-plan-shell { padding: 2rem 1.5rem; }
   .graduation-board { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -969,13 +1221,20 @@ input:focus-visible {
   .graduation-cap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .graduation-plan-checks__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .graduation-candidate-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graduation-year-summary,
+  .graduation-requirement-main-summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .graduation-semester-choice-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1100px) {
+  .graduation-dashboard-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .graduation-board { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .graduation-credit-summary dl { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .graduation-plan-checks__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .graduation-candidate-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .graduation-dialog:not(.graduation-confirm-dialog) { width: min(64rem, 100%); }
+  .graduation-filters { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .graduation-requirement-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 button:disabled {

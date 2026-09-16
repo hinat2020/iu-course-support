@@ -355,7 +355,7 @@ describe("Phase 11 graduation plan UI", () => {
     });
     fireEvent.click(screen.getByRole("button", { name: "この学期に追加" }));
     const fall = screen.getByRole("heading", { name: "1年後期" }).closest("section");
-    expect(within(fall!).getByText("公式の配当情報と異なる配置です")).toBeInTheDocument();
+    expect(within(fall!).getByText(/公式の配当情報と異なる配置です/)).toBeInTheDocument();
   });
 
   it("planned科目を移動してから削除できる", () => {
@@ -364,9 +364,14 @@ describe("Phase 11 graduation plan UI", () => {
       graduationPlan: { entries: [{ courseId: "data-science-foundations", semesterId: "year2-spring" }] },
     };
     renderPlanner(state);
-    fireEvent.change(screen.getByLabelText("データサイエンス基礎の配置学期"), { target: { value: "year2-fall" } });
+    const courseCard = screen.getByText("データサイエンス基礎").closest("li")!;
+    fireEvent.click(within(courseCard).getByRole("button", { name: "学期を変更" }));
+    fireEvent.click(screen.getByRole("button", { name: "2年後期" }));
+    fireEvent.click(screen.getByRole("button", { name: "確認して移動" }));
     expect(within(screen.getByRole("heading", { name: "2年後期" }).closest("section")!).getByText("データサイエンス基礎")).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: "計画から外す" }));
+    const movedCard = screen.getByText("データサイエンス基礎").closest("li")!;
+    fireEvent.click(within(movedCard).getByRole("button", { name: "計画から外す" }));
+    fireEvent.click(within(screen.getByRole("dialog", { name: "計画から外しますか？" })).getByRole("button", { name: "計画から外す" }));
     expect(screen.queryByText("データサイエンス基礎")).not.toBeInTheDocument();
   });
 

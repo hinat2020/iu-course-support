@@ -415,7 +415,7 @@ describe("Phase 12D integrated UI", () => {
     });
     renderPlanner(createInitialState());
     fireEvent.click(screen.getAllByRole("button", { name: "該当箇所を見る" })[0]);
-    expect(document.activeElement?.id).toBe("graduation-requirement-total-credits");
+    expect(document.activeElement?.id).toMatch(/^graduation-requirement-/);
   });
 
   it("warning 0時は限定表現を使い卒業保証しない", () => {

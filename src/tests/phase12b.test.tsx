@@ -405,21 +405,19 @@ describe("Phase 12B state integration", () => {
 describe("Phase 12B UI", () => {
   it("学年別の履修登録単位と確認済み上限を表示する", () => {
     renderPlanner(knownFirstSemester({ "study-skills": "earned" }));
-    const region = screen.getByRole("region", { name: "学年別CAP（履修登録単位の計画）" });
-    expect(within(region).getByText("1年次")).toBeInTheDocument();
-    expect(within(region).getByText("計画上の履修登録単位：16単位 / 46単位")).toBeInTheDocument();
-    expect(within(region).getByText("2年次")).toBeInTheDocument();
-    expect(within(region).getByText("計画上の履修登録単位：12単位 / 42単位")).toBeInTheDocument();
-    expect(within(region).getByText("計画上の履修登録単位：25単位 / 42単位")).toBeInTheDocument();
-    expect(within(region).getByText("計画上の履修登録単位：5単位 / 42単位")).toBeInTheDocument();
+    const summary = screen.getByLabelText("学年別CAPサマリー");
+    expect(within(summary).getByText("16 / 46単位")).toBeInTheDocument();
+    expect(within(summary).getByText("12 / 42単位")).toBeInTheDocument();
+    expect(within(summary).getByText("25 / 42単位")).toBeInTheDocument();
+    expect(within(summary).getByText("5 / 42単位")).toBeInTheDocument();
   });
 
   it("前期unknownを問題なし表示にしない", () => {
     renderPlanner(knownFirstSemester({ "study-skills": "unknown" }));
-    const region = screen.getByRole("region", { name: "学年別CAP（履修登録単位の計画）" });
-    const firstYear = within(region).getByText("1年次").closest("li");
+    const summary = screen.getByLabelText("学年別CAPサマリー");
+    const firstYear = within(summary).getByText("1年次").closest("li");
     expect(within(firstYear!).getByText("? 判定できません")).toBeInTheDocument();
-    expect(within(firstYear!).getByText(/未確認項目/)).toBeInTheDocument();
+    expect(within(firstYear!).getByText(/未確認/)).toBeInTheDocument();
   });
 
   it("追加前にCAP超過をsoft warningとして表示し配置を許可する", () => {
@@ -457,6 +455,8 @@ describe("Phase 12B UI", () => {
     const semester = screen.getByRole("heading", { name: "2年前期" }).closest("section")!;
     const card = within(semester).getByText("基礎プロジェクトⅠ").closest("li");
     expect(within(card!).getByText("⚠ 前提科目を確認")).toBeInTheDocument();
-    expect(within(card!).getByText("⚠ CAPを確認")).toBeInTheDocument();
+    const capSummary = screen.getByLabelText("学年別CAPサマリー");
+    const secondYear = within(capSummary).getByText("2年次").closest("li")!;
+    expect(within(secondYear).getByText("⚠ 上限超過")).toBeInTheDocument();
   });
 });
