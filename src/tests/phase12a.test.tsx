@@ -212,7 +212,7 @@ describe("Phase 12A prerequisite domain", () => {
 });
 
 describe("Phase 12A derived selectors and regression", () => {
-  it("前提科目の移動後に判定を再計算する", () => {
+  it("自動必修の移動actionを拒否して前提順序を維持する", () => {
     const initial: AppState = {
       ...stateWithEarned(["business-introduction"]),
       graduationPlan: {
@@ -228,11 +228,12 @@ describe("Phase 12A derived selectors and regression", () => {
       type: "MOVE_GRADUATION_PLAN_COURSE",
       payload: { courseId: "ict-introduction", semesterId: "year3-spring" },
     });
+    expect(moved).toBe(initial);
     expect(selectGraduationPrerequisiteChecks(moved).get("pre-internship-guidance")?.requirements[1].status)
-      .toBe("planned_after");
+      .toBe("planned_before");
   });
 
-  it("前提科目の削除後にmissingへ再計算する", () => {
+  it("自動必修の削除actionを拒否して前提配置を維持する", () => {
     const initial: AppState = {
       ...stateWithEarned(["business-introduction"]),
       graduationPlan: {
@@ -246,8 +247,9 @@ describe("Phase 12A derived selectors and regression", () => {
       type: "REMOVE_GRADUATION_PLAN_COURSE",
       payload: "ict-introduction",
     });
+    expect(removed).toBe(initial);
     expect(selectGraduationPrerequisiteChecks(removed).get("pre-internship-guidance")?.requirements[1].status)
-      .toBe("missing");
+      .toBe("planned_before");
   });
 
   it("後期必修の前提はcurrent_unconfirmedとして扱う", () => {
@@ -273,7 +275,7 @@ describe("Phase 12A derived selectors and regression", () => {
       },
     };
     expect(selectGraduationPrerequisiteChecks(state).get("basic-project-1")?.status)
-      .toBe("not_satisfied");
+      .toBe("satisfied");
     saveState(state);
     const raw = localStorage.getItem("iu-course-support:v1") ?? "";
     expect(raw).not.toContain("not_satisfied");
@@ -297,18 +299,19 @@ describe("Phase 12A derived selectors and regression", () => {
 });
 
 describe("Phase 12A UI", () => {
-  it("不足中の前提科目をカードへ表示する", () => {
+  it("自動必修の前提科目をカードへ表示する", () => {
     renderPlanner({
       ...stateWithEarned(["business-introduction"]),
       graduationPlan: {
         entries: [{ courseId: "pre-internship-guidance", semesterId: "year2-spring" }],
       },
     });
-    const card = screen.getByText("実習事前指導").closest("li");
-    expect(within(card!).getByText("⚠ 前提科目を確認")).toBeInTheDocument();
-    fireEvent.click(within(card!).getByText("⚠ 前提科目を確認"));
+    const semester = screen.getByRole("heading", { name: "2年後期" }).closest("section")!;
+    const card = within(semester).getByText("実習事前指導").closest("li");
+    expect(within(card!).getByText("✓ 前提科目OK")).toBeInTheDocument();
+    fireEvent.click(within(card!).getByText("✓ 前提科目OK"));
     expect(within(card!).getByText(/ICT入門/)).toBeInTheDocument();
-    expect(within(card!).getByText(/まだ前の学期にありません/)).toBeInTheDocument();
+    expect(within(card!).getByText(/前の学期に履修予定/)).toBeInTheDocument();
   });
 
   it("満たした前提科目をカードへ表示する", () => {
@@ -318,25 +321,20 @@ describe("Phase 12A UI", () => {
         entries: [{ courseId: "pre-internship-guidance", semesterId: "year2-spring" }],
       },
     });
-    const card = screen.getByText("実習事前指導").closest("li");
+    const semester = screen.getByRole("heading", { name: "2年後期" }).closest("section")!;
+    const card = within(semester).getByText("実習事前指導").closest("li");
     expect(within(card!).getByText("✓ 前提科目OK")).toBeInTheDocument();
   });
 
-  it("追加前に前提不足をsoft warningとして表示し配置は許可する", () => {
+  it("必修は通常追加検索から除外して自動配置先を説明する", () => {
     renderPlanner(stateWithEarned(["business-introduction"]));
     fireEvent.click(screen.getByRole("button", { name: "科目を追加" }));
     fireEvent.change(screen.getByLabelText("科目名検索"), {
       target: { value: "実習事前指導" },
     });
-    fireEvent.click(screen.getByRole("radio", { name: /実習事前指導/ }));
-    fireEvent.change(screen.getByLabelText("配置する学期"), {
-      target: { value: "year2-spring" },
-    });
-    expect(screen.getByText("⚠ この配置では前提科目を先に満たしていません"))
-      .toBeInTheDocument();
-    expect(screen.getByText(/ICT入門 — まだ前の学期にありません/))
-      .toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "この学期に追加" })).toBeEnabled();
+    expect(screen.queryByRole("radio", { name: /実習事前指導/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/2年後期へ自動表示/)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "この学期に追加" })).toBeDisabled();
   });
 
   it("前提科目なしでは前提warningを表示しない", () => {
@@ -346,11 +344,12 @@ describe("Phase 12A UI", () => {
         entries: [{ courseId: "data-science-foundations", semesterId: "year2-spring" }],
       },
     });
-    expect(screen.queryByText("⚠ 前提科目を確認")).not.toBeInTheDocument();
-    expect(screen.queryByText("✓ 前提科目OK")).not.toBeInTheDocument();
+    const card = screen.getByText("データサイエンス基礎").closest("li")!;
+    expect(within(card).queryByText("⚠ 前提科目を確認")).not.toBeInTheDocument();
+    expect(within(card).queryByText("✓ 前提科目OK")).not.toBeInTheDocument();
   });
 
-  it("移動後に前提warningを即時更新し配当warningも維持する", () => {
+  it("自動必修は移動UIを持たず前提表示を維持する", () => {
     renderPlanner({
       ...stateWithEarned(["business-introduction"]),
       graduationPlan: {
@@ -360,12 +359,9 @@ describe("Phase 12A UI", () => {
         ],
       },
     });
-    expect(screen.getByText("✓ 前提科目OK")).toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText("ICT入門の配置学期"), {
-      target: { value: "year3-spring" },
-    });
-    expect(screen.getByText("⚠ 前提科目を確認")).toBeInTheDocument();
-    expect(screen.getAllByText("公式の配当情報と異なる配置です").length)
-      .toBeGreaterThan(0);
+    const semester = screen.getByRole("heading", { name: "2年後期" }).closest("section")!;
+    const card = within(semester).getByText("実習事前指導").closest("li")!;
+    expect(within(card).getByText("✓ 前提科目OK")).toBeInTheDocument();
+    expect(screen.queryByLabelText("ICT入門の配置学期")).not.toBeInTheDocument();
   });
 });

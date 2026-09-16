@@ -103,7 +103,10 @@ export function checkGraduationPlanPrerequisites({
 }): PrerequisiteCheckResult[] {
   const coursesById = new Map(courses.map((course) => [course.courseId, course]));
   return placements
-    .filter((placement) => placement.source === "graduation_plan")
+    .filter((placement) =>
+      placement.source === "graduation_plan" ||
+      placement.source === "required_auto"
+    )
     .map((placement) =>
       checkCoursePrerequisites({
         course: placement.course,

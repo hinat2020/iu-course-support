@@ -10,3 +10,7 @@ export const curriculumCoursesById = new Map(
 export const plannableCurriculumCourses = curriculumCourses.filter(
   (course) => course.planningAvailability === "standard",
 );
+
+export const manuallyPlannableCurriculumCourses = plannableCurriculumCourses.filter(
+  (course) => course.requirementType !== "required",
+);

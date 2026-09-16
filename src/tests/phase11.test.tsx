@@ -197,7 +197,10 @@ describe("Phase 11 graduation planning domain and selectors", () => {
       type: "SET_PREVIOUS_COURSE_STATUS",
       payload: { courseId, status },
     });
-    expect(selectGraduationBoard(state).flatMap((item) => item.courses).some((item) => item.course.courseId === courseId)).toBe(false);
+    const entry = selectGraduationBoard(state).flatMap((item) => item.courses)
+      .find((item) => item.course.courseId === courseId);
+    expect(entry?.status).not.toBe("earned");
+    expect(entry?.source).toBe("required_auto");
   });
 
   it("plannedとearnedが重複しても単位を二重計上しない", () => {
@@ -209,7 +212,7 @@ describe("Phase 11 graduation planning domain and selectors", () => {
     state = { ...state, graduationPlan: { entries: [{ courseId, semesterId: "year2-spring" }] } };
     const summary = selectGraduationCreditSummary(state);
     expect(summary.earnedCredits).toBe(firstSemesterRequiredCourses[0].credits);
-    expect(summary.plannedCredits).toBe(0);
+    expect(summary.plannedCredits).toBe(72);
   });
 
   it("追加・移動・削除と同一courseId重複防止が純粋に動く", () => {
@@ -317,12 +320,12 @@ describe("Phase 11 graduation planning domain and selectors", () => {
 });
 
 describe("Phase 11 graduation plan UI", () => {
-  it("8学期と空状態を表示する", () => {
+  it("8学期と自動配置必修を表示する", () => {
     renderPlanner();
     for (const label of ["1年前期", "1年後期", "2年前期", "2年後期", "3年前期", "3年後期", "4年前期", "4年後期"]) {
       expect(screen.getByRole("heading", { name: label })).toBeInTheDocument();
     }
-    expect(screen.getAllByText("履修予定の科目はまだありません。")).toHaveLength(8);
+    expect(screen.getAllByText(/必修・将来予定/).length).toBeGreaterThan(0);
   });
 
   it("検索して科目を選び学期へ追加する", () => {

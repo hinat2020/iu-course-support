@@ -334,12 +334,7 @@ describe("Phase 12C graduation requirement engine", () => {
       amount: 128,
       unit: "単位",
     });
-    expect(shortfalls).toContainEqual({
-      id: "required-courses",
-      label: "未計画の必修科目",
-      amount: 36,
-      unit: "科目",
-    });
+    expect(shortfalls.some((item) => item.id === "required-courses")).toBe(false);
   });
 });
 
@@ -386,7 +381,7 @@ describe("Phase 12C state integration and regression", () => {
     const progress = selectGraduationRequirementProgress(configuredState());
     expect(progress.totalCredits.earnedCredits).toBe(0);
     expect(progress.totalCredits.currentIncludedCredits).toBe(14);
-    expect(progress.totalCredits.plannedIncludedCredits).toBe(14);
+    expect(progress.totalCredits.plannedIncludedCredits).toBe(74);
   });
 
   it("won+confirmed通常抽選をcurrentとして1回だけ集計する", () => {
@@ -396,7 +391,7 @@ describe("Phase 12C state integration and regression", () => {
     };
     const progress = selectGraduationRequirementProgress(state);
     expect(progress.totalCredits.currentIncludedCredits).toBe(16);
-    expect(progress.totalCredits.plannedIncludedCredits).toBe(16);
+    expect(progress.totalCredits.plannedIncludedCredits).toBe(76);
     expect(progress.requirementGroups.find((item) => item.symbol === "■")?.currentIncludedCredits).toBe(2);
   });
 
@@ -431,7 +426,7 @@ describe("Phase 12C state integration and regression", () => {
         entries: [{ courseId: "pre-internship-guidance", semesterId: "year2-spring" }],
       },
     };
-    expect(selectGraduationPrerequisiteChecks(state).get("pre-internship-guidance")?.status).toBe("not_satisfied");
+    expect(selectGraduationPrerequisiteChecks(state).get("pre-internship-guidance")?.status).toBe("satisfied");
     expect(state.schemaVersion).toBe(5);
   });
 
@@ -462,9 +457,10 @@ describe("Phase 12C UI", () => {
     }
   });
 
-  it("未計画必修を折りたたみ表示する", () => {
+  it("必修を自動配置したことを表示する", () => {
     renderPlanner(createInitialState());
-    expect(screen.getByText("未計画の必修科目 36科目")).toBeInTheDocument();
+    expect(screen.getByText("必修科目は公式curriculumから自動配置しています。")).toBeInTheDocument();
+    expect(screen.queryByText(/未計画の必修科目/)).not.toBeInTheDocument();
   });
 
   it("特殊科目除外と卒業非保証を明示する", () => {

@@ -208,6 +208,7 @@ export type CalculateGraduationRequirementProgressInput = {
   placements: readonly GraduationRequirementPlacement[];
   requirements: GraduationRequirementsData;
   hasUnknownFirstSemesterStatus?: boolean;
+  hasUnresolvedRequiredCoursePlacement?: boolean;
 };
 
 export function calculateGraduationRequirementProgress({
@@ -215,6 +216,7 @@ export function calculateGraduationRequirementProgress({
   placements,
   requirements,
   hasUnknownFirstSemesterStatus = false,
+  hasUnresolvedRequiredCoursePlacement = false,
 }: CalculateGraduationRequirementProgressInput): GraduationRequirementProgress {
   const placementByCourseId = normalizePlacements(placements);
   const standardCourses = curriculum.filter(
@@ -262,7 +264,9 @@ export function calculateGraduationRequirementProgress({
       credits: course.credits,
     }));
   const requiredStatus: RequirementProgressStatus =
-    earnedCourses === requiredCourses.length
+    hasUnresolvedRequiredCoursePlacement
+      ? "unknown"
+      : earnedCourses === requiredCourses.length
       ? "satisfied"
       : plannedIncludedCourses === requiredCourses.length
         ? "projected_satisfied"
@@ -280,7 +284,12 @@ export function calculateGraduationRequirementProgress({
     currentIncludedCredits: requiredCredits.currentIncluded,
     plannedIncludedCredits: requiredCredits.plannedIncluded,
     status: requiredStatus,
-    notes: ["必修は単位数だけでなく、対象となる全科目の修得が必要です。"],
+    notes: [
+      "必修は単位数だけでなく、対象となる全科目の修得が必要です。",
+      ...(hasUnresolvedRequiredCoursePlacement
+        ? ["公式配当から配置学期を一意に決められない必修科目があります。"]
+        : []),
+    ],
   };
 
   const selectableCourses = standardCourses.filter(
@@ -423,13 +432,5 @@ export function getGraduationRequirementShortfalls(
       amount: item.projectedShortfall,
       unit: "単位" as const,
     }));
-  if (progress.requiredCourses.status === "shortfall") {
-    shortfalls.push({
-      id: progress.requiredCourses.id,
-      label: "未計画の必修科目",
-      amount: progress.requiredCourses.unplannedCourses.length,
-      unit: "科目",
-    });
-  }
   return shortfalls;
 }

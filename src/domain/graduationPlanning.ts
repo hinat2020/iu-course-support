@@ -55,9 +55,30 @@ export type GraduationBoardCourse = {
   course: CurriculumCourse;
   semesterId: GraduationSemesterId;
   status: GraduationCourseStatus;
-  source: "first_semester" | "current_registration" | "graduation_plan";
+  source:
+    | "first_semester"
+    | "current_registration"
+    | "required_auto"
+    | "graduation_plan";
+  firstSemesterStatus?: "failed" | "not_taken" | "unknown";
   registrationEvidence?: "unipa_confirmed";
   editable: boolean;
+};
+
+export type RequiredCourseAutomaticPlacement = {
+  course: CurriculumCourse;
+  semesterId: GraduationSemesterId;
+};
+
+export type UnresolvedRequiredCoursePlacement = {
+  course: CurriculumCourse;
+  reasons: Array<
+    | "multiple_years"
+    | "multiple_semesters"
+    | "unknown_year"
+    | "unknown_semester"
+    | "managed_elsewhere"
+  >;
 };
 
 export type GraduationSemesterBoard = {
@@ -117,6 +138,38 @@ export function isGraduationSemesterId(
   return typeof value === "string" && graduationSemesters.some(
     (semester) => semester.id === value,
   );
+}
+
+export function getRequiredCourseAutomaticPlacement(
+  course: CurriculumCourse,
+): RequiredCourseAutomaticPlacement | null {
+  if (
+    course.requirementType !== "required" ||
+    course.planningAvailability !== "standard" ||
+    course.recommendedYears.length !== 1 ||
+    course.availableSemesters.length !== 1
+  ) {
+    return null;
+  }
+  const year = course.recommendedYears[0];
+  const semester = course.availableSemesters[0];
+  const semesterId = `year${year}-${semester}`;
+  if (!isGraduationSemesterId(semesterId)) return null;
+  return { course, semesterId };
+}
+
+export function getUnresolvedRequiredCoursePlacement(
+  course: CurriculumCourse,
+): UnresolvedRequiredCoursePlacement | null {
+  if (course.requirementType !== "required") return null;
+  if (getRequiredCourseAutomaticPlacement(course)) return null;
+  const reasons: UnresolvedRequiredCoursePlacement["reasons"] = [];
+  if (course.planningAvailability !== "standard") reasons.push("managed_elsewhere");
+  if (course.recommendedYears.length === 0) reasons.push("unknown_year");
+  if (course.recommendedYears.length > 1) reasons.push("multiple_years");
+  if (course.availableSemesters.length === 0) reasons.push("unknown_semester");
+  if (course.availableSemesters.length > 1) reasons.push("multiple_semesters");
+  return { course, reasons };
 }
 
 export function sanitizeGraduationPlan(
@@ -240,7 +293,9 @@ export function getSemesterPlannedCredits(
     .filter((entry) => entry.source === "current_registration")
     .reduce((sum, entry) => sum + entry.course.credits, 0);
   const planned = courses
-    .filter((entry) => entry.source === "graduation_plan")
+    .filter((entry) =>
+      entry.source === "graduation_plan" || entry.source === "required_auto"
+    )
     .reduce((sum, entry) => sum + entry.course.credits, 0);
   return {
     earned,

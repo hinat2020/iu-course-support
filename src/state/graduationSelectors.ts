@@ -1,7 +1,7 @@
 import {
   curriculumCourses,
   curriculumCoursesById,
-  plannableCurriculumCourses,
+  manuallyPlannableCurriculumCourses,
 } from "../data/2026/curriculum";
 import { candidateCourses } from "../data/2026/coursePlanning";
 import { registrationRules } from "../data/2026/coursePlanning";
@@ -24,7 +24,9 @@ import {
 } from "../domain/graduationPrerequisites";
 import {
   getGraduationCreditSummary,
+  getRequiredCourseAutomaticPlacement,
   getSemesterPlannedCredits,
+  getUnresolvedRequiredCoursePlacement,
   graduationSemesters,
   type CurriculumRequirementSymbol,
   type CurriculumRequirementType,
@@ -158,6 +160,26 @@ export function selectGraduationBoard(
     }
   }
 
+  for (const course of curriculumCourses) {
+    const automatic = getRequiredCourseAutomaticPlacement(course);
+    if (!automatic) continue;
+    const firstSemesterRecord = automatic.semesterId === "year1-spring"
+      ? state.firstSemester.courses[course.courseId]
+      : undefined;
+    addCourse(entries, {
+      course,
+      semesterId: automatic.semesterId,
+      status: "planned",
+      source: "required_auto",
+      firstSemesterStatus: automatic.semesterId === "year1-spring"
+        ? firstSemesterRecord?.confirmedByUser && firstSemesterRecord.status !== "earned"
+          ? firstSemesterRecord.status
+          : "unknown"
+        : undefined,
+      editable: false,
+    });
+  }
+
   for (const situation of selectGraduationCandidateSituations(state)) {
     if (situation.status !== "won_confirmed") continue;
     const course = curriculumCoursesById.get(situation.courseId);
@@ -248,7 +270,8 @@ export function selectGraduationCapPlan(
     const additions = semester.courses
       .filter((entry) =>
         entry.source === "graduation_plan" ||
-        entry.source === "current_registration"
+        entry.source === "current_registration" ||
+        (entry.source === "required_auto" && !entry.semesterId.startsWith("year1-"))
       )
       .map((entry) => ({
         courseId: entry.course.courseId,
@@ -339,6 +362,8 @@ export function selectGraduationRequirementProgress(state: AppState) {
     placements,
     requirements: officialGraduationRequirements,
     hasUnknownFirstSemesterStatus,
+    hasUnresolvedRequiredCoursePlacement:
+      selectUnresolvedRequiredCourses().length > 0,
   });
 }
 
@@ -389,6 +414,14 @@ export function selectGraduationPlanChecks(state: AppState) {
     prerequisiteChecks: selectGraduationPrerequisiteChecks(state),
     placements,
     hasSpecialCourseUncertainty: hasSpecialCourseUncertainty(state),
+    unresolvedRequiredCourses: selectUnresolvedRequiredCourses(),
+  });
+}
+
+export function selectUnresolvedRequiredCourses() {
+  return curriculumCourses.flatMap((course) => {
+    const unresolved = getUnresolvedRequiredCoursePlacement(course);
+    return unresolved ? [unresolved] : [];
   });
 }
 
@@ -454,7 +487,7 @@ export function selectUnplacedCurriculumCourses(
   const occupied = selectOccupiedGraduationCourseIds(state);
   const query = filters.query?.trim().toLocaleLowerCase("ja") ?? "";
 
-  return plannableCurriculumCourses.filter((course) => {
+  return manuallyPlannableCurriculumCourses.filter((course) => {
     if (occupied.has(course.courseId)) return false;
     if (query && !course.name.toLocaleLowerCase("ja").includes(query)) {
       return false;
@@ -506,7 +539,12 @@ export function selectGraduationCandidatePreview(
 ): CandidatePlacementPreview | null {
   const course = curriculumCoursesById.get(courseId);
   const semester = graduationSemesters.find((item) => item.id === semesterId);
-  if (!course || !semester || course.planningAvailability !== "standard") {
+  if (
+    !course ||
+    !semester ||
+    course.planningAvailability !== "standard" ||
+    course.requirementType === "required"
+  ) {
     return null;
   }
   const prerequisiteResult = selectProspectivePrerequisiteCheck(

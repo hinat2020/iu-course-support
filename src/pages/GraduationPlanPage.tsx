@@ -50,6 +50,7 @@ import {
   selectGraduationSpecialSummary,
   selectSupersededGraduationPlanEntries,
   selectUnplacedCurriculumCourses,
+  selectUnresolvedRequiredCourses,
   type GraduationCandidateStatus,
 } from "../state/graduationSelectors";
 import { useAppState } from "../state/useAppState";
@@ -68,7 +69,6 @@ const requirementTypes: readonly {
   value: CurriculumRequirementType;
   label: string;
 }[] = [
-  { value: "required", label: "必修" },
   { value: "required_elective", label: "選択必修" },
   { value: "elective", label: "選択" },
 ];
@@ -524,6 +524,10 @@ export function GraduationPlanPage() {
     () => selectSupersededGraduationPlanEntries(state),
     [state],
   );
+  const unresolvedRequiredCourses = useMemo(
+    () => selectUnresolvedRequiredCourses(),
+    [],
+  );
   const prerequisiteChecks = useMemo(
     () => selectGraduationPrerequisiteChecks(state),
     [state],
@@ -538,9 +542,6 @@ export function GraduationPlanPage() {
   );
   const candidateRequirementIds = useMemo(() => {
     const ids = new Set<string>();
-    if (requirementProgress.requiredCourses.status === "shortfall") {
-      ids.add(requirementProgress.requiredCourses.id);
-    }
     if (requirementProgress.selectableRequired.status === "shortfall") {
       ids.add(requirementProgress.selectableRequired.id);
     }
@@ -649,6 +650,8 @@ export function GraduationPlanPage() {
     ? `この科目は${existingSemesterLabel}に修得済みとして表示されています。重複して配置できません。`
     : existingPlacement?.source === "graduation_plan"
       ? `この科目は${existingSemesterLabel}に履修予定として配置されています。`
+      : existingPlacement?.source === "required_auto"
+        ? `この必修科目は公式curriculumに基づき${existingSemesterLabel}へ自動表示されています。`
       : existingPlacement
         ? `この科目は${existingSemesterLabel}の履修登録対象として表示されています。`
         : searchedCourse?.planningAvailability === "managed_elsewhere"
@@ -733,9 +736,7 @@ export function GraduationPlanPage() {
     ...requirementProgress.requirementGroups.map((item) => item.status),
     ...requirementProgress.electiveRequirements.map((item) => item.status),
   ].every((status) => status === "satisfied" || status === "projected_satisfied");
-  const candidateRequirementLabel = candidateRequirementId === requirementProgress.requiredCourses.id
-    ? "未計画の必修科目"
-    : candidateRequirementId === requirementProgress.totalCredits.id
+  const candidateRequirementLabel = candidateRequirementId === requirementProgress.totalCredits.id
       ? requirementProgress.totalCredits.label
       : candidateRequirementId === requirementProgress.selectableRequired.id
         ? requirementProgress.selectableRequired.label
@@ -778,7 +779,7 @@ export function GraduationPlanPage() {
           <button type="button" onClick={() => navigateWithinPlan("graduation-requirements-heading")}>卒業要件</button>
           <button type="button" onClick={() => navigateWithinPlan("graduation-cap-heading")}>CAP</button>
           <button type="button" onClick={() => navigateWithinPlan("semester-board-heading")}>8学期</button>
-          <button type="button" onClick={() => navigateWithinPlan("graduation-special-heading")}>未確定事項</button>
+          <button type="button" onClick={() => navigateWithinPlan("graduation-unresolved-required-heading")}>未確定事項</button>
         </nav>
 
         <PlanCheckSection
@@ -839,13 +840,17 @@ export function GraduationPlanPage() {
               {supersededEntries.map((item) => (
                 <li key={item.courseId}>
                   {item.name}
-                  <button
-                    className="text-button"
-                    type="button"
-                    onClick={() => dispatch({ type: "REMOVE_GRADUATION_PLAN_COURSE", payload: item.courseId })}
-                  >
-                    {item.name}の将来予定を外す
-                  </button>
+                  {item.source === "required_auto" ? (
+                    <span> — 保存済みの必修予定は、自動表示へ統合しています（保存データは変更していません）。</span>
+                  ) : (
+                    <button
+                      className="text-button"
+                      type="button"
+                      onClick={() => dispatch({ type: "REMOVE_GRADUATION_PLAN_COURSE", payload: item.courseId })}
+                    >
+                      {item.name}の将来予定を外す
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -867,6 +872,7 @@ export function GraduationPlanPage() {
               科目を追加
             </button>
           </div>
+          <p className="muted-note">必修科目は公式curriculumの配当年次・学期に基づいて自動表示され、追加候補には表示されません。</p>
 
           <div className="graduation-board">
             {board.map((semesterBoard) => (
@@ -886,7 +892,7 @@ export function GraduationPlanPage() {
                   </div>
                 </header>
                 {semesterBoard.courses.length === 0 ? (
-                  <p className="graduation-empty">履修予定の科目はまだありません。</p>
+                  <p className="graduation-empty">表示する科目はまだありません。</p>
                 ) : (
                   <ul className="graduation-course-list">
                     {semesterBoard.courses.map((entry) => {
@@ -912,6 +918,14 @@ export function GraduationPlanPage() {
                             ? entry.registrationEvidence === "unipa_confirmed"
                               ? "● 今学期の履修対象"
                               : "● 今学期の必修"
+                            : entry.source === "required_auto"
+                              ? entry.firstSemesterStatus === "failed"
+                                ? "△ 必修・未修得"
+                                : entry.firstSemesterStatus === "not_taken"
+                                  ? "□ 必修・未履修"
+                                  : entry.firstSemesterStatus === "unknown"
+                                    ? "？ 必修・状態未確認"
+                                    : "▣ 必修・将来予定（自動表示）"
                             : statusLabels[entry.status]}
                         </span>
                         {entry.registrationEvidence === "unipa_confirmed" && (
@@ -943,7 +957,7 @@ export function GraduationPlanPage() {
                             </ul>
                           </aside>
                         )}
-                        {entry.source === "graduation_plan" && (
+                        {(entry.source === "graduation_plan" || entry.source === "required_auto") && (
                           <PrerequisiteDetails
                             result={
                               prerequisiteChecks.get(entry.course.courseId) ?? {
@@ -954,7 +968,7 @@ export function GraduationPlanPage() {
                             }
                           />
                         )}
-                        {entry.source === "graduation_plan" &&
+                        {(entry.source === "graduation_plan" || entry.source === "required_auto") &&
                           entryCapResult?.status === "over_limit" && (
                             <aside className="graduation-cap-warning" role="note">
                               <strong>⚠ CAPを確認</strong>
@@ -1000,6 +1014,14 @@ export function GraduationPlanPage() {
                         ) : entry.status === "earned" ? (
                           <p className="graduation-source-note">
                             修得状況は<Link to="/settings">前期設定</Link>から変更できます。
+                          </p>
+                        ) : entry.source === "required_auto" && entry.semesterId === "year1-spring" ? (
+                          <p className="graduation-source-note">
+                            修得状況は前期設定から変更できます。
+                          </p>
+                        ) : entry.source === "required_auto" ? (
+                          <p className="graduation-source-note">
+                            公式curriculumから自動表示しています。卒業設計から移動・削除はできません。
                           </p>
                         ) : (
                           <p className="graduation-source-note">
@@ -1071,30 +1093,7 @@ export function GraduationPlanPage() {
               <p className="muted-note">
                 計画含む単位 {requirementProgress.requiredCourses.plannedIncludedCredits} / {requirementProgress.requiredCourses.requiredCredits}単位
               </p>
-              {requirementProgress.requiredCourses.unplannedCourses.length > 0 && (
-                <details className="graduation-unplanned-required">
-                  <summary>未計画の必修科目 {requirementProgress.requiredCourses.unplannedCourses.length}科目</summary>
-                  <ul>
-                    {requirementProgress.requiredCourses.unplannedCourses.map((course) => (
-                      <li key={course.courseId}>{course.name}（{course.credits}単位）</li>
-                    ))}
-                  </ul>
-                </details>
-              )}
-              {candidateRequirementIds.has(requirementProgress.requiredCourses.id) && (
-                <button
-                  className="text-button"
-                  type="button"
-                  onClick={(event) =>
-                    openCandidatePanel(
-                      requirementProgress.requiredCourses.id,
-                      event.currentTarget,
-                    )
-                  }
-                >
-                  未計画必修の配置を検討
-                </button>
-              )}
+              <p className="muted-note">必修科目は公式curriculumから自動配置しています。</p>
             </article>
 
             <RequirementCreditCard
@@ -1136,6 +1135,29 @@ export function GraduationPlanPage() {
             </p>
             <p>{requirementProgress.selectableRequiredExcess.note}</p>
           </aside>
+        </section>
+
+        <section className="graduation-overview-section" aria-labelledby="graduation-unresolved-required-heading">
+          <h2 id="graduation-unresolved-required-heading" tabIndex={-1}>配置時期を自動決定できない必修科目</h2>
+          {unresolvedRequiredCourses.length === 0 ? (
+            <p>現在の公式curriculumでは、配置時期が一意に決まらない必修科目はありません。</p>
+          ) : (
+            <ul>
+              {unresolvedRequiredCourses.map(({ course, reasons }) => (
+                <li key={course.courseId}>
+                  <strong>{course.name}</strong> — {
+                    reasons.includes("managed_elsewhere")
+                      ? "特殊な履修方法"
+                      : reasons.includes("multiple_years")
+                        ? "複数学年配当"
+                        : reasons.includes("multiple_semesters")
+                          ? "複数学期配当"
+                          : "公式の配当情報が未確定"
+                  }
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
 
         <section className="graduation-overview-section" aria-labelledby="graduation-special-heading">
@@ -1181,6 +1203,7 @@ export function GraduationPlanPage() {
               </div>
               <button className="icon-button" type="button" onClick={closePicker} aria-label="科目選択を閉じる">×</button>
             </header>
+            <p className="muted-note">必修科目は公式curriculumに基づいて自動表示されるため、この検索には含まれません。</p>
 
             <div className="graduation-filters">
               <label>

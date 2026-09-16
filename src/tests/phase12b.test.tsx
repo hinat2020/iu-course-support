@@ -308,7 +308,7 @@ describe("Phase 12B state integration", () => {
       ...knownFirstSemester(),
       graduationPlan: { entries: [{ courseId: "data-science-foundations", semesterId: "year2-spring" }] },
     };
-    expect(resultForGrade(state, 2)).toMatchObject({ springCredits: 2, annualCredits: 2, status: "within_limit" });
+    expect(resultForGrade(state, 2)).toMatchObject({ springCredits: 8, annualCredits: 14, status: "within_limit" });
   });
 
   it("moveで旧学年から減り新学年へ加算する", () => {
@@ -320,8 +320,8 @@ describe("Phase 12B state integration", () => {
       type: "MOVE_GRADUATION_PLAN_COURSE",
       payload: { courseId: "data-science-foundations", semesterId: "year3-fall" },
     });
-    expect(resultForGrade(moved, 2).annualCredits).toBe(0);
-    expect(resultForGrade(moved, 3).annualCredits).toBe(2);
+    expect(resultForGrade(moved, 2).annualCredits).toBe(12);
+    expect(resultForGrade(moved, 3).annualCredits).toBe(27);
   });
 
   it("removeで計画単位を減算する", () => {
@@ -333,7 +333,7 @@ describe("Phase 12B state integration", () => {
       type: "REMOVE_GRADUATION_PLAN_COURSE",
       payload: "data-science-foundations",
     });
-    expect(resultForGrade(removed, 2).annualCredits).toBe(0);
+    expect(resultForGrade(removed, 2).annualCredits).toBe(12);
   });
 
   it("prospective CAP warningをstate変更なしでderived計算する", () => {
@@ -398,7 +398,7 @@ describe("Phase 12B state integration", () => {
       graduationPlan: { entries: [{ courseId: "pre-internship-guidance", semesterId: "year2-spring" }] },
     };
     expect(selectGraduationPrerequisiteChecks(state).get("pre-internship-guidance")?.status)
-      .toBe("not_satisfied");
+      .toBe("satisfied");
   });
 });
 
@@ -409,7 +409,9 @@ describe("Phase 12B UI", () => {
     expect(within(region).getByText("1年次")).toBeInTheDocument();
     expect(within(region).getByText("計画上の履修登録単位：16単位 / 46単位")).toBeInTheDocument();
     expect(within(region).getByText("2年次")).toBeInTheDocument();
-    expect(within(region).getAllByText("計画上の履修登録単位：0単位 / 42単位")).toHaveLength(3);
+    expect(within(region).getByText("計画上の履修登録単位：12単位 / 42単位")).toBeInTheDocument();
+    expect(within(region).getByText("計画上の履修登録単位：25単位 / 42単位")).toBeInTheDocument();
+    expect(within(region).getByText("計画上の履修登録単位：5単位 / 42単位")).toBeInTheDocument();
   });
 
   it("前期unknownを問題なし表示にしない", () => {
@@ -452,7 +454,8 @@ describe("Phase 12B UI", () => {
       },
     };
     renderPlanner(state);
-    const card = screen.getByText("基礎プロジェクトⅠ").closest("li");
+    const semester = screen.getByRole("heading", { name: "2年前期" }).closest("section")!;
+    const card = within(semester).getByText("基礎プロジェクトⅠ").closest("li");
     expect(within(card!).getByText("⚠ 前提科目を確認")).toBeInTheDocument();
     expect(within(card!).getByText("⚠ CAPを確認")).toBeInTheDocument();
   });

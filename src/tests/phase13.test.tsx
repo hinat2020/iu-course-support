@@ -191,10 +191,9 @@ describe("Phase 13 candidate engine", () => {
     expect(candidatesFor("professional-elective")).toEqual([]);
   });
 
-  it("未計画必修はrequired科目として抽出する", () => {
+  it("必修はCandidate Engineから除外する", () => {
     const result = candidatesFor("required-courses");
-    expect(result).toHaveLength(36);
-    expect(result.every((item) => item.course.requirementType === "required")).toBe(true);
+    expect(result).toEqual([]);
   });
 
   it("候補理由を重複せず複数保持する", () => {

@@ -19,8 +19,7 @@ export type GraduationCandidateReason =
   | "requirement_group"
   | "selectable_required_total"
   | "elective_category"
-  | "total_credits"
-  | "required_course";
+  | "total_credits";
 
 export type CandidateConstraintStatus = "clear" | "attention" | "unknown";
 
@@ -105,16 +104,6 @@ export function getCandidateReasons({
 }): GraduationCourseCandidateReason[] {
   const reasons: GraduationCourseCandidateReason[] = [];
   if (
-    course.requirementType === "required" &&
-    progress.requiredCourses.status === "shortfall"
-  ) {
-    reasons.push({
-      type: "required_course",
-      requirementId: progress.requiredCourses.id,
-      label: "公式curriculum上の未計画必修科目です",
-    });
-  }
-  if (
     course.requirementType === "required_elective" &&
     progress.selectableRequired.status === "shortfall"
   ) {
@@ -174,9 +163,7 @@ function courseMatchesRequirement({
   progress: GraduationRequirementProgress;
   requirements: GraduationRequirementsData;
 }) {
-  if (requirementId === progress.requiredCourses.id) {
-    return course.requirementType === "required";
-  }
+  if (requirementId === progress.requiredCourses.id) return false;
   if (requirementId === progress.selectableRequired.id) {
     return course.requirementType === "required_elective";
   }
@@ -257,6 +244,7 @@ export function getCandidatesForRequirement({
   return curriculum
     .filter((course) =>
       course.planningAvailability === "standard" &&
+      course.requirementType !== "required" &&
       course.credits > 0 &&
       !used.has(course.courseId) &&
       courseMatchesRequirement({ course, requirementId, progress, requirements }) &&

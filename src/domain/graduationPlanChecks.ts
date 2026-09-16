@@ -2,6 +2,7 @@ import type { GraduationYearCapResult } from "./graduationCap";
 import type {
   GraduationBoardCourse,
   GraduationSemesterId,
+  UnresolvedRequiredCoursePlacement,
 } from "./graduationPlanning";
 import { graduationSemesters } from "./graduationPlanning";
 import type { PrerequisiteCheckResult } from "./graduationPrerequisites";
@@ -59,6 +60,7 @@ export type CalculateGraduationPlanChecksInput = {
   prerequisiteChecks: ReadonlyMap<string, PrerequisiteCheckResult>;
   placements: readonly GraduationBoardCourse[];
   hasSpecialCourseUncertainty?: boolean;
+  unresolvedRequiredCourses?: readonly UnresolvedRequiredCoursePlacement[];
 };
 
 const categoryLabels: Record<GraduationPlanCheckCategory, string> = {
@@ -322,6 +324,7 @@ export function calculateGraduationPlanChecks({
   prerequisiteChecks,
   placements,
   hasSpecialCourseUncertainty = false,
+  unresolvedRequiredCourses = [],
 }: CalculateGraduationPlanChecksInput): GraduationPlanCheckSummary {
   const rawChecks: GraduationPlanCheck[] = [];
 
@@ -343,6 +346,15 @@ export function calculateGraduationPlanChecks({
       title: "特殊科目の単位算入",
       message: "イノベーション特講・技法の一部は、卒業要件・CAP試算に含めていません。",
       target: { type: "special", id: "graduation-special-heading" },
+    });
+  }
+  for (const unresolved of unresolvedRequiredCourses) {
+    rawChecks.push({
+      id: `data:required-placement:${unresolved.course.courseId}`,
+      category: "data_uncertainty",
+      severity: "unknown",
+      title: `${unresolved.course.name} — 必修の配置時期`,
+      message: "公式curriculumの配当情報から配置学期を一意に決められないため、自動配置していません。",
     });
   }
 

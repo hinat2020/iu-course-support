@@ -11,14 +11,17 @@ import {
   movePlannedCourse,
   removePlannedCourse,
 } from "../domain/graduationPlanning";
-import { plannableCurriculumCourses } from "../data/2026/curriculum";
+import {
+  curriculumCoursesById,
+  manuallyPlannableCurriculumCourses,
+} from "../data/2026/curriculum";
 import type { UserCourseRecord } from "../domain/user";
 import type { AppAction } from "./actions";
 import { selectOccupiedGraduationCourseIds } from "./graduationSelectors";
 import { createInitialState, type AppState } from "./initialState";
 
 const plannableGraduationCourseIds = new Set(
-  plannableCurriculumCourses.map((course) => course.courseId),
+  manuallyPlannableCurriculumCourses.map((course) => course.courseId),
 );
 
 function getPreviousCourse(
@@ -530,7 +533,10 @@ export function appReducer(state: AppState, action: AppAction): AppState {
       };
     }
     case "MOVE_GRADUATION_PLAN_COURSE":
-      if (!isGraduationSemesterId(action.payload.semesterId)) return state;
+      if (
+        !isGraduationSemesterId(action.payload.semesterId) ||
+        curriculumCoursesById.get(action.payload.courseId)?.requirementType === "required"
+      ) return state;
       return {
         ...state,
         graduationPlan: movePlannedCourse(
@@ -541,6 +547,9 @@ export function appReducer(state: AppState, action: AppAction): AppState {
         ),
       };
     case "REMOVE_GRADUATION_PLAN_COURSE":
+      if (curriculumCoursesById.get(action.payload)?.requirementType === "required") {
+        return state;
+      }
       return {
         ...state,
         graduationPlan: removePlannedCourse(

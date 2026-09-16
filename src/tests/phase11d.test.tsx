@@ -70,8 +70,8 @@ describe("Phase 11D graduated credit classification", () => {
     expect(selectGraduationCreditSummary(state)).toMatchObject({
       earnedCredits: 2,
       currentCredits: 0,
-      plannedCredits: 0,
-      totalPlannedCredits: 2,
+      plannedCredits: 72,
+      totalPlannedCredits: 74,
     });
     expect(state.graduationPlan.entries).toEqual([]);
   });
@@ -95,7 +95,7 @@ describe("Phase 11D graduated credit classification", () => {
     expect(selectGraduationCreditSummary(state)).toMatchObject({
       earnedCredits: 0,
       currentCredits: 14,
-      plannedCredits: 0,
+      plannedCredits: 60,
     });
   });
 
@@ -106,14 +106,14 @@ describe("Phase 11D graduated credit classification", () => {
     };
     expect(selectGraduationCandidateSituations(state).find((item) => item.courseId === "database")?.status).toBe("considering");
     expect(selectGraduationCreditSummary(state).currentCredits).toBe(14);
-    expect(selectGraduationCreditSummary(state).plannedCredits).toBe(0);
+    expect(selectGraduationCreditSummary(state).plannedCredits).toBe(60);
   });
 
   it("応募済み・結果待ちは今学期対象へ入れない", () => {
     const state = withDatabaseLottery(configuredState(), "pending");
     expect(selectGraduationCandidateSituations(state).find((item) => item.courseId === "database")?.status).toBe("pending");
     expect(selectGraduationCreditSummary(state).currentCredits).toBe(14);
-    expect(selectGraduationCreditSummary(state).plannedCredits).toBe(0);
+    expect(selectGraduationCreditSummary(state).plannedCredits).toBe(60);
   });
 
   it("応募済みで結果未入力も今学期対象へ入れない", () => {
@@ -150,8 +150,8 @@ describe("Phase 11D graduated credit classification", () => {
     expect(selectGraduationCreditSummary(state)).toMatchObject({
       earnedCredits: 0,
       currentCredits: 16,
-      plannedCredits: 0,
-      totalPlannedCredits: 16,
+      plannedCredits: 60,
+      totalPlannedCredits: 76,
     });
   });
 
@@ -162,8 +162,8 @@ describe("Phase 11D graduated credit classification", () => {
     };
     expect(selectGraduationCreditSummary(state)).toMatchObject({
       currentCredits: 16,
-      plannedCredits: 0,
-      totalPlannedCredits: 16,
+      plannedCredits: 60,
+      totalPlannedCredits: 76,
     });
     expect(selectSupersededGraduationPlanEntries(state).map((item) => item.courseId)).toEqual(["database"]);
   });
@@ -179,8 +179,8 @@ describe("Phase 11D graduated credit classification", () => {
     };
     expect(selectGraduationCreditSummary(state)).toMatchObject({
       earnedCredits: 2,
-      plannedCredits: 0,
-      totalPlannedCredits: 2,
+      plannedCredits: 72,
+      totalPlannedCredits: 74,
     });
   });
 
@@ -235,7 +235,7 @@ describe("Phase 11D graduated credit classification", () => {
       method: "前期から継続（後期自動登録）",
       includedInCredits: false,
     });
-    expect(selectGraduationCreditSummary(state).totalPlannedCredits).toBe(0);
+    expect(selectGraduationCreditSummary(state).totalPlannedCredits).toBe(74);
   });
 
   it("特殊科目の前期earned記録も一般科目の修得単位へ混ぜない", () => {
@@ -317,7 +317,7 @@ describe("Phase 11D UI", () => {
     const summary = screen.getByRole("region", { name: "計画単位の内訳" });
     expect(within(summary).getByText("修得済み").nextElementSibling).toHaveTextContent("2単位");
     expect(within(summary).getByText("今学期の履修対象").nextElementSibling).toHaveTextContent("14単位");
-    expect(within(summary).getByText("将来予定").nextElementSibling).toHaveTextContent("2単位");
+    expect(within(summary).getByText("将来予定").nextElementSibling).toHaveTextContent("60単位");
     const fall = screen.getByRole("region", { name: "1年後期" });
     expect(within(fall).getAllByText("● 今学期の必修")).toHaveLength(8);
     expect(within(fall).queryByText("✓ 修得済み")).not.toBeInTheDocument();

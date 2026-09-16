@@ -42,7 +42,7 @@ describe("Phase 11C graduation planning UI", () => {
     renderPlanner(earned);
     const spring = screen.getByRole("heading", { name: "1年前期" }).closest("section");
     expect(within(spring!).getByText("修得済み 2単位")).toBeInTheDocument();
-    expect(within(spring!).getByText("将来予定 0単位")).toBeInTheDocument();
+    expect(within(spring!).getByText("将来予定 16単位")).toBeInTheDocument();
     expect(within(spring!).queryByRole("button", { name: "計画から外す" })).not.toBeInTheDocument();
   });
 
@@ -55,7 +55,15 @@ describe("Phase 11C graduation planning UI", () => {
       });
       renderPlanner(state);
       const spring = screen.getByRole("heading", { name: "1年前期" }).closest("section");
-      expect(within(spring!).queryByText("スタディスキル")).not.toBeInTheDocument();
+      const card = within(spring!).getByText("スタディスキル").closest("li")!;
+      expect(within(card).queryByText("✓ 修得済み")).not.toBeInTheDocument();
+      expect(within(card).getByText(
+        status === "failed"
+          ? "△ 必修・未修得"
+          : status === "not_taken"
+            ? "□ 必修・未履修"
+            : "？ 必修・状態未確認",
+      )).toBeInTheDocument();
     },
   );
 
