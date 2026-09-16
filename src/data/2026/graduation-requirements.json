@@ -1,5 +1,45 @@
 {
   "academicYear": 2026,
+  "entryCohort": {
+    "from": 2025,
+    "label": "2025年度以降入学者"
+  },
+  "totalCreditsRequired": 128,
+  "categoryTotals": {
+    "requiredCredits": 74,
+    "selectableRequiredCredits": 36,
+    "electiveCredits": 18
+  },
+  "requiredCourses": {
+    "id": "required-courses",
+    "label": "必修科目",
+    "requiredCredits": 74,
+    "allCoursesRequired": true
+  },
+  "selectableRequired": {
+    "id": "selectable-required-total",
+    "label": "選択必修 合計",
+    "totalRequiredCredits": 36
+  },
+  "electiveRequirements": [
+    {
+      "id": "basic-elective",
+      "label": "基礎科目 選択",
+      "categoryPrefix": "基礎科目",
+      "minimumCredits": 2
+    },
+    {
+      "id": "professional-elective",
+      "label": "職業専門科目 選択",
+      "categoryPrefix": "職業専門科目",
+      "minimumCredits": 16
+    }
+  ],
+  "excessSelectableRequiredTreatment": {
+    "canCountTowardElectives": true,
+    "allocation": "requires_official_confirmation",
+    "note": "選択必修科目の卒業要件36単位を超えて修得した単位は、選択科目の卒業要件単位へ充当できます。基礎科目・職業専門科目への具体的な配分は、このアプリでは自動決定しません。"
+  },
   "requirements": [
     {
       "id": "modern-society",
@@ -43,5 +83,11 @@
       "label": "多文化・国際化社会理解",
       "requiredCredits": 2
     }
-  ]
+  ],
+  "source": {
+    "documentName": "02_2026年度学生便覧.pdf",
+    "section": "IV. 教育課程 / 5. 学位・卒業要件 / 2025年度以降入学者",
+    "page": 29,
+    "physicalPage": 36
+  }
 }

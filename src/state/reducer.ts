@@ -4,9 +4,22 @@ import {
   type LotteryApplication,
 } from "../domain/lottery";
 import { normalizeInnovationLecturePreferences } from "../domain/innovation";
+import {
+  addPlannedCourse,
+  canAddCourseToPlan,
+  isGraduationSemesterId,
+  movePlannedCourse,
+  removePlannedCourse,
+} from "../domain/graduationPlanning";
+import { plannableCurriculumCourses } from "../data/2026/curriculum";
 import type { UserCourseRecord } from "../domain/user";
 import type { AppAction } from "./actions";
+import { selectOccupiedGraduationCourseIds } from "./graduationSelectors";
 import { createInitialState, type AppState } from "./initialState";
+
+const plannableGraduationCourseIds = new Set(
+  plannableCurriculumCourses.map((course) => course.courseId),
+);
 
 function getPreviousCourse(
   state: AppState,
@@ -494,6 +507,46 @@ export function appReducer(state: AppState, action: AppAction): AppState {
             estimatedHours: action.payload,
           },
         },
+      };
+    case "ADD_GRADUATION_PLAN_COURSE": {
+      if (
+        !isGraduationSemesterId(action.payload.semesterId) ||
+        !canAddCourseToPlan(
+          state.graduationPlan,
+          action.payload.courseId,
+          plannableGraduationCourseIds,
+          selectOccupiedGraduationCourseIds(state),
+        )
+      ) {
+        return state;
+      }
+      return {
+        ...state,
+        graduationPlan: addPlannedCourse(
+          state.graduationPlan,
+          action.payload,
+          plannableGraduationCourseIds,
+        ),
+      };
+    }
+    case "MOVE_GRADUATION_PLAN_COURSE":
+      if (!isGraduationSemesterId(action.payload.semesterId)) return state;
+      return {
+        ...state,
+        graduationPlan: movePlannedCourse(
+          state.graduationPlan,
+          action.payload.courseId,
+          action.payload.semesterId,
+          plannableGraduationCourseIds,
+        ),
+      };
+    case "REMOVE_GRADUATION_PLAN_COURSE":
+      return {
+        ...state,
+        graduationPlan: removePlannedCourse(
+          state.graduationPlan,
+          action.payload,
+        ),
       };
     case "SET_SETUP_COMPLETED":
       return { ...state, setupCompleted: action.payload };

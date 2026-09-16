@@ -1,5 +1,52 @@
 {
   "academicYear": 2026,
   "grade": 1,
-  "annualCap": 46
+  "annualCap": 46,
+  "capRules": [
+    {
+      "grade": 1,
+      "period": "annual",
+      "limit": 46,
+      "sourceConfirmed": true
+    },
+    {
+      "grade": 2,
+      "period": "annual",
+      "limit": 42,
+      "sourceConfirmed": true
+    },
+    {
+      "grade": 3,
+      "period": "annual",
+      "limit": 42,
+      "sourceConfirmed": true
+    },
+    {
+      "grade": 4,
+      "period": "annual",
+      "limit": 42,
+      "sourceConfirmed": true
+    }
+  ],
+  "capExceptions": [
+    {
+      "id": "required-course-retake",
+      "additionalPerSemester": 4,
+      "additionalAnnual": 8,
+      "automatic": false,
+      "note": "一度履修して単位を修得できなかった必修科目を再履修する場合。"
+    },
+    {
+      "id": "excellent-academic-performance",
+      "additionalPerSemester": 4,
+      "additionalAnnual": 6,
+      "automatic": false,
+      "note": "所定の単位を優れた成績で修得し、申請により認められた場合。"
+    }
+  ],
+  "source": {
+    "documentName": "02_2026年度学生便覧.pdf",
+    "section": "履修登録の上限（CAP制）",
+    "page": 20
+  }
 }

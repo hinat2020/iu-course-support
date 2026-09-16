@@ -1,0 +1,3401 @@
+{
+  "innovation-spirit": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "基礎科目",
+    "courseName": "イノベーションの志",
+    "classFormat": "講義",
+    "courseCode": "AIV1110001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "江端 浩人",
+    "overview": "本学は「変化を楽しみ、自ら学び、革新を創造する」ことを教育理念とし、経営と情報通信技術に関する理論と実践力、国際的なコミュニケ\nーション能力、これらを組み合わせた応用力を主体的に身に付け、国際社会と地域社会の産業発展に貢献する人材を育成する大学である。本\n授業ではこの「イノベーション」について理解を深めるとともに、イノベーションを生み出し、イノベーターとなるために必要な資質や素養\nを身に付けるための土台を、様々な事例を学ぶことにより構築する。\n「イノベーションの志」は大学1年生の前期に実施される授業であり、知識習得型の学習から脱却し、思考力や表現力を養うことを目的とし\nている。本授業ではクリティカルシンキング、アクティブリスニング、演繹思考、バックキャスティング、ロジカルシンキング、仮説構築な\nどの思考法を学び、議論や対話を通して社会で通用する思考プロセスを習得する。\n現代社会では技術革新のスピードが速く、人工知能やデジタル技術の発展が社会構造を大きく変化させている。また持続可能な社会の実現に\n向け、多様な価値観を理解し多角的に物事を捉える力が求められている。本授業ではこうした社会的背景を踏まえ、学生が主体的に思考し、\n他者と議論しながら新たな価値創造について考える基礎的能力を養う。",
+    "objectives": "■授業の目的\n本授業は、情報社会におけるイノベーションの基本的な考え方を理解するとともに、大学での学修および将来の社会活動において必要となる\n思考力、表現力、対話力の基礎を養うことを目的とする。\n■到達目標\n本授業を通じて、学生は以下のことができるようになる。\n・情報社会におけるイノベーションの概念を説明できる。\n・物事を多角的に捉え、自身の考えを論理的に整理し言語化できる。\n・他者の意見を尊重しながら議論を進め、自分の考えを深めることができる。\n・仮説を立て、根拠をもとに自分なりの考察を行うことができる。",
+    "grading": "授業内での発言およびディスカッションへの貢献：50％\nグループワークおよび発表の内容：25％\n相互評価：25％",
+    "preparation": "各回の授業に向けて、授業計画に示したテーマに関連する資料や情報を事前に調べ、自分の考えを整理した上で授業に臨むこと（事前学\n習：各回90分）。\n授業後はディスカッションや演習を通して得た気づきや学びを振り返り、自身の考えを文章でまとめるなどの復習を行うこと（事後学習：各\n回90分）。",
+    "textbooks": "書名：『スタンフォード式 世界一や\nさしい パラレルキャリアの育\nて方』\n著者：江端 浩人\n出版社：かんき出版\nISBN：978-4-7612-7559-4",
+    "references": "■参考文献\n「超ヒマ社会をつくる」（ヨシモトブックス）\n「新版 超ヒマ社会をつくる―アフターコロナはネコの時代―」（ヨシモトブックス）\n『演繹革命』−校條浩\n『考える技術・書く技術』−バーバラ・ミント\n『ロジカル・シンキング』−照屋華子・岡田恵子\n『クリティカル・シンキング入門』−スティーブン・D・シャッキン\n『仮説思考』−内田和成\n『Yes, And』−ケリー・レナード、トム・ヨート",
+    "notes": "＊本科目は、起業家・経営者としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "第1回\nオリエンテーション／情報社会におけるイノベーションとは何か\n事前学習（90分）\nシラバスを事前に読み、本授業で身に付けたい力や関心のあるテーマを文章で整理する。\n授業内容\n授業の目的・進め方の説明、自己紹介、心理的安全性の確保。情報社会におけるイノベーションの基本的な考え方を講義形式で学ぶ。\n事後学習（90分）\n授業で扱った「イノベーション」の定義について、自分なりの言葉でまとめる。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "ディスカッション実践①\n（※以下は構造のみ提示、内容は元案を維持し時間のみ修正）\n事前学習（90分）\n指定テーマについて自分の意見を整理する。\n授業内容\nディスカッションの改善プロセスについて理解し、実践する。\n授業内作業（90分）\nグループディスカッション、振り返り。\n事後学習（90分）\nディスカッションを通して得た気づきを整理する。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "ディスカッション実践②\n事前学習（90分）\n前回の議論を振り返り改善点を整理する。\n授業内容\nディスカッションスキルの改善を理解し実践する。\n授業内作業（90分）\nグループディスカッションと振り返り。\n事後学習（90分）\n議論を通して得た学びを整理する。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "自分の意見の構築①（ロジカルシンキング）\n事前学習（90分）\nテーマについて自分の考えを整理する。\n授業内容\n論理的思考の基本を理解する。\n授業内作業（90分）\n意見整理演習。\n事後学習（90分）\n思考ツールを用いて関心テーマを整理する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "アクティブリスニングとフィードバック\n事前学習（90分）\nプレゼン内容を整理する。\n授業内容\nアクティブリスニングの考え方を学ぶ。\n授業内作業（90分）\nプレゼンテーションと相互フィードバック。\n事後学習（90分）\nフィードバックを踏まえて考えを整理する。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "ゲスト講義（イノベーションの実践）\n事前学習（90分）\nゲスト講師の活動について調査する。\n授業内容\nイノベーション実践事例を学ぶ。\n授業内作業（90分）\n講義聴講および質疑応答。\n事後学習（90分）\n講義内容を振り返りまとめる。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "効果的なディスカッション方法①\n事前学習（90分）\nこれまでの議論を振り返る。\n授業内容\n効果的な議論方法を理解する。\n授業内作業（90分）\nテーマ別ディスカッション。\n事後学習（90分）\n自己評価と改善点整理。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "第8回 効果的なディスカッション方法②\n事前学習（90分）\n前回のディスカッションを振り返り、グループとして改善できる点や、自分自身の発言の仕方・議論への関わり方について整理する。\n授業内容\n前回の学修内容を踏まえ、ディスカッションの進め方をさらに発展させる方法について理解する。議論の役割分担、論点整理、発言の促進\nなどの観点から、より効果的なディスカッションの進め方を学ぶ。\n授業内作業（90分）\n同一テーマについて条件を変えたディスカッションを実施し、比較と改善を行う。\n① テーマ1についてのディスカッション（30分）\n② テーマ2についてのディスカッション（30分）\n③ チェックリストを用いた自己評価およびグループ振り返り（30分）\n事後学習（90分）\n2つのディスカッションの違いを振り返り、自分の役割や発言の質がどのように変化したかを整理する。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "第9回 Yes, And方式でのディスカッション\n事前学習（90分）\n「Yes, And」という考え方について簡単に調べ、これまでの議論方法との違いについて自分なりに整理する。\n授業内容\n「Yes, And」の精神を理解し、他者の意見を否定せず発展させる議論方法を学ぶ。創造的な議論を生み出すコミュニケーションの考え方に\nついて理解する。\n授業内作業（90分）\n① Yes, Andの考え方の説明（15分）\n② テーマに基づくアイデア出し（30分）\n③ 出されたアイデアを発展させるグループワーク（30分）\n④ 新しいサービス案の簡単な発表（15分）\n事後学習（90分）\nYes, Andを用いることで議論やアイデア創出がどのように変化したかを振り返り、気づきを文章で整理する。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "第10回 多くのアイデア・仮説を生み出す方法\n事前学習（90分）\n身近な課題を1つ選び、「できるだけ多くの解決アイデアを出す」とした場合にどのような案が考えられるかを書き出して整理する。\n授業内容\n質より量を重視する発想法を理解し、多くのアイデアや仮説を生み出すための思考方法について学ぶ。\n授業内作業（90分）\n① 個人によるアイデア出し（20分）\n② グループによるアイデア共有および拡張（40分）\n③ クラス全体でのアイデア整理および共有（30分）\n事後学習（90分）\n授業で出されたアイデアの中から実現可能性が高いと考えられるものを選び、その理由を整理する。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "第11回 正解のない問いに対する思考法①（仮説構築）\n事前学習（90分）\n指定されたテーマについて、事前知識がない状態で自分なりの考えや疑問点を箇条書きで整理する。\n授業内容\n正解のない問いに対して仮説を立てることで思考を深めていく方法を理解する。仮説思考の基本的な考え方と活用方法について学ぶ。\n授業内作業（90分）\n① 前提知識なしでのグループディスカッション（20分）\n② 仮説構築の考え方の解説（15分）\n③ 個人による仮説設定および簡単な調査（35分）\n④ グループでの共有と再議論（20分）\n事後学習（90分）\n授業内で立てた仮説について追加調査を行い、仮説を修正または深化させて文章でまとめる。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "第12回 正解のない問いに対する思考法②（仮説の深化）\n事前学習（90分）\n前回立てた仮説とその根拠を見直し、追加で調べたい点や疑問点を整理する。\n授業内容\n仮説を検証・修正しながら思考を深めていくプロセスを体験する。仮説思考を継続的に発展させる方法について理解する。\n授業内作業（90分）\n① 仮説および調査内容の整理（30分）\n② グループ内共有および相互フィードバック（40分）\n③ 全体共有およびまとめ（20分）\n事後学習（90分）\n仮説思考のプロセスを振り返り、正解のない問いに向き合う際に重要だと感じた点を文章で整理する。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "第13回 正解のない問いに対する思考法②（仮説構築とリサーチ）\n事前学習（90分）\n提示されたテーマについて、自分なりの疑問点や考えを整理し、仮説としてどのような可能性が考えられるかを簡単に書き出してくる。\n授業内容\n仮説を立ててリサーチを行うことで思考を深めていくプロセスを体験する。提示されたテーマについて、まず前提知識がない状態で議論を\n行い、その後仮説を立てて調査を行うことで、自分の考えを発展させる思考方法を理解する。\n授業内作業（90分）\n① 前提知識なしの状態でのグループディスカッション（20分）\n② 仮説を立てる方法についてのレクチャー（15分）\n③ 個人ワーク（仮説設定およびリサーチを含む）（35分）\n④ 再度グループディスカッション（10分）\n⑤ 全体共有およびまとめ・振り返り（10分）\n事後学習（90分）\n授業で立てた仮説とリサーチ結果を振り返り、どのように考えが深まったかを整理して文章にまとめる。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "第14回 ゲスト講義（イノベーションの実践）\n事前学習（90分）\nゲスト講師の経歴や取り組んでいる事業・活動内容について調べ、講義中に質問したい内容を2点以上整理する。\n授業内容\nイノベーションを実践しているゲスト講師の講義を通して、実社会におけるイノベーションの考え方や意思決定のプロセスについて理解す\nる。\n授業内作業（90分）\n① ゲスト講義の聴講（60分）\n② 質疑応答およびディスカッション（30分）\n事後学習（90分）\n講義内容を踏まえ、「これまでの授業内容との関連」や「印象に残った点」について整理し、学びを文章でまとめる。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "最終発表・総括（イノベーションの志）\n事前学習（90分）\n最終発表準備。\n授業内容\n学修成果の最終発表。\n授業内作業（90分）\n発表と全体振り返り。\n事後学習（90分）\n授業全体の学びを整理する。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "business-introduction": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "基礎科目",
+    "courseName": "ビジネス入門",
+    "classFormat": "講義",
+    "courseCode": "IBZ1110001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "志村 一隆、阿部川 久広、斎藤 祐士、仁木 隆大、松村 太郎",
+    "overview": "・社会の多様化が進んだ現代のビジネス界において、取引を成立させるためには、お互いの意思疎通を円滑に進めることが必要不可欠であ\nる。\n・その第一歩として、本科目では、ビジネスマナーを紹介し、学生同士のドリルなどで、起業、インターンシップ、就職などに必要となるビ\nジネスリーダーとのコミュニケーションスキルとマインドを身につける。\n・授業内では、教員からの質問に積極的に答えることが求められる。また、学生同士のコミュニケーション、発表、読み書きをする機会を多\nく設ける。\n・授業には、パソコン、この科目専用のノート、筆記用具を持参すること。\n・事前課題、復習課題が与えられるため、授業の予習・復習を行う。\n・面談での受け答え、メールの書き方、履歴書などを完成させる。",
+    "objectives": "・人間は怠惰で言い訳の多い生き物である。他責、言い訳、ネガティブな言動・思考法は、行動をしない強力な理由づけとなる。\n・本科目では、今後増えるであろうビジネスリーダーとのコミュニケーションを円滑に行うことを目的に、受け身な行動やマインドを変容\nし、礼節を理解し、挨拶やポジティブな考え方や、時間を守る、メールなど書き言葉でのマナーを身につけることを目的とする。\n・人生において、常に自らをアップデート、新たなスキルや知識を取り入れるマインド（向上心）を持つことが重要である。そうした向上心\nを学び、理解する。\n・消費者目線から経営者、投資家目線にマインドチェンジする。そのために、ビジネスの基本的な知識（財務三表の読み方、税法など）を習\n得する。\n・AIなどテクノロジーを使い、「効率性」を意識、QOLを上げる生き方を学ぶ。\n・授業の開始時間や、提出物の期限を守る、挨拶をするといった基本行動の重要性を理解する。\n・「臨地実務実習（インターンシップ）」での配属、受講などの心構えを学ぶ。",
+    "grading": "・定期試験：100％",
+    "preparation": "予習：事前配布される資料を理解する。また、事前課題が出された場合は、期限までに提出する。（各回90分）\n復習：授業内容の復習を行い、小テスト、面談、定期試験に備える。（各回90分）",
+    "textbooks": "書名：指定なし",
+    "references": "デジタルサービスNotionで作成した資料を配布。",
+    "notes": "パソコン以外に、この授業専用のノートと筆記用具を持参のこと。",
+    "previousYearReflection": "昨年度はビジネスマナーを学ぶことに時間を割いた。今年度は、ビジネスの初歩的知識の理解・把握も行う。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "自己と他人。\n自らが実現したい「夢」をビジネス展開する際のハードルはなにかを学ぶ。\nビジネスには、自らのモノ・サービスに価値を感じ、購入する顧客が必要であり、その顧客とのコミュニケーションが重要なことを理解す\nる。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "礼儀と挨拶。\n他者とのコミュニケーションにおいて、挨拶を自ら行うことの重要性を理解する。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "他責とネガティブ。\n他責思考が、いかに自らのビジネスに損なことであるかを理解する。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "受身と能動。\n受身な行動やマインドをリセットし、能動的に他者と関わる技術を学び、理解する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "社⻑と義務。\nリーダーシップを学ぶ。\n地位や権力を持つことは、他者を支配することではないことを理解する。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "約束と信用。\n約束の時間を守るなど、ビジネスの基本マナーを学ぶ。\nまた、ビジネスで重要な信用について理解する。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "本音と建前。\nビジネスの交渉時に、多用される単語や言い回しを学び、複雑なビジネス交渉術を学ぶ。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "メールとLINE。\nビジネス上でのコミュニケーションツールとして重要なメールマナーを学ぶ。\nまた、書き言葉と話し言葉の違いを理解する。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "金利と信用\n1年後の100円と目の前にある100円。どちらが価値があるのか？\n金利と割引価値について理解する\nなぜ時間を守らなければならないのか？\n遅刻は他責か？自責か？\n期日までに支払う重要性を理解する。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "売上と利益。\n企業の基本的な収益とお金の流れを理解する。\nキャッシュと売掛について学ぶ。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "資産と資本\nBSについて学ぶ。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "履歴書と志望理由書\n書き言葉と話し言葉の違いを理解し、実際に履歴書と志望理由書を完成させる。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "面談の心構え\nビジネスの交渉、インターンシップ、事業ピッチなど、対人の面談でのマナーを学び、理解する。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "人生のQOLについて\n人的資本、社会資本、金融資本について学ぶ。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "自立について\n自立した人生を送るには？どんな行動が必要か理解する。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        6,
+        7
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "english-core-skills-1": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "基礎科目",
+    "courseName": "英語コア・スキルズⅠ",
+    "classFormat": "演習",
+    "courseCode": "EC11120001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "奥村 耕一、Joe Hug、遠山 三津子、小林 素羅",
+    "overview": "現代社会においてグローバルに活躍するためのツールとして、英語の習得方法を身に付けることは必要不可欠である。本科目では、入学前ま\nでの学習を基礎に、基本的な知識・技能を駆使して、アウトプットの強化を図っていく。各授業では、個人やグループで、Input-Intake-\nOutputのプロセスで使える英語表現の獲得を狙い、音声による集中トレーニングを行い、最終的に1分程度のプレゼンテーションの基礎を養\nう。また、特定のトピックに関するスモール・トークを行い、やり取りの基礎も養う。特に集中トレーニングでは、シャドーイング、英語表\n現獲得のための音読等で、音声によるインプットを取り込みながら、アウトプット につなげる活動を行うことを通じて、近い将来において\n自律して学ぶ方法を習得する。\n本科目では、さまざまな学習場面で目的に応じて適切な生成AIの活用を推奨する。\nまた、展開科目のビジネス英語実習Ⅰ〜Ⅳにおいて、本科目で培った力を生かすことも狙いとしている。",
+    "objectives": "・英語を取り込み、それを駆使する能力を高め、実際の英語使用のための学び方を習得することができる。\n・実際のやり取りや発表の場面を想定した言語活動を行うことを通じて、基礎的なコミュニケーションをとることができる。",
+    "grading": "発表・やり取りなどの実技面【20％】\n各回の授業への参加度（授業内での課題取り組み状況）・貢献度（ペア・グループ活動等で積極的なやり取りの状況）【40％】\n各回の課題提出状況と英語の獲得度【40％】",
+    "preparation": "復習：授業で触れた表現の練習（発音確認・音読・リテリング等）とそれを用いた自己表現（プレゼンテーション等の準備）（合計90分）\n課題：授業内で課す動画またはテキスト（文字）による自己表現の提出、授業内での学びに関するレポート、オンライン教材によるインプッ\nトの増加とスキルアップ（合計90分）",
+    "textbooks": "書名：指定なし",
+    "references": "適宜紹介する。",
+    "notes": "授業における学習の状況に応じて、練習や言語活動の内容や進め方が変わる場合がある。\n授業では、各自のパソコンを使用するので、毎回の用意が必要である（ノートまたはタブレットが別に必要な場合は使用可）。\n本科目は、対面による学習活動を通じて知識と技能を高め、それに関連した授業外での学習活動も必要であるので、極力の出席が必要であ\nる。",
+    "previousYearReflection": "昨年度の授業改善アンケート結果から、今年度も引き続き、ペア・グループ活動を積極的に取り入れ、互いに学び合うことを重視するととも\nに、さらに個別最適化学習の機会も設定する。\n授業は少人数クラスで、多様なレベルの仲間が互いの状況を理解し、効果的に取り組むことが重要である。\n授業では、個人個人が目標を設定して、各個人の英語レベルに応じて取り組む場面がある。\nオンライン教材は、授業外に英語に触れる機会を保障するための課題として与えられる。次の授業時間に取り組みの度合いとして、教材内で\n触れた英語表現の獲得度を確認する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "オリエンテーション\n・英語が使えるようになる基礎を身に付けるための学習方法\n・目標、概要、予定、評価方法、オンライン教材、Google Classroomの使用方法\n・英語学習に関するアンケート調査"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "・Input → Intake (Practice) → Output プロセスでの学び方（英語の内容理解、文構造の確認、発音・語彙の習得から英語の再生・産出を\n行う言語学習の基本）\n・英語学習のための生成AIの活用方法（以降各回必要に応じて英語学習における生成AIの活用方法を学ぶ）"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "・Daily Talk（日常の話題でやり取りし、即興で表現する技能の向上を図る）の導入\n・アンケート結果、レベルチェックテストの結果、英語教育の現状から、学習のあり方の再考\n・英語獲得のしかた Input活動：リスニング+リーディング（以下、Input活動）＋Intake活動：音読、穴埋め音読、再生（以下、Intake活\n動）"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "・Daily Talk 2\n・英語獲得のしかた Input活動：リスニング+リーディング（以下、Input活動）＋Intake活動：音読、穴埋め音読、再生（以下、Intake活\n動）\n・発音プログラム（すべての音声による活動のための基礎学習）の導入"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "・発音プログラム 1\n・Daily Talk 3\n・英語獲得のしかた Output活動：スピーキング（プレゼンテーションに向かう活動）（以下、Output活動）"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "・発音プログラム 2\n・Daily Talk 4\n・Input活動＋Intake活動 2（英語獲得のための個別最適教材の作り方）"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "・発音プログラム 3\n・Daily Talk 5\n・Output活動 2"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "・発音プログラム 4\n・Daily Talk 6\n・Input活動＋Intake活動 3（個別最適教材作成）"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "・発音プログラム 5\n・Daily Talk 7\n・Output活動 3"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "・スキルテスト1（個別小テスト）\n・発音プログラム 6\n・Input活動＋Intake活動 4（スキルテストと同時）（個別最適教材作成）"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "・発音プログラム 7\n・Daily Talk 8\n・Output活動 4"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "・発音プログラム 8\n・Daily Talk 9\n・Input活動＋Intake活動 5（個別最適教材作成）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "・発音プログラム 9\n・Daily Talk 10\n・Output活動 5"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "・発音プログラム 10（まとめ）\n・Daily Talk 11\n・スキルテスト２に向けて"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "・スキルテスト 2（個別小テスト）\n・練習と言語活動の振り返りと今後の学習課題\n・授業改善アンケート"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        10,
+        11
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "study-skills": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "基礎科目",
+    "courseName": "スタディスキル",
+    "classFormat": "演習",
+    "courseCode": "SSK1110001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "桐谷 恵介、国分 峰樹、粂川 美紀",
+    "overview": "大学生活は社会で貢献するための準備期間であり、自分が興味関心を持つ分野について主体的に学ぶとともに、社会に出ていくにあたって企\n業におけるプレゼンテーションに代表されるように今度は自らが情報発信をしなければならないという立場にもなる。本講義では有意義な大\n学生活を送るために、基本となるアカデミックスキルや社会人基礎力など、入学時に立てた目標を実現する力を身に付ける。具体的には、課\n題に取り組みながら大学生活を送るために必要なコミュニケーション、情報収集と活用、レポートやプレゼンテーションなどを身に付けると\nともに、取り上げる課題やテーマから大学での学びや将来の目標を考える。",
+    "objectives": "有意義な4年間の大学生活を送るための基本となる、大学において学ぶ（授業、課外活動）ことのスキルを身につけることを目的とする。\nそして、本専門職大学の学生として、自覚を持って行動できるようになることを目標とする。",
+    "grading": "・毎回の授業時に提出する小レポート（30％）\n・講義内タスク：講義で学んだ知識、理解度を確認するために毎回行い提出する演習（課題）資料（30％）\n・授業時の課題：授業時の課題として提出するプレゼンテーション資料、自己アピール（履歴書、強み資料）、最終まとめ資料（40％）",
+    "preparation": "・講義中だけではなく、大学生活や家庭生活においても常にスタディスキルを意識すること。\n・各回の授業テーマについて、各自で予習（2時間程度）すること。\n・講義資料を公開する予定なので、復習では講義資料中のキーワードを自分の講義ノートであらためて整理し（2時間程度）、実践するこ\nと。",
+    "textbooks": "書名：指定なし",
+    "references": "必要な資料は随時配布する。\n参考文献：\n・情報リテラシー教科書 Windows 11/Office＋Access 2021対応版、矢野文彦（著）、オーム社\n・基礎からわかる情報リテラシー、森本尚之（著）、技術評論社\n・DX時代のICTリテラシー（よくわかる）大型本、富士通ラーニングメディア（著）、富士通ラーニングメディア",
+    "notes": null,
+    "previousYearReflection": "昨年度から科目責任者が変更のため該当なし。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "ガイダンスと基礎知識の確認\n大学の環境を把握した上で、学内の情報環境を利用できる。\nコンピュータをネットワークに接続して利用する場合に注意すべき、情報セキュリティに関する規程や身に付けておくべき知識について\n学ぶ。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "情報とコミュニケーション\n情報とは何かについて、身近な情報システムの例を取り上げ、その役割について説明できる。\nまたSociety5.0社会や、DX（デジタルトランスフォーメーション）とは何かを理解し、なぜ「iU生はプラスICT人材」なのかを理解す\nる。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "タイピング、文書の書き方基礎\nWord初歩（文書作成ソフト使用時の注意点）を学ぶ。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "レポートの書き方 アカデミック・ライティング入門\nレポート作成演習を行う。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "Excel①基礎\n簡単な表計算などができるようになる。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "Excel②応用\n簡単な関数の使い方を学び、グラフの出力などができるようになる。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "プレゼンテーション①\nPowerPoint初歩を学び、簡単なプレゼンテーション資料を作成できる。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "プレゼンテーション②\n効果的なプレゼン資料の作り方（PPT、Excel、Word総復習）、および発表演習"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "コミュニケーション①\n発想力・論理力を学び、「自己紹介、自分の強み」を作成する。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "ビジネスリテラシー基礎\n履歴書の書き方を学ぶ。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "コミュニケーション②\nビジネスコミュニケーションの基礎を学ぶ。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "SNSを取り巻くセキュリティの脅威\nインターネットの利用の仕方、SNSの利用の仕方、利用上の注意を学ぶ。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "生成AIはじめの一歩と、情報に関する法規・情報モラル\n生成AIの基礎知識や利用時の注意点を、個人情報保護法、著作権などの視点も含めて学ぶ。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "イノベーション技法 アカデミック・ライティング応用\n専門書・文献の収集や検索方法、および論文の読み方を学ぶ。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ\n課題や本科目を通じて得た気づき、目標の再設定を行う。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        23,
+        24
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "management-foundations": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "マネジメント（経営学基礎）",
+    "classFormat": "講義",
+    "courseCode": "IMG1210001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "教員未定",
+    "overview": "本授業では、企業が利益を獲得するために行うビジネス活動に必要不可欠な経営資源が、効率的かつ有効に活用されている実態について学修\nする。特に、マネジメントに関する様々な事例を取り上げることで、実践的な事象に対する理解力を身につける。",
+    "objectives": "・現代企業の仕組み、制度と運営メカニズムについて説明することができる。\n・諸学説を現実のマネジメントの問題に関連づけながら説明することができる。",
+    "grading": "理解度確認テスト100％",
+    "preparation": "予習）授業に関連する時事問題に関する資料等を読んでおく（90分）\n復習）授業で分からなかった箇所を中心に振り返り、理解を深めておく（90分）",
+    "textbooks": "書名：指定なし",
+    "references": "『コア・テキスト イノベーション・マネジメント（新訂版）』近能善範・高井文子、新世社、ISBN：978-4-88384-386-2",
+    "notes": "毎回、筆記用具・ノートを持参して下さい。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "ガイダンス 「経営学」とは何か"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "ドメインの定義、戦略の策定、競争のための差別化"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "多角化と事業ポートフォリオ、多角化の論理、事業の選択と集中"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "国際移動のジレンマ、国のポートフォリオの選択、国際的ポートフォリオ"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "中間まとめ（理解度確認テストを含む）"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "株式会社のメリットと問題点、資金調達の選択、日本企業の金融の特徴"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "全社的組織構造の試み、機械的組織と有機的組織、リーダーシップ"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "人事労務管理、労働時間の管理、労使関係の管理"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "経営理念と組織文化、モチベーションとストレス、非営利組織とは"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "金融の働き、中央銀行の役割、ドラッカーのマネジメント"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "中間まとめ（理解度確認テストを含む）"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "課題演習（調査）企業研究①"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "課題演習（発表）企業研究①"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "課題演習（調査）企業研究②"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "課題演習（発表）企業研究②"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        29
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "marketing-foundations": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "マーケティング基礎",
+    "classFormat": "講義",
+    "courseCode": "MK11220001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "佐々木 ⻯介",
+    "overview": "ビジネスを展開するうえで不可欠となるマーケティングについて、基本となるマネジリアル・マーケティングに加え、ブランドやリレーショ\nンシップ・マーケティング、またBtoBマーケティングやデジタル・マーケティングなど幅広い分野も触れる。マーケティングの基礎的な知識\nや理論を幅広く学ぶとともに、各種ケースの分析を行うことでその発想法を修得し、将来のビジネスの実務で、マーケティング戦略の立案、\n戦術の策定ができるようになることを目指す。",
+    "objectives": "マーケティングの基礎理論を理解し、マーケティングプランの作成をできるようになる。",
+    "grading": "各回授業への参加度、貢献度：20％\n各回授業における課題：60％\n期末レポート：20％",
+    "preparation": "【予習】（90分程度）\n各回授業で出題された課題について、レポートを作成、提出する。\n【復習】（90分程度）\n事前学習での自分の分析について、授業を受けた上での答え合わせを行う。",
+    "textbooks": "書名：指定なし",
+    "references": "教科書：\n毎回授業前にグーグルクラスルームを通じて資料を配布します。\n参考書：\n・「ベーシック・マーケティング 第2版」恩蔵直人、三浦俊彦、芳賀康浩 編、同文舘出版、2019年（ISBN：978-4-495-64372-0）\n・「マーケティング入門」小川孔輔、日本経済新聞出版社、2009年（ISBN：978-4-532-13369-6）\n・「コトラー、アームストロング、バラスブラマニアン、恩藏のマーケティング原理」フィリップ・コトラー、ゲイリー・アームストロング、\nスリーダー・バラスブラマニアン、恩藏直人（共著）、丸善出版、2025年（ISBN：978-4-621-31156-1）\n他、各回のテーマごとに適宜提示します。",
+    "notes": "授業クラスごとにグーグルクラスルームを設定し、最初の授業時にURLないしは授業コードをお知らせしますので、速やかに登録してくださ\nい。そちらを通じて資料を配布、また課題を提出してもらいます。\n課題について、提出された中からいくつかを選び次回授業で紹介しますので、それを前提に取り組んでください。\nなお記載された内容は、変更となる場合があります。",
+    "previousYearReflection": "昨年度から科目責任者が変更のため該当なし。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "イントロダクション\n-マーケティングとは\n-ビジネスとマーケティング\n-マーケティングの発展史"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "マーケティング・マネジメント\n-マーケティング・マネジメントとは\n-B-STP\n-マーケティング・ミックス"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "戦略的マーケティング\n-戦略的マーケティングとは\n-環境分析\n-成⻑戦略／競争戦略"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "顧客分析\n-顧客とは\n-消費者行動論\n-マーケティング・リサーチ"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "Product戦略\n-製品開発とは\n-製品開発の進め方\n-製品戦略のケーススタディ"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "Price戦略\n-価格とは\n-価格決定の方法と価格戦略の考え方\n-価格戦略のケーススタディ"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "Place戦略\n-流通とは\n-流通の種類\n-流通戦略のケーススタディ"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "Promotion戦略\n-4つのプロモーション\n-広告戦略\n-プロモーション・ミックス"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "ブランド\n-ブランドとは\n-ブランドの要素\n-ブランディングの実際"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "リレーションシップ・マーケティング\n-リレーションシップ・マーケティングとは\n-顧客との関係性／取引先との関係性\n-リレーションシップ・マーケティングのケーススタディ"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "サービス・マーケティング\n-サービス・マーケティングとは\n-サービス・マーケティングの枠組み\n-サービス・マーケティングの課題"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "BtoBマーケティング\n-BtoBビジネスとマーケティング\n-BtoBマーケティングの枠組み\n-DX時代のBtoBマーケティング"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "デジタル・マーケティング\n-デジタル・マーケティングとは\n-デジタル・マーケティング戦略\n-デジタル・マーケティングのマネジメント"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "マーケティングの新潮流\n-リキッド消費と応援消費\n-ブルーオーシャン戦略\n-エフェクチュアル・マーケティング"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        37,
+        38
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "ict-introduction": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "[旧]コンピュータとソフトウェア基礎／[新]ICT入門",
+    "classFormat": "講義",
+    "courseCode": "CSW1310001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "山内 正人、Kim Jieun、中田 豊久、Kamya Yekeh Yazdandoost、椚田 尚亨、韓 旭、片桐 雅二",
+    "overview": "本授業ではICTに関わる様々な分野について幅広く知ることで、自身の興味分野の開発や各分野が社会にどのように繋がっているかについて\n理解を深める。\nまたICTについて学ぶ上で最低限必要となる基礎知識や基礎スキルを習得することで、この後の本学での学びの素地とする。\n本科目はオムニバス形式で実施し、8回まではクラスごとに順不同の集中講義、それ以降は授業計画の順番で実施する。\n開講日などが変則的になるためよく確認すること。",
+    "objectives": "本授業はICTについて学ぶ意義を理解し、自身の興味やキャリアに合わせたICT分野を学べるようになることを目的とする。\nICTに関わる各分野が、どのような内容を扱い何を学ぶ学問なのか説明できる。\nICTに関わる各分野が、社会とどのように繋がっているか説明できる。\nICTに関わる自身の興味分野や足りていない知識、スキルなどを理解し、ICT科目について自身に合わせた履修設計ができる。\nICTについて学ぶ上で最低限必要となる基礎知識や基礎スキルを習得する。",
+    "grading": "各回ごとのフィードバックレポート・課題（70％）\nグループワークでの積極的な活動、積極的な質問や発言など授業への取り組む態度（30％）",
+    "preparation": "予習（標準学習時間：2時間）\n・参考文献やWebサイト等を閲覧し、各回に関係する基本的な用語・概念について理解をしたうえで授業に臨むこと。\n復習（標準学習時間：2時間）\n・各テーマごとに設定される課題に取り組む。",
+    "textbooks": "書名：指定なし",
+    "references": "適宜資料などを配布する。\n参考文献：\n各ICT科目のシラバスを参照",
+    "notes": null,
+    "previousYearReflection": "昨年度から科目責任者が変更のため該当なし。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "オリエンテーション＆ネットワーク\n（本授業の目標など＆ネットワークとは？：山内）"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "コンピュータアーキテクチャ\n（コンピュータアーキテクチャとは？：韓）"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "オペレーティングシステム\n（OSとは？：韓）"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "データ構造と処理法\n（アルゴリズムとは？：片桐）"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "情報数学①\n（N進数、ブール代数、補数：椚田）"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "情報数学②＆データサイエンス、AI\n（データサイエンスやAIとは？：椚田）"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "Introduction to Design\n（What is Design?：Kim）"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "クラウド\n（クラウドを見てみよう：山内）"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "電子回路\n（電子回路とは？：Yazdandoost）"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "IoT\n（IoTとは？：Yazdandoost）"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "データベース\n（データベースとは？：片桐）"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "プログラミング①\n（Webプログラミング：中田）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "プログラミング②\n（プログラミングと設計：中田）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "セキュリティ\n（セキュリティとは？：山内）"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ\n（まとめと履修設計：山内）"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        53,
+        54
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "programming-fundamentals-practicum": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "[旧]プログラミングⅠ／[新]プログラミング基礎実習",
+    "classFormat": "実習",
+    "courseCode": "PG11310005",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "Kamya Yekeh Yazdandoost、中田 豊久",
+    "overview": "本科目は、プログラミング経験がほとんどないかまったくなく、Pythonを使用してソフトウェア開発の道を歩み始めたい学生を対象としてい\nます。このコースの目的は、問題解決において計算が果たす役割を学生に理解させ、専攻に関係なく、学生が有用な目標を達成できる小さな\nプログラムを作成するための基本的なスキルを身につけ、自分の能力に十分な自信を持てるようにすることです。このクラスでは、Pythonプ\nログラミング言語を使用します。また本科目は、クラスによって内容が変わることがあります。この科目にはサポートと標準の2つのレベル\nがあり、学生はレベルに応じて2つの異なるクラスに分けられます。",
+    "objectives": "フローチャート、アルゴリズム、プログラミングロジックを使用して、問題解決へのステップバイステップのアプローチを説明できる。\nVisual Studio CodeやGoogle Colaboratoryなどのプログラミング環境を使ってコーディングができる。\n一般的な関数、条件文、ループを使用して、Pythonスクリプトでプログラムを作成できる。\nテストとデバッグの手法を使用して、コード\"の信頼性を確保できる。\nデータセットに論理演算と数学演算を適用できる。",
+    "grading": "・課題と毎週のテスト： 15％\n・中間試験：35％\n・期末試験：50％",
+    "preparation": "以前の講義はそれぞれ次の講義と関連しているため、学生は次の講義をよりよく理解するために講義と課題を復習することが期待されます。\n（各回45分）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": "サンプルプログラムが提供されます。ただし、毎回の授業で自身でプログラムを作成していきます。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "コンピュータプログラミングとは何か？\nコンピュータサイエンスとは何か？\nフローチャートと疑似コード、Python入門（1）"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "コンピュータプログラミングとは何か？\nコンピュータサイエンスとは何か？\nフローチャートと疑似コード、Python入門（2）"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "Pythonの基礎、変数、ステートメントおよび式（1）"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "Pythonの基礎、変数、ステートメントおよび式（2）"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "条件ステートメント：if、elif、else（1）"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "条件ステートメント：if、elif、else（2）"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "関数：組み込みおよびユーザー定義（1）"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "関数：組み込みおよびユーザー定義（2）"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "ループ：for、while（1）"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "ループ：for、while（2）"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "文字列操作（1）"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "文字列操作（2）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "中間試験（1）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "中間試験（2）"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "ファイル：開く、読む、検索する（1）"
+      },
+      {
+        "number": 16,
+        "topic": null,
+        "content": "ファイル：開く、読む、検索する（2）"
+      },
+      {
+        "number": 17,
+        "topic": null,
+        "content": "リスト：リストの使用、リスト内の確認、リストとループ（1）"
+      },
+      {
+        "number": 18,
+        "topic": null,
+        "content": "リスト：リストの使用、リスト内の確認、リストとループ（2）"
+      },
+      {
+        "number": 19,
+        "topic": null,
+        "content": "辞書、コレクション（1）"
+      },
+      {
+        "number": 20,
+        "topic": null,
+        "content": "辞書、コレクション（2）"
+      },
+      {
+        "number": 21,
+        "topic": null,
+        "content": "タプルとリスト（1）"
+      },
+      {
+        "number": 22,
+        "topic": null,
+        "content": "タプルとリスト（2）"
+      },
+      {
+        "number": 23,
+        "topic": null,
+        "content": "Pythonオブジェクト（オブジェクト指向プログラミング）（1）"
+      },
+      {
+        "number": 24,
+        "topic": null,
+        "content": "Pythonオブジェクト（オブジェクト指向プログラミング）（2）"
+      },
+      {
+        "number": 25,
+        "topic": null,
+        "content": "データベースの概要（1）"
+      },
+      {
+        "number": 26,
+        "topic": null,
+        "content": "データベースの概要（2）"
+      },
+      {
+        "number": 27,
+        "topic": null,
+        "content": "データベースの詳細（1）"
+      },
+      {
+        "number": 28,
+        "topic": null,
+        "content": "データベースの詳細（2）"
+      },
+      {
+        "number": 29,
+        "topic": null,
+        "content": "期末試験前のまとめと復習（1）"
+      },
+      {
+        "number": 30,
+        "topic": null,
+        "content": "期末試験前のまとめと復習（2）"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        55,
+        56
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "business-english-practicum-1a": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "展開科目",
+    "courseName": "[旧]ビジネス英語実習Ⅰ／[新]ビジネス英語実習Ⅰa",
+    "classFormat": "実習",
+    "courseCode": "EA11410001",
+    "credits": 1.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "Joe Hug、平野 麻紀子、田中 亮子、横井 博文",
+    "overview": "This Business English course uses authentic content to bring real-world business concepts for complete beginners. The course focuses\non developing all English communication skills̶reading, writing, listening, and speaking. It is designed for students at the CEFR A1 to\nA2 level who are learning the fundamentals of business English.\nこのビジネス英語コースは、実際のビジネスシーンで役立つコンテンツを用いて、ビジネス英語を全く知らない初心者にも分かりやすく解説\nします。リーディング、ライティング、リスニング、スピーキングといった、あらゆる英語コミュニケーションスキルの向上に重点を置いて\nいます。CEFR A1〜A2レベルで、ビジネス英語の基礎を学びたい方を対象としています。",
+    "objectives": "1.Build fundamental business English vocabulary.\n2.Develop practical business English communication skills.\n3.Improve Business English listening, reading, and skills.\n1.ビジネス英語の基礎語彙を身につける。\n2.実践的なビジネス英語コミュニケーションスキルを養う。\n3.ビジネス英語のリスニング、リーディング、およびコミュニケーション能力を向上させる。",
+    "grading": "• Class participation and engagement: 5%\n• Completion of weekly speeches, presentations, and assignments: 15%\n• Midterm (Reviews) Presentation x3: 30%\n• Final Presentation: 50%\n• 授業への参加度：5％\n• 毎週のスピーチとプレゼンテーションの完了：15％\n• 中間プレゼンテーション：30％\n• 期末プレゼンテーション：50％",
+    "preparation": "1. Practice delivering speeches without relying on notes or slides to improve spontaneity and confidence.\n2. Focus on using effective body language, maintaining good posture, and making consistent eye contact with the audience.\n3. Rehearse presentations multiple times, refining content and delivery to ensure clarity and impact.\n1. メモやスライドに頼らずにスピーチを練習して、自発性と自信を高めます。\n2. 効果的なボディランゲージの使用、良い姿勢の維持、聴衆との一貫したアイコンタクトに重点を置きます。\n3. プレゼンテーションを何度もリハーサルして、内容と伝え方を洗練させ、明瞭性とインパクトを確保します。\n• The slides used in class will be distributed via Google Classroom, so be sure to read them in advance.\n• 授業で使用するスライドは Google Classroom で配布されるので、事前にスライドを読んでおくこと。\n（あわせて各回45分程度）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": "• You need to become familiar with and utilize AI tools (e.g., Notebook LM, Canva, ChatGPT, etc.).\n• AIツール（例：Notebook LM、Canva、ChatGPTなど）に精通し、活用できるようになる必要があります。\n• The difficulty of the lectures will vary depending on the way of basic explanations and the use of terms and expressions. Opportunities\nwill be given to improve speaking and listening skills.\n• Classes will be structured efficiently and intensively to minimize lecture time and allow students to focus on group discussions and\npresentations.\n• Students are expected to actively participate in activities and reflect autonomous leadership and teamwork.\n• 授業の難易度は、基本的な説明のしかた、用語や表現の使い方によって変わります。スピーキングとリスニングのスキルを向上させる機会\nが与えられます。\n• 授業は、講義時間を最小限に抑えながら、グループディスカッションとプレゼンテーションに集中できるように、効率的かつ集中的に構成\nされます。\n• 履修者は、活動に積極的に参加し、自律的なリーダーシップとチームワークを反映させることが望まれます。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "INTRODUCTIONS: Introducing yourself\n•LANGUAGE: Nationalities; to be; a / an with jobs; wh- questions\n•SKILL: Introducing yourself to others"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "WORK & LEISURE: Discuss what people want from work/jobs\n•LANGUAGE: Days, months, dates; Leisure activities; Present simple; Adverbs and expressions of frequency\n•SKILL: Talking about work and leisure"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "PROBLEMS: Talk about problems at work\n•LANGUAGE: Adjectives too / enough; Present simple; negatives and questions; have some and any\n•SKILL: Telephoning: Solving problems"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "REVIEW: Week 1 to 3\nWorking Across Cultures: Eating out"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "TRAVEL: Talk about business travel\n•LANGUAGE: Travel details; can/canʼt; there is / there are\n•SKILL: Making bookings and checking arrangements"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "FOOD & ENTERTAINMENT: Discuss food from different countries\n•LANGUAGE: Eating out; some/any; Countable and uncountable nouns\n•SKILL: Making decisions"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "BUYING & SELLING: Talk about buying different products\n•LANGUAGE: Choosing a product; Choosing a service; Past simple; Past time references\n•SKILL: Describing a product"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "REVIEW: Week 4 to 6\nWorking Across Cultures: Communication Styles"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "PEOPLE: Talk about how you like to work\n•LANGUAGE: Describing people; Past simple; negatives and questions; Question forms\n•SKILL: Dealing with problems"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "ADVERTISING: Discuss advertising\n• LANGUAGE: Advertising and markets; Comparatives and superlatives; much / a lot, a little / a bit\n• SKILL: Participating in discussions"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "COMPANIES: Discuss companies\n• LANGUAGE: Describing companies; Present continuous; Present simple or present continuous\n• SKILL: Starting a presentation"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "REVIEW: Week 7 to 9\nWorking Across Cultures: Doing Business Internationally"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "COMMUNICATION: Discuss business communication\n• LANGUAGE: Internal business communication; Talking about future plans; will\n• SKILL: Making arrangements"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "CULTURES: Discuss doing business in other countries\n• LANGUAGE: Company cultures; should / shouldnʼt; could / would\n• SKILL: Identifying problems and agreeing action"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "FINAL PRESENTATION\nJOBS: Discuss jobs\n• LANGUAGE: Skills and abilities; Present perfect; Past simple and present perfect\n• SKILL: Interview skills"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        160,
+        161,
+        162
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "business-english-practicum-1b": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "展開科目",
+    "courseName": "[旧]ビジネス英語実習Ⅰ／[新]ビジネス英語実習Ⅰb",
+    "classFormat": "実習",
+    "courseCode": "EB11410001",
+    "credits": 1.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "Joe Hug、平野 麻紀子、田中 亮子、横井 博文",
+    "overview": "This Business English course uses authentic content to bring real-world business concepts for complete beginners. The course focuses\non developing all English communication skills̶reading, writing, listening, and speaking. It is designed for students at the CEFR A1 to\nA2 level who are learning the fundamentals of business English.\nこのビジネス英語コースは、実際のビジネスシーンで役立つコンテンツを用いて、ビジネス英語を全く知らない初心者にも分かりやすく解説\nします。リーディング、ライティング、リスニング、スピーキングといった、あらゆる英語コミュニケーションスキルの向上に重点を置いて\nいます。CEFR A1〜A2レベルで、ビジネス英語の基礎を学びたい方を対象としています。",
+    "objectives": "1.Build fundamental business English vocabulary.\n2.Develop practical business English communication skills.\n3.Improve Business English listening, reading, and skills.\n1.ビジネス英語の基礎語彙を身につける。\n2.実践的なビジネス英語コミュニケーションスキルを養う。\n3.ビジネス英語のリスニング、リーディング、およびコミュニケーション能力を向上させる。",
+    "grading": "• Class participation and engagement: 5%\n• Completion of weekly speeches, presentations, and assignments: 15%\n• Midterm (Reviews) Presentation x3: 30%\n• Final Presentation: 50%\n• 授業への参加度：5％\n• 毎週のスピーチとプレゼンテーションの完了：15％\n• 中間プレゼンテーション：30％\n• 期末プレゼンテーション：50％",
+    "preparation": "1. Practice delivering speeches without relying on notes or slides to improve spontaneity and confidence.\n2. Focus on using effective body language, maintaining good posture, and making consistent eye contact with the audience.\n3. Rehearse presentations multiple times, refining content and delivery to ensure clarity and impact.\n1. メモやスライドに頼らずにスピーチを練習して、自発性と自信を高めます。\n2. 効果的なボディランゲージの使用、良い姿勢の維持、聴衆との一貫したアイコンタクトに重点を置きます。\n3. プレゼンテーションを何度もリハーサルして、内容と伝え方を洗練させ、明瞭性とインパクトを確保します。\n• 授業で使用するスライドは Google Classroom で配布されるので、事前にスライドを読んでおくこと。\n• The slides used in class will be distributed via Google Classroom, so be sure to read them in advance.\n（あわせて各回45分程度）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": "• You need to become familiar with and utilize AI tools (e.g., Notebook LM, Canva, ChatGPT, etc.).\n• AIツール（例：Notebook LM、Canva、ChatGPTなど）に精通し、活用できるようになる必要があります。",
+    "previousYearReflection": "• The difficulty of the lectures will vary depending on the way of basic explanations and the use of terms and expressions. Opportunities\nwill be given to improve speaking and listening skills.\n• Classes will be structured efficiently and intensively to minimize lecture time and allow students to focus on group discussions and\npresentations.\n• Students are expected to actively participate in activities and reflect autonomous leadership and teamwork.\n• 授業の難易度は、基本的な説明のしかた、用語や表現の使い方によって変わります。スピーキングとリスニングのスキルを向上させる機会\nが与えられます。\n• 授業は、講義時間を最小限に抑えながら、グループディスカッションとプレゼンテーションに集中できるように、効率的かつ集中的に構成\nされます。\n• 履修者は、活動に積極的に参加し、自律的なリーダーシップとチームワークを反映させることが望まれます。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "INTRODUCTIONS: Introducing yourself\nCase Study: A job fair in Singapore:\nDecide on the successful candidate for a job\nWriting: e-mail"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "WORK & LEISURE: Discuss what people want from work/jobs\nCase Study: Hudson Design Inc.:\nResolve issues with unhappy staff\nWriting: e-mail"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "PROBLEMS: Talk about problems at work\nCase Study: High-Style Business\nRentals: Respond to negative customer feedback\nWriting: e-mail"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "REVIEW: Week 1 to 3\nUnit A: Revision"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "TRAVEL: Talk about business travel\nCase Study: The Gustav Conference\nCentre: Coordinate the needs of three different companies\nWriting: e-mail"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "FOOD & ENTERTAINMENT: Discuss food from different countries\nCase Study: Which restaurant?\nChoose the right place to eat for some important clients\nWriting: e-mail"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "BUYING & SELLING: Talk about buying different products\nCase Study: NP Innovations:\nDecide on a new product\nWriting: e-mail"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "REVIEW: Week 4 to 6\nUnit B: Revision"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "PEOPLE: Talk about how you like to work\nCase Study: Tell us about it:\nGive advice on problems at work\nWriting: reply to a problem message"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "ADVERTISING: Discuss advertising\nCase Study: Excelsior Chocolate\nProducts: Devise an advertising campaign\nWriting: product launch plan"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "COMPANIES: Discuss companies\nCase Study: Presenting your company:\nPrepare a short presentation\nWriting: company profile"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "REVIEW: Week 7 to 9\nUnit C: Revision"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "COMMUNICATION: Discuss business communication\nCase Study: Blakelock Engineering:\nDecide who should leave a company\nWriting: e-mail"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "CULTURES: Discuss doing business in other countries\nCase Study: The wind of change:\nAssess ideas for changing a company culture\nWriting: action minutes"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "FINAL PRESENTATION\nJOBS: Discuss jobs\nCase Study: Nelson & Harper Inc.:\nInterview candidates for a job\nWriting: letter"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        163,
+        164,
+        165
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "computer-architecture": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "コンピュータアーキテクチャ",
+    "classFormat": "講義",
+    "courseCode": "CAT1310001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "韓 旭",
+    "overview": "本授業では、コンピュータが内部でどのように動作しているのかを体系的に学ぶ。\nデータのデジタル表現から始まり、演算回路（ALU）やレジスタ、主記憶装置、命令の仕組み、アドレッシング方式、パイプライン処理、記\n憶階層（キャッシュ・仮想記憶）、入出力制御、例外処理までを扱う。",
+    "objectives": "コンピュータがどのように機能しているのか、各機能の動作原理について理解する。\n・コンピュータがデータをどのように表現・計算しているかを説明できる。\n・命令がどのように実行されるか、その流れを理解できる。\n・メモリやキャッシュ、仮想記憶などの役割を理解できる。\n・並列処理やパイプラインの基本原理を説明できる。\n・コンピュータ全体の構造を体系的に把握できる。",
+    "grading": "・授業内での発言・発表：20％\n・課題の提出状況と、その内容を評価する：40%\n・授業内テスト（最終試験、15回目）：40%",
+    "preparation": "予習（標準学習時間：90分）\n・教科書、Webサイト等を閲覧し、基本的な用語・概念について理解をしたうえで授業に臨むこと。\n復習（標準学習時間：90分）\n・各授業で示したWebサイト、演習課題等について振り返り、着実に理解した上で次回の授業につなげる。",
+    "textbooks": "書名：コンピュータアーキテクチャ\n（電子情報通信レクチャーシ\nリーズ）\n著者：坂井修一\n出版社：コロナ社\nISBN：978-4339018431\n\n書名：参考書：\n1．『コンピュータの構成と設計 第5版』\nジョン・L．ヘネシー（著）、デイビッド・A．パターソン（著）、成田光彰（翻訳）、日経BP社、2014年\n\n書名：2．『コンピュータアーキテクチャ技術入門 高速化の追求×消費電力の壁』\nHisa Ando（著）、技術評論社、2014年\nその他：\n必要な資料を適宜配布する。",
+    "references": null,
+    "notes": "教科書に挙げた\n『コンピュータアーキテクチャ（電子情報通信レクチャーシリーズ）』坂井修一（著）、電子情報通信学会（編集）、コロナ社、2004年\nに沿って講義を進める。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "デジタル表現と計算回路"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "ALUとレジスタ"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "主記憶装置"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "コンピュータ命令の動作"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "命令の表現形式と命令セット"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "アドレッシング、サブルーチンの実現"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "命令パイプライン（1）"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "命令パイプライン（2）"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "命令パイプライン（3）"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "記憶階層（1）： 主記憶装置とキャッシュ"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "記憶階層（2）：仮想記憶"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "命令レベル並列処理（1）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "命令レベル並列処理（2）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "入出力と周辺装置"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "・例外処理\n・授業内テスト（最終試験）"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        61,
+        62
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "data-structures-and-processing": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "データ構造と処理法",
+    "classFormat": "演習",
+    "courseCode": "ADS1340001",
+    "credits": 2.0,
+    "requiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修",
+    "activeLearning": "実施しない",
+    "instructor": "片桐 雅二",
+    "overview": "プログラミング的思考力の向上を目的として、コンピュータ・プログラム（ソフトウェア）を作成する上で基本となるデータ構造と基本的な\nアルゴリズム（処理法／処理手順）について学習する。内容を解説するとともに、学修する項目毎に課題を設定し、演習形式で各自が取り組\nむ。選択するデータ構造と処理手順によって、同じ結果を得るための手間の量（所要時間等）が異なったり、処理対象のデータ量が増えた場\n合に必要な手間の量（所要時間等）の増え方が異なったりすることになるが、そのメカニズムについて考えることで、プログラミング的思考\n力を養成する。\nはじめに、文字列照合アルゴリズムおよび整列アルゴリズムを具体例として取り上げ、同一のタスクであってもアルゴリズムによって性能等\nに違いが生じる事を確認し、アルゴリズムの重要性を学ぶ。その後、基本的なデータ構造（キュー、スタック、木構造など）およびその操作\n方法（挿入、削除など）について説明し、その特性を実習により確認する。さらにはネットワーク制御など実際の課題でも用いられる最短\n経路問題および最小全域木問題を取り上げ、それらに対するアルゴリズムについて学ぶ。",
+    "objectives": "基本的なデータ構造に対して、その基礎的な操作方法（挿入、削除、探索、整列など）とともにその特性を理解し、説明できるようになる。\n所望の課題に応じた適切なデータ構造および処理方法を検討する際に、必要に応じて自らより深く調べる手がかりとして、得た知識を課題解\n決に活用できるようになる。\nより一般的な課題（タスク）に取り組む手順を考える際にも、学んだ考え方を応用できるようになる。",
+    "grading": "単元ごとの課題レポートの内容（15% × 5単元 = 75%）、定期試験の結果（15%）、受講態度等（10%）により評価する。",
+    "preparation": "授業範囲について教科書および講義前日より閲覧可能となる授業資料（PDFファイル）により（必要に応じて参考書等も活用して）、予習す\nることが望ましい（60分／回）\n復習によって自分なりに頭を整理して理解を深め内容を消化することが特に大切なので、授業資料に加えて教科書を活用すること（60-90分\n／回）\n単元ごとにレポート課題を設定する（90-120分×5回）",
+    "textbooks": "書名：アルゴリズムとデータ構造\n著者：藤田 聡\n出版社：数理工学社\nISBN：978-4-901683-99-9\n備考：グラフィック情報工学ライブ\nラリ ※ 電子書籍可",
+    "references": "「図解でかんたんアルゴリズム 情報処理のかなめとなる考え方が手に取るようにわかる!」，杉浦著，サイエンス・アイ新書，SBクリエイテ\nィブ，2012",
+    "notes": "＊本科目は、ICT関連の研究職としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": "昨年度からの改善点：授業内においてはできるだけ対話的な進行を行い、説明内容／方法／レベル等を適応的に調整することで、履修者の\nエンゲージメントがさらに高まるように工夫する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "アルゴリズムとは\nコース概要、授業の進め方、イントロダクション"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "文字列照合アルゴリズム（１）\n文字列の走査とは、素朴な方法、KMP法"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "文字列照合アルゴリズム（２）\nBM法、演習（文字列照合アルゴリズムの手法による性能差を考え、理解を深めるとともに応用する力を身につける）"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "整列アルゴリズム（１）\n整列問題（ソート）とは、バブルソート、選択ソート、挿入ソート"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "整列アルゴリズム（２）\nクイックソート、マージソート、基数ソート"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "整列アルゴリズム（３）\n整列アルゴリズムに関する演習を行い理解を深めるとともに応用する力を身につける"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "基本データ構造とその操作（１）\nデータ構造の重要性、配列、線形リスト、ハッシュテーブル、キュー、スタック"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "基本データ構造とその操作（２）\n二分探索木、平衡木、ヒープ、素集合データ構造"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "基本データ構造とその操作（３）\n演習を行い基本データ構造に関する理解を深めるとともに応用する力を身につける"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "最短経路アルゴリズム（１）\n最短経路問題とは、グラフ構造とその表現方法、ダイクストラ法"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "最短経路アルゴリズム（２）\nベルマン−フォード法"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "最短経路アルゴリズム（３）\n演習を行い最短経路アルゴリズムに関する理解を深めるとともに応用する力を身につける"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "最小全域木アルゴリズム（１）\n最小全域木問題とは、最良優先探索法、クラスカル法"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "最小全域木アルゴリズム（２）\nプリム法、最小全域木アルゴリズムの応用事例"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "最小全域木アルゴリズム（３）\n演習を行い最小全域木アルゴリズムに関する理解を深めるとともに応用する力を身につける"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        65,
+        66
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "applied-information-mathematics-a": {
+    "grade": "カリキュラムにより\n異なります。",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "情報系数学応用A",
+    "classFormat": "講義",
+    "courseCode": "MIA1320001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施しない",
+    "instructor": "椚田 尚亨",
+    "overview": "工学分野等の技術分野のみならず、マーケティング、ビジネス、経営等おける現実世界の課題は、数式により定義でき、これを数値解法を\n用いて解くことができるものが多く存在する。本科目では、情報通信技術科目を学んでゆく上で必要な基礎的な知識であるとともに、ビジネ\nスの意思決定や業務効率等における課題を大幅に解消し、事業成果の最大化に貢献するデータ活用技術である数理最適化を学習する。具体的\nには数理最適化の基礎知識である「微分」「積分」「ベクトル」「行列」を学んだ上、「最適化法」の基礎を習得することを目的とする。それぞ\nれの単元の授業では、理解をより深められるように数式の説明だけではなく、応用例等を講義する。特に最適化法は、製品設計、流通計画\nから高度な画像・音声認識処理に至るまで多くの分野で活用されることから、より具体的なビジネス上の課題を解決できることを講義する。\n本科目を通じ、これらの手法の原理や特徴を理解すると共に、現実世界の課題を解く力を養う。",
+    "objectives": "・数理最適化の基礎知識を習得し、説明できる。\n・数理最適化の基礎となる「微分」「積分」「ベクトル」「行列」「最適化法」に出てくる数式をはじめとする知識を習得し、その意味や考え\n方を説明できる。\n・上記知識を用い、課題の捉え方や定式化、その課題に適した解法の選択方法や適用方法など、得た知識をもとに課題解決に活用できる。",
+    "grading": "■各授業内容の理解と応用する力を下記の観点から評価する。\n・各授業で「課題」を出します。これをノートに解き、写真を撮影して、課題レポートとして提出して下さい（70%）。\n課題を解くために、授業資料、本、インターネット等で調べ学習をして解いて頂いて結構です。\nWord、PowerPoint等により,電子文字を用いて作成したレポートは、電子的コピーが作れる為、不可とします。\n手書きにより作成したレポートの写真(jpegフォーマット)を原則とします。この写真をPowerPointに貼り付けて提出することはＯＫです。\n・課題の中に、少し難しい「発展課題」も出題し、加点します（10%）。\n・授業中での取り組み状況、発表や質疑応答などを評価します（20%）。\n■注意点\n★問題を第３者に公開することは禁止します。（著作権など、いろいろな問題が発生します）\n★各種サービスで、問題の解答を他の人から教えてもらうYａｈｏｏ知恵袋などの利用は禁止です。\n★他人が作成した回答／プログラムファイルをそのままコピーしたレポート/プログラムファイル、\n及び、他人が作成した写真そのものの提出は不正行為とみなします。（バイナリレベルで比較し、同一かどうかを確認できます）",
+    "preparation": "■本科目では、数理最適化の原理、特徴を学ぶだけでなく、Excelのソルバー、マクロを用いて、各種課題を数値的に解く方法についても講\n義、演習を行い、習得できるようにします。そのため事前に案内しますので、使用するExcelのソルバー、マクロについての知識を予習して\nおいてください。\n■予習と復習について\n予習：各授業ごとに事前に配布される資料について、概要、特徴などを調べてノートに書く（90分）\n授業：授業で新しく気づいた事、理解した事、理解度確認課題をノートに書く（90分授業）\n復習：課題に対する調べ学習、考察結果をノートに書いて、レポート提出（90分）",
+    "textbooks": "書名：指定なし（資料を配布）",
+    "references": "『最短コースでわかるディープラーニングの数学』\n赤石雅典(著)、日経BP社、2019年\n『データサイエンスのための数学』\n椎名洋 他（著）、講談社、2019年\n『これなら分かる最適化数学―基礎原理から計算手法まで』\n金谷健一(著)、共立出版、2005",
+    "notes": "・高校数学で数学II、B、IIIまでの履修をしていない場合は、本科目で学習する数理最適化、「微分」「積分」「ベクトル」「行列」「最適化法」\nの知識をインターネットあるいは参考書等で自主的に習得して授業参加することが望ましい。\n・進捗状況により授業内で扱う題材の難易度を変更する場合がある。\n＊本科目は、ICT関連の開発職としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": "毎回出す課題/発展課題によっては正解率が低いことがあったので、正解率が低い課題/発展課題に関しては翌週に時間をかけて解説するよう\nにします。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "イントロダクション\n・現実世界の課題解決手段としての数理最適化の概要を学ぶ"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "微分（1）\n・微分と積分の概要と現実世界での事例を習得した上で、微分の基本計算を学ぶ"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "微分（2）\n・微分に関する基本的な定理と応用（テイラー展開等）を学ぶ"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "積分（1）\n・積分の基本計算を学ぶ"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "積分（2）\n・置換積分と部分積分を学ぶ"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "微分と積分のまとめ\n・ここまでの微分と積分の内容についてまとめる"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "ベクトル（1）\n・ベクトルと行列の考え方、ベクトルの基本演算を学ぶ"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "ベクトル（2）\nベクトル空間（ベクトル空間の基底と次元等）について学ぶ"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "行列（1）\n・行列式の定義と基本演算を学ぶ"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "行列（2）\n・行列式の余因子展開と連立一次方程式の解法について学ぶ"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "ベクトルと行列のまとめ\n・ここまでのベクトルと行列の内容についてまとめる"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "最適化法(1)\n・最適化法の基本的な考え方と線形計画法の代表的な主法について学ぶ"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "最適化法（2）\n・非線形計画法の基本的な考え方と代表的な主法について学ぶ"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "最適化法のまとめ\n・ここまでの線形計画法と非線形計画法の内容についてまとめる"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ\n・これまで学んだ数理最適化のための基礎知識をまとめ、数理最適化の活用事例を学ぶ"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        67,
+        68
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "design-introduction": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "職業専門科目",
+    "courseName": "デザイン入門",
+    "classFormat": "講義",
+    "courseCode": "IDE1320001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "Kim Jieun",
+    "overview": "この授業は、デザインの基礎概念を理解し、実習を通じてデザインの能力を向上させることを目的としています。\n**本授業は英語で行われます。英語で行われることを必ず認識し、受講申し込みをしてください。**\nThis course aims to help students understand the fundamental concepts of design and improve their design abilities through practical\nexercises.\nThis course will be conducted in English. Please make sure you are aware that the class will be conducted in English before registering\nfor the course.",
+    "objectives": "-デザインの基本概念の理解と基礎造形・実技能力の向上を強化し、創造的思考を通じてデザイナーとしての思考力とマインドを育てること\nを目的とします。\n-基礎造形、スケッチ、書体、色彩、レイアウトなどの実習を通じてデザイン感覚を養います。\n-The course aims to strengthen studentsʼ understanding of basic design concepts and improve their fundamental form-making and\npractical skills, while fostering designersʼ ways of thinking and mindset through creative thinking.\n-Through exercises such as basic form studies, sketching, typography, color, and layout, students will develop their design sensibility.",
+    "grading": "出席：20% ※\n授業及び実習参加度及び課題：30%\n発表：50%\nAttendance: 20%\nClass and Workshop Participation & Assignments: 30%\nPresentation: 50%\n※単に出席することをもって加点するものではなく、知識・スキルの修得に向け、適切な態度・姿勢で受講しているかを評価します。",
+    "preparation": "各回の授業で学んだ内容について、各自で要点を整理するなど、復習を行い知識等の定着を図るとともに、次回の授業に向け、必要な準備や\n予習を行うこと。（各回予習90分、復習90分）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": null,
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "Orientation"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "Ice Breaking : Wall to Wall (Team)"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "発表\nPresentation"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "レイアウトの理解\nUnderstanding Layout\n色の理解\nUnderstanding Color"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "発表\nPresentation"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "発表\nPresentation"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "タイポグラフィ基礎\nTypography Basics\n実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "実習\n持ち物：円定規、マーカー、はさみ、のり\nPractice\nMaterials: Circle template (circle ruler), markers, scissors, glue"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "コンセプトとカラー\nConcept and Color"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "発表\nPresentation"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "発表\nPresentation"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        82,
+        83
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "esports": {
+    "grade": "1年",
+    "semester": "前期",
+    "category": "基礎科目",
+    "courseName": "eスポーツ",
+    "classFormat": "講義",
+    "courseCode": "ESP1120001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "江端 浩人、本橋 壮太、中村 鮎葉",
+    "overview": "本授業は、eスポーツを単なるゲーム競技として捉えるのではなく、成⻑著しい産業および文化現象として、そのエコシステム全体を総合的\nに理解することを目的とする。\n授業ではeスポーツのプレイ技術のみならず、コーチング、チーム運営、ゲーム実況、配信技術、スポンサー獲得、コミュニティ育成、ファ\nンマネジメント、グッズ開発、イベント運営など、多岐にわたる関連分野を実践的に学ぶ。さらに世界的なeスポーツ市場の動向、オリンピ\nック採用の可能性、サウジアラビア等による巨額な投資や国際的な大会の盛り上がり、日本国内での成功事例など最新のトピックスも取り\n上げ、多彩なゲスト講師による講義やワークショップを通じてeスポーツ産業のリアルな姿を理解する。",
+    "objectives": "【授業の目的】\n本授業では、eスポーツを単なるゲーム競技としてではなく、成⻑著しい産業および文化現象として捉え、そのエコシステム全体を総合的に\n学修する。プレイ技術に加え、コーチング、チーム運営、実況・配信、スポンサーシップ、コミュニティ形成、ファンマネジメント、グッズ\n開発、イベント運営など、eスポーツ産業を構成する多様な関連分野について理解を深める。\nさらに、世界的な市場動向や国際大会の展開、日本国内における事例を取り上げ、多彩なゲスト講師による講義やワークショップを通じて、\neスポーツ産業の構造とビジネスモデルの特徴を具体的に把握する。\nこれらの学修を通じて、eスポーツ産業の仕組みを多角的に分析し、関連ビジネスの可能性や課題について考察する力を養う。本科目は、職\n業専門科目として、eスポーツを通じた産業理解およびキャリア形成の基礎を築くことを目的とする。\n【到達目標】\n本授業の履修を通じて、学生は次のことができるようになる。\n1．eスポーツ産業のエコシステムの構造を説明できる。\n2．eスポーツ関連ビジネス（実況、配信、スポンサーシップ、イベント運営等）の仕組みを整理し説明できる。\n3．世界的な市場動向を踏まえ、eスポーツ産業の課題と可能性を論理的に考察できる。\n4．グループワークを通じて企画案を立案し、プレゼンテーションとして発表できる。",
+    "grading": "最終レポート：40％\n授業内プレゼンテーション：40％\n授業内討議への貢献度：20％\n最終レポートは、eスポーツ産業の構造理解、分析の論理性、具体性、将来展望の妥当性を基準として評価する。\n授業内プレゼンテーションおよび討議への貢献度は、事前準備の充実度、発言内容の論理性および具体性、グループ活動への貢献度を基準と\nして評価する。",
+    "preparation": "予習（90分）では、次回のテーマに関連するeスポーツ産業の動向、関連用語、代表的事例について文献や公的資料、報道資料等を用いて調\n査し、基礎情報を整理する。必要に応じて事例の構造や関係者を図示する。\n復習（90分）では、授業で扱った内容を踏まえ、eスポーツ産業の構造、ビジネスモデル、法務・マーケティング・教育・地域連携などの各\n領域の特徴を整理する。その上で、課題や将来展望について考察し、レポートまたは提案書としてまとめる。",
+    "textbooks": "書名：eスポーツ学習／ビジネス基\n礎\n著者：株式会社NTTeSports\n出版社：株式会社NTTeSports\nISBN：不明\n備考：現在準備中\n\n書名：eスポーツ学習／コミュニケ\nーション基礎\n著者：株式会社NTTeSports\n出版社：株式会社NTTeSports\nISBN：不明\n備考：現在準備中",
+    "references": "参考図書\n・「eスポーツが地域と若者を動かす」テレコミュニケーション編集部",
+    "notes": "＊本科目は、起業家・経営者（江端）、eスポーツプレイヤー（中村、本橋）としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "授業内容\n本授業の目的、全体構成、成績評価方法および学修方法を説明する。あわせて、eスポーツを取り巻くエコシステムの構造を整理し、eスポ\nーツ産業を構成する主要な関係者（プレイヤー、チーム、配信者、スポンサー、イベント運営者等）の役割とビジネス構造について概観す\nる。\n事前学習（90分）\neスポーツ産業に関する基礎情報を調査する。具体的には、①国内外の市場規模、②主要な大会・リーグ、③代表的なeスポーツタイトル、\n④関連ビジネスの種類の4点を整理し、A4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツ産業のエコシステムを図示し、各関係者の役割および収益構造の関係性を整理する。その上で、eスポーツ産\n業の特徴を300字以上でまとめる。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "授業内容\neスポーツにおけるプレーヤーおよびストリーマーの役割について、実務経験を有するゲスト講師の講話を通じて理解する。競技活動、配\n信活動、収益構造、スポンサー契約、ファンとの関係構築などの実態を整理し、プロフェッショナルとして活動するために必要な能力およ\nび課題について考察する。\n事前学習（90分）\neスポーツのプロプレーヤーまたはストリーマーを1名選び、①活動内容、②主な収益源、③所属チームや契約形態、④ファンとの関係構築\n方法の4点を調査する。調査結果をA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、プレーヤーおよびストリーマーのビジネスモデルを整理する。具体的には、①収益構造、②必要なスキル、③キャリア\n形成の課題、④今後の可能性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "授業内容\neスポーツにおけるゲーム実況の役割と機能について、実務経験を有するゲスト講師の講話を通じて理解する。実況者の業務内容、配信技\n術、視聴者とのコミュニケーション手法、スポンサーとの関係、収益構造などを整理し、実況がeスポーツ産業に果たす役割について考察\nする。\n事前学習（90分）\neスポーツの大会実況動画または配信アーカイブを1つ視聴し、①実況の構成、②解説との役割分担、③視聴者への訴求方法、④広告・スポ\nンサー表示の方法の4点を整理する。分析結果をA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、ゲーム実況のビジネスモデルを整理する。具体的には、①収益源（広告、スポンサー契約等）、②必要な技能、③視聴\n者獲得戦略、④将来的な発展可能性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "授業内容\neスポーツにおける配信技術の基礎および実務について理解する。配信機材の構成、映像・音声の処理方法、配信プラットフォームの仕組\nみ、視聴者との双方向コミュニケーションの設計などを整理し、配信技術がeスポーツ産業に与える影響について考察する。\n事前学習（90分）\neスポーツの配信動画または大会中継を1つ視聴し、①使用されている配信プラットフォーム、②画面構成、③実況・解説との連携、④広告\n表示やスポンサー露出の方法の4点を整理する。分析内容をA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツ配信のビジネスモデルを整理する。具体的には、①収益源、②技術的要件、③視聴者獲得戦略、④今後の技\n術革新の可能性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "授業内容\neスポーツチームの運営体制およびマネジメントの実際について理解する。チーム編成、選手育成、スポンサー契約、広報戦略、収益構\n造、スタッフの役割分担などを整理し、チーム運営に必要な経営的視点および課題について考察する。\n事前学習（90分）\n国内または海外のeスポーツチームを1つ選定し、①所属選手、②参加大会、③スポンサー企業、④収益源の4点を調査する。調査内容をA4\n用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツチームのビジネスモデルを整理する。具体的には、①収益構造、②人材マネジメントの特徴、③スポンサー\nとの関係、④今後の成⻑課題の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "授業内容\neスポーツが若者に支持される背景について、社会的・文化的観点から分析する。あわせて、教育現場や家庭における受容の課題、いわゆ\nる保護者層からの懸念、社会的評価の形成過程について整理し、eスポーツを社会的に受容可能な活動として位置付けるための方策を検討\nする。\n授業内作業（30分）\n提示された論点に基づきグループ討議を行い、社会的受容を高めるための具体的提案を整理し発表する。\n事前学習（90分）\neスポーツに対する社会的評価に関する記事または調査資料を1件以上調査し、①肯定的評価、②否定的評価、③主な論点、④背景要因の4\n点を整理する。A4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内討議の内容を踏まえ、eスポーツの社会的受容を高めるための具体的施策を提案する。①教育的活用、②地域連携、③産業振興、④\n倫理的配慮の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "授業内容\neスポーツイベントの企画および制作の実務について理解する。大会企画立案、会場設計、配信連携、スポンサー調整、広報活動、収益構\n造などの要素を整理し、イベント制作がeスポーツ産業において果たす役割を考察する。\n授業内作業（30分）\n提示された事例を基に、eスポーツイベントの企画案（目的、対象、収益モデル）をグループで整理し、発表する。\n事前学習（90分）\n国内または海外のeスポーツ大会を1つ選定し、①開催目的、②主催者、③収益源、④スポンサー構成の4点を調査する。調査内容をA4用紙\n1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツイベントのビジネスモデルを整理する。具体的には、①収益構造、②リスク要因、③集客戦略、④今後の発\n展可能性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "授業内容\neスポーツに関わる法務および権利関係の基礎について理解する。著作権、配信権、肖像権、スポンサー契約、景品表示法等の関連法制度\nを整理し、コンプライアンスの観点からeスポーツビジネスにおける法的課題を考察する。\n授業内作業（30分）\n提示された事例を基に、法的リスクの所在を整理し、適切な対応策についてグループで検討し発表する。\n事前学習（90分）\neスポーツに関連する法的論点を1つ選び、①関連する法律名、②想定される問題点、③実際の事例、④事業者が留意すべき点の4点を調査\nする。内容をA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツ産業における法務上の主要課題を整理する。具体的には、①知的財産権の課題、②契約上の課題、③未成年\n者保護の観点、④今後の制度整備の方向性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "授業内容\neスポーツにおけるマーケティング戦略の実務について理解する。スポンサーシップ戦略、ブランド構築、ファンエンゲージメント、デジ\nタル広告活用、ソーシャルメディア運用などの手法を整理し、eスポーツ産業における価値創造の仕組みを考察する。\n授業内作業（30分）\n提示された事例を基に、eスポーツチームまたは大会のマーケティング施策を分析し、改善提案をグループで整理し発表する。\n事前学習（90分）\neスポーツ関連企業またはチームのマーケティング施策を1つ選定し、①ターゲット層、②活用媒体、③スポンサー戦略、④ブランド構築手\n法の4点を調査する。内容をA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツにおけるマーケティングの特徴を整理する。具体的には、①ファンとの関係構築方法、②収益への影響、③\n他産業との相違点、④今後の発展可能性の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "授業内容\neスポーツの国際化の現状について理解する。国際大会の運営体制、海外チームとの連携、言語対応、通訳の役割、文化的差異への対応な\nどを整理し、グローバル市場におけるeスポーツ産業の展開と課題について考察する。\n授業内作業（30分）\n国際大会の事例を基に、言語・文化の違いが運営やマーケティングに与える影響をグループで整理し、発表する。\n事前学習（90分）\n海外で開催されたeスポーツ大会を1つ選定し、①開催国、②参加国・地域、③運営体制、④スポンサー構成の4点を調査する。調査内容を\nA4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツの国際展開における課題と可能性を整理する。具体的には、①市場拡大の要因、②文化的課題、③法制度の\n違い、④今後の成⻑戦略の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "授業内容\neスポーツの教育的側面について理解する。学校教育や課外活動における活用事例を取り上げ、学習効果、チームワーク形成、コミュニケ\nーション能力育成などの観点から教育的意義を整理する。あわせて、教育現場に導入する際の課題および社会的評価について考察する。\n授業内作業（30分）\n教育現場でのeスポーツ活用事例を基に、教育的効果と懸念点を整理し、導入に向けた具体的提案をグループでまとめ発表する。\n事前学習（90分）\n教育分野におけるeスポーツ活用事例を1件調査し、①実施主体、②対象者、③教育的目的、④得られた成果の4点を整理する。内容をA4用\n紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツの教育的活用の可能性と課題を整理する。具体的には、①期待される教育効果、②保護者・学校側の懸念、\n③制度上の課題、④今後の展望の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "授業内容\neスポーツにおけるコミュニティ形成の仕組みについて理解する。オンラインおよびオフラインにおけるファンコミュニティの構造、参加\n動機、運営方法を整理し、コミュニティがeスポーツ産業の持続的発展に果たす役割を考察する。\n授業内作業（30分）\neスポーツコミュニティの事例を基に、参加者の動機およびコミュニティ運営の工夫を整理し、発表する。\n事前学習（90分）\neスポーツ関連のコミュニティ（オンラインフォーラム、ファンイベント等）を1つ選定し、①参加者層、②活動内容、③運営主体、④収益\nとの関係の4点を調査する。A4用紙1枚程度にまとめる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツコミュニティの価値創造構造を整理する。①参加動機、②ブランド形成への影響、③収益への波及効果、④\n今後の課題の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "授業内容\neスポーツと地域活性化の関係について理解する。自治体、企業、教育機関が連携する公⺠学連携の事例を取り上げ、地域振興策としてのe\nスポーツ活用の可能性と課題を考察する。\n授業内作業（30分）\n地域活性化を目的としたeスポーツ活用企画をグループで立案し、目的・対象・期待効果を整理して発表する。\n事前学習（90分）\neスポーツを活用した地域振興事例を1件調査し、①実施主体、②目的、③実施内容、④成果の4点を整理する。A4用紙1枚程度にまとめ\nる。\n事後学習（90分）\n授業内容を踏まえ、eスポーツを活用した地域活性化の可能性と課題を整理する。①経済的効果、②社会的効果、③持続可能性、④今後の\n展望の4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "授業内容\nこれまでの授業で扱った内容を踏まえ、eスポーツ産業が抱える課題を整理し、解決策を検討する。市場拡大、社会的受容、法務・権利関\n係、教育活用、地域連携などの観点から課題を抽出し、実現可能な解決策を構想する。\n授業内作業（60分）\nグループごとに課題を1つ選定し、原因分析、解決策の提案、期待される効果を整理し、発表資料の構成を作成する。\n事前学習（90分）\neスポーツ産業における課題を1つ選定し、①課題の背景、②関係する主体、③現状の問題点、④既存の対応策の4点を調査する。内容をA4\n用紙1枚程度にまとめる。\n事後学習（90分）\n授業内で検討した内容を踏まえ、提案した解決策について、①実現可能性、②必要な資源、③想定されるリスク、④期待される社会的効果\nの4点を整理し、400字以上でまとめる。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "授業内容\n本授業で扱ったeスポーツ産業の各領域（プレーヤー、配信、チーム運営、イベント制作、法務、マーケティング、教育、地域連携等）を\n総括し、エコシステム全体の構造を再整理する。各分野の相互関係を確認し、eスポーツ産業の今後の発展可能性および課題について総合\n的に考察する。\n授業内作業（60分）\nグループごとにeスポーツ産業の将来像をテーマに整理し、主要課題とその解決策を発表する。\n事前学習（90分）\nこれまでの各回の学修内容を振り返り、eスポーツ産業を構成する主要要素（競技、配信、運営、法務、マーケティング、教育、地域連携）\nを整理する。エコシステム全体を図示し、A4用紙1枚程度にまとめる。\n事後学習（90分）\n授業全体を踏まえ、eスポーツ産業の将来展望について整理する。具体的には、①産業構造の変化、②市場拡大の可能性、③社会的課題、\n④自身のキャリアとの関連の4点を整理し、800字以上でまとめる。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "english-core-skills-2": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "基礎科目",
+    "courseName": "英語コア・スキルズⅡ",
+    "classFormat": "演習",
+    "courseCode": "EC21120001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "奥村 耕一、Joe Hug、遠山 三津子、小林 素羅",
+    "overview": "本科目では、前期で培った知識・技能を駆使し、英語使用の学び方を生かして、アウトプットの強化をさらに図る。特に、自律した英語使用\n者となるために、一人ひとりの課題に合った個別最適な学習方法で授業を行う。また、授業では、各自が英語を使うためのゴールを設定\nし、そのゴールに到達するために必要な表現を調べ、練習して、習得することを基本とする。ゴール到達で得られた成果物を実際にグローバ\nルに発信することも狙いとする。\n本科目では、さまざまな学習場面で目的に応じて適切な生成AIの活用を推奨する。\nまた、本科目で培った力を展開科目のビジネス英語実習Ⅱ〜Ⅳで、さらに生かすことも狙いとしている。",
+    "objectives": "・実際の英語使用のための学び方を生かして、目的に応じてグローバルに発信するための表現とは何かを体得することができる。\n・実際のやり取りや発信の場面を想定した活動を行うことを通じて、基礎的なコミュニケーションをとることができる。",
+    "grading": "動画作成の達成度【20％】\n各回の授業への参加度（授業内での課題取り組み状況）・貢献度（ペア・グループ活動等で積極的なやり取りの状況）【40％】\n各回の課題提出状況と英語の獲得度【40％】",
+    "preparation": "復習：授業で触れた表現の練習とそれを用いた自己表現（合計90分）\n課題：授業内で課す動画またはテキスト（文字）による自己表現の提出、授業内での学びに関するレポート、オンライン教材によるインプッ\nトの増加とスキルアップ（合計90分）",
+    "textbooks": "書名：指定なし",
+    "references": "適宜紹介する。",
+    "notes": "授業における学習の状況に応じて、トレーニングや言語活動の内容や進め方が変わる場合がある。\n授業では、各自のパソコンを使用する（ノート・タブレット等が別に必要な場合は使用可）。\n本科目は、対面による学習活動を通じて知識と技能を高め、それに関連した授業外での学習活動も必要であるので、極力の出席が必要であ\nる。",
+    "previousYearReflection": "昨年度の授業改善アンケートと科目独自の振り返りアンケート結果から、今年度も引き続き、ペア・グループ活動を積極的に取り入れ、互い\nに学び合うことを重視するとともに、さらに個別最適化学習の機会も設定する。\n授業は少人数クラスで、多様なレベルの仲間が互いの事情を理解し、効果的に取り組むことが重要である。\n授業では、個人個人が目標を設定して、各個人の英語レベルに応じて取り組む場面がある。\nオンライン教材は、授業外に英語に触れる機会を保障するための課題として与えられる。次の授業時間に取り組みの度合いとして、教材内で\n触れた英語の獲得度を確認する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "オリエンテーション\n・前期の振り返りと後期の学習プラン作成\n・目標、概要、後期の予定、評価方法の確認\n・Short Presentation 1 準備"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "・Daily Talk（日常の話題でやり取りし、即興で表現する技能の向上を図る）1\n・Short Presentation 1 発表"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "・Daily Talk 2\n・Weekly Task （週ごとに自分の課題を設定し、ペア・グループで援助し合いながら英語表現の獲得を図るInput-Intake-Output活動）1"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "・Daily Talk 3\n・Weekly Task 2"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "・Daily Talk 4\n・Weekly Task 3"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "・地域紹介動画作成 1-1（フィールドリサーチ）"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "・地域紹介動画作成 1-2（動画撮影・編集）"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "・地域紹介動画発表 1"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "・Daily Talk 5\n・Weekly Task 4"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "・Daily Talk 6\n・Weekly Task 5"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "・Short Presentation 2 準備\n・Weekly Task 6"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "・Short Presentation 2\n・Weekly Task 7"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "・地域紹介動画作成 2-1（フィールドリサーチ）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "・地域紹介動画作成 2-2（撮影、編集）"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "・地域紹介動画発表 2\n・後期学習プランの振り返り\n・授業改善アンケート"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        12,
+        13
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "basic-mathematics": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "基礎科目",
+    "courseName": "[旧]数学基礎C／[新]数学基礎",
+    "classFormat": "講義",
+    "courseCode": "FMC1130001",
+    "credits": 2.0,
+    "requiredElective": "2025年度以降\n入学者：必修\n2024年度以前\n入学者：選択",
+    "activeLearning": "実施しない",
+    "instructor": "片桐 雅二",
+    "overview": "本科目では、社会に出てからも大いに役にたつ数学として「確率統計」の基礎を学ぶ。世の中には不確かなことや一部しか観測できないこと\nは沢山ある。これらについて正しく理解・解釈し適切に応用できることは、あらゆる分野において重要である。またICT技術の進歩は多様か\nつ膨大なデータの蓄積を可能とし、様々な分野で応用されてきているため、その重要性は高まる一方である。このため、「確率統計」におけ\nる重要な基本概念について実際の応用例と合わせて学ぶとともに、演習により基本的な計算手順等を修得する。",
+    "objectives": "・確率統計の分野における基本的な用語について、その意味や考え方を説明できる。\n・確率統計における基本的なプロセスである、特性値等の計算、母数の推定、検定について、基礎的な手順を実践することができる。",
+    "grading": "単元ごとの演習課題の内容（50％：6.25％×8単元）、定期試験の結果（40％）、受講態度等（10％）により評価する。",
+    "preparation": "授業範囲について教科書および講義前日より閲覧可能となる授業資料（PDFファイル）により（必要に応じて参考書等も活用して）予習を行\nうことが望ましい。（90分／回）\n授業内で出された事例・例題や説明事項およびワークシート内容について、復習により（単に暗記するのではなく）自分なりに内容を消化\nし、その「意味」を理解することが特に大切である。（60-90分／回）\n単元ごとにe-Learningを利用した演習課題に取り組む。（30-60分×8単元）",
+    "textbooks": "書名：入門 実践する統計学\n著者：薮 友良\n出版社：東洋経済新報社\nISBN：978-4-492-47085-5\n備考：※電子書籍可",
+    "references": "◎参考文献（一般教養向け）\n『文系のための統計学入門 データサイエンスの基礎 第2版』\n川口洋行（著）、日本評論社、2024年\n◎参考文献（理系一般教養向け）\n『統計学入門（基礎統計学Ⅰ）』\n東京大学教養学部統計学教室（編集）、東京大学出版会、1991年",
+    "notes": "＊本科目は、ICT関連の研究職としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": "昨年度からの改善点：授業内において取り組む「ワークシート」の内容を精査・更新し、その実践が意味を理解することにさらに効果的に\n結び着くよう改良する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "導入：「確率・統計」とは\nコース概要、授業の進め方、イントロダクション"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "データの記述（1）\n度数分布、ヒストグラム、平均、中央値、最頻値"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "データの記述（2）\nばらつき（標本分散、標本標準偏差）、線形変換、範囲と割合"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "相関（1）\n散布図、共分散"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "相関（2）\n相関係数、相関と因果関係、非線形関係"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "確率（1）\n確率の基本概念、ベン図、先験的確率、経験的確率、主観的確率"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "確率（2）\n和事象の確率、積事象の確率、条件付き確率、ベイズの定理"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "確率変数と確率分布（1）\n確率変数と確率分布、期待値、分散と標準偏差"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "確率変数と確率分布（2）\n複数の確率変数（同時確率、複数の確率変数の関数の期待値、共分散と相関係数）、連続確率変数"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "主要な確率分布（1）\nベルヌーイ分布、二項分布、正規分布、正規分布の標準化、正規分布の性質"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "主要な確率分布（2）\n確率変数の和と平均の分布（期待値と分散）、中心極限定理"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "母数の推定（1）\n無作為抽出、推定量と推定値、推定量の優劣の判断基準、点推定（割合の推定、平均の推定）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "母数の推定（2）\n区間推定（割合の推定、平均の推定）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "仮設検定（1）\n検定の手順、平均と割合の検定"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "仮設検定（2）\n差の検定\n全体のまとめ"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        25,
+        26
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "corporate-law-basics": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "[旧]法務リテラシーⅠ／[新]企業法務基礎",
+    "classFormat": "講義",
+    "courseCode": "LL11230001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "堀野 裕子",
+    "overview": "「株式投資に興味があるけど、仕組みがよくわからないんです。」この科目では、その「仕組み」の正体を明らかにします。企業は営利活動\nを目的として存在しています。\n会社法は、会社の設立や運営に関するルールを定めています。事業活動を継続して営んでいくためには、顧客・取引先・従業員など事業活動\nに関わる人々との良好な関係や環境への配慮も求められます。\n企業活動をする会社に着目し、その法的性質への理解を深めましょう。学修の過程で、併せて企業は誰のものかについて考え、我が国にお\nける、会社に関する法制度を学びます。\n会社法を理解するために必要な⺠法の知識、登記関係の知識を初めとしたビジネスに係る法律等にも随時触れます。",
+    "objectives": "企業法務に関して理解を深める。\n・法とは何かについて考える。\n・取引に関する⺠法の基礎知識を学修する。\n・ビジネスに係る法律について学修する（商法・会社法等）。",
+    "grading": "授業参画度：50％\n期末筆記試験：50％",
+    "preparation": "主に復習を中心として授業内容を身に付ける。具体的には、授業時にその日の重要事項を明示する。各自、重要事項について授業内容・教科\n書・六法等を通じて理解を深める。\n毎回、前回の授業の復習を行ってから新しいテーマに入る。\n課題に関しては、必ず準備をすること。\n授業外学修（予習・復習）として180分が必要とされる。予習・復習に関するポイントは授業内で触れる。",
+    "textbooks": "書名：商事法講義1\n著者：松嶋隆弘・大久保拓也\n出版社：中央経済社\nISBN：978-4-502-45691-6",
+    "references": "『株式会社法読本』秋坂朝則、中央経済社\n『アプローチ商法』根田正樹、弘文堂",
+    "notes": "・講義室には、脱帽して、スマートフォン等の電源を切って入室してください。\n・筆記用具（鉛筆またはシャープペンシル、消しゴム、黑のボールペン等）を必ず持参してください。\n※黑のボールペンは、消せないタイプのボールペンをご持参ください。\n＊本科目は、税理士としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": "昨年度、授業内で行った授業内容に関する復習課題が好評であったため、今年も実施します。\n各自、筆記用具を必ずご持参ください。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "ガイダンス〜授業の進め方、予習復習について\n・法とは何か。\n・会社の意義と会社法の目的について学修する。\n・企業の倫理と社会的責任〜コンプライアンス"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "・会社の種類について学修する。\n・株式会社と持分会社の比較をする。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "・株主と株式 その1"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "・株主と株式 その2"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "・⺠法の考え方\n・契約を締結するための能力\n・物権と債権 その1"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "・物権と債権 その2"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "・資金調達について\n・会社の設立と解散\n・登記について その1"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "・登記について その2\n・株式会社の機関について その1"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "・株式会社の機関について その2"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "・株式会社の機関について その3"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "・機関設計の種類"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "・企業再編"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "・商法総則・商行為 その1"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "・商法総則・商行為 その2"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "総まとめ"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        49,
+        50
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "accounting-introduction": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "アカウンティング入門",
+    "classFormat": "講義",
+    "courseCode": "AC11230001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施しない",
+    "instructor": "中嶋 隆一",
+    "overview": "ICTの進歩により飛躍的な発展を遂げるビジネス社会で有為な人材として活躍するためには、ビジネス社会の共通言語である会計を学ぶこと\nが重要である。この科目では、会計を初めて学ぶ人達を対象に、会計の全般的で基礎的な内容を平易に解説する。会計といえば、一般的に企\n業会計を意味することが多い。会計情報は企業を取り巻く各種ステークホルダー（利害関係者）の意思決定に利用されるからである。そこ\nで、企業において会計が果たす役割を外部報告会計（財務会計）と内部報告会計（管理会計）という2つの相互関連する視点で取り扱い、会\n計の基本的な考え方とその守備範囲についてわかりやすく説明する。",
+    "objectives": "ICTを利用してビジネス社会で活躍する人材の育成をめざし、必要とされる会計の基礎知識を広く習得することを目的としている。これによ\nり、会計の基本的考え方・必要性が理解できるようになる。とりわけ、会計情報の重要性をより深く学び、会計をビジネスのツールとして利\n用することができるよう、実際の企業の財務諸表を当初から使用し、会社の財務状況等が理解できるようになることが目標である。",
+    "grading": "授業内小テスト・レポート・課題プレゼンテーション等を含む平常点：30％\n最終試験：70％（授業範囲すべてを含む）\n（授業内小テスト解説・課題等の回答は授業内または後日グーグルクラスルームへフィードバックする。）",
+    "preparation": "予習（2時間）：毎回完結型のテーマによる授業のため、事前に関連する事例等をインターネット等で調べておく。\n復習（2時間）：授業時に適宜配布するレジュメ（グーグルクラスルームより配信）と講義内容の復習\n授業時に適宜課す課題ないしは演習問題（グーグルクラスルームより送受信）については平常点に係るので、提出・解答の準備をしておく。",
+    "textbooks": "書名：指定なし",
+    "references": "すべてオリジナルのレジュメ形式で毎回（グーグルクラスルームから）配信する。必ず、ファイル保存しておく。\n参考文献：\n◎『会計学入門（第5版）』櫻井久勝、日経文庫、2021年10月\n◎『日商簿記３級合格テキスト・日商簿記３級合格トレーニング』（最新バージョン）TAC株式会社\n◎『会計学基礎論第六版』神戶大学、2019年10月\n◎『管理会計入門〈第2版〉』加登豊、梶原武久（共著）、日経文庫、2017年6月\n◎『管理会計・入門（第4版）』浅田孝、頼誠、鈴木研一、中川優、佐々木郁子（共著）、有斐閣アルマ、2022年8月\nその他テーマごとに適宜提示する。",
+    "notes": "授業クラスごとに設定したグーグルクラスルームで授業用資料を配信・連絡します。最初の授業時にURLないしは授業コードをお知らせしま\nす。\n履修者は所属するクラスルームへ速やかに登録し、資料を授業前に用意して授業に臨んで下さい。",
+    "previousYearReflection": "会計（アカンティング）は、簿記と共にビジネスの世界の共通言語とされ、大変重要です。そのため、昨年度から、身近な企業の実際の財務\n諸表を利用し、会社の財務状況等に慣れ親しんでもらうことを狙いとして授業展開しています。幸い、この授業方法は好評です。\n同時に、財務諸表作成の基礎となる簿記システムの初歩を学ぶことにより、会計の内容をより理解しやすくなるように工夫しています。全15\n回という短期間で会計のすべてを網羅・解説することは難しいですが、この授業では簿記一巡の手続きについて3分の1の時間を割いていま\nす。簿記は会計を学ぶ上での基礎知識であり、これを学ぶことにより、少しでも難しいあるいは苦手とされやすい会計に興味を持ち、その重\n要性が理解されることを目標としています。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "ガイダンス・・会計とは何だろう。会計は何に役立つのだろう。\nー会計の意義・目的・仕組みについて理解できるー"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "会計について深掘りする。\nー会計の対象、会計の分類、会社の健康チェックを理解できるー"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "会計情報の重要性を考えよう。\nー財務3表（B/S、P/L、C/F）の関わりについて理解できるー"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "会社の財政状態表示とは\nー貸借対照表（B/S）のひな形と表示内容について理解できるー"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "会社の経営成績表示とは\nー損益計算書（P/L）のひな形と表示内容を理解できるー"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "キャッシュの流れを考えよう。\nーキャッシュ・フロー計算書（C/F）のひな形と表示内容を理解できるー"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "財務諸表作成のプロセス①\nー簿記のルール：仕訳と転記の基礎を理解できるー"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "財務諸表作成のプロセス②\nー簿記のルール：仕訳と転記の確認を理解できるー"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "財務諸表作成のプロセス③\nー簿記のルール：試算表（T/B）の作成を理解できるー"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "財務諸表作成のプロセス④\nー簿記のルール：精算表（W/S）、決算書（F/S）の作成を理解できるー"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "財務諸表作成のプロセス⑤\nー簿記一巡の手続きの流れを理解できるー"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "会社に影響を及ぼす会計制度\nー日本における企業会計法の概要を理解できるー"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "会計の基本的前提条件\nー会計の理論構造を理解できるー"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "外部報告会計と内部報告会計について\nー財務会計と管理会計の範囲を理解できるー"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "管理会計の考え方\nーコーヒー缶の値段のつけ方を理解できるー"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        41,
+        42
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "prototyping-practicum": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "プロトタイピング実習",
+    "classFormat": "実習",
+    "courseCode": "PRT1310003",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "韓 旭、須田 拓也",
+    "overview": "本科目では、クリエイティブなプログラミング環境である「Processing」を用い、プログラミングの基本構造からインタラクション表現、ア\nニメーション、サウンドなど、メディアアート制作・プロトタイピングに必要な技術を幅広く学びます。講義と実習を組み合わせながら、\n個々のテーマ（変数・配列、条件分岐と繰り返し、図形描画、色表現、アニメーション、サウンドなど）を段階的に習得し、最終的には自ら\n発想したアイデアをかたちにするための作品制作を行います。授業を通して、プログラミングの基礎力だけでなく、プロトタイピング、イン\nタラクションデザインなどの視点から「表現」と「技術」をバランス良く身に付けることを目指します。",
+    "objectives": "本科目は、Processingの基本文法や構文の学習に留まらず、「動くもの」「インタラクティブなもの」を作りながらプログラムによる表現の魅\n力を体感することを重視します。視覚効果、動き、音などのメディア要素を総合的に扱い、プロトタイピングデザインやメディアアートとし\nての表現手法を学びます。最終課題では、受講者それぞれのアイデアを活かし、高齢者のQOL向上を目的としたプロトタイプの制作に取り組\nみます。制作と実践を通して作品をブラッシュアップし、創造性豊かな作品を発表することで、実践力を身に付けることを目指します。",
+    "grading": "小課題（第2週〜第11週）：70％\n…各小課題ごとに、提出点（1点）、評価点（0、1、2）がつけられます。評価点は通常の出来であれば0、良くできていれば1、極めて素晴ら\nしい場合に2となります。つまり各小課題を提出することで1-3点の得点となります。\n最終課題：30％\nただし、最終課題未提出の場合は、不合格となるので十分注意すること。最終課題の得点は5段階評価（1-5）となります。",
+    "preparation": "予習（標準学習時間：45分）\n・教科書、Webサイト等を閲覧し、基本的な用語・概念について理解をしたうえで授業に臨むこと\n・事前準備（授業用ソフトウェアのインストール）\n復習（標準学習時間：45分）\n・毎週の授業の課題制作を復習とみなす",
+    "textbooks": "書名：ProcessingによるCGとメデ\nィアアート\n著者：近藤 邦雄・田所 淳 （編）\n出版社：講談社\nISBN：978-4065129746",
+    "references": "適宜参考となるWebサイト等を共有します。",
+    "notes": null,
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "第1週：\n・オリエンテーションと導入\n・Processingの準備\n1.インストールとプログラムの作成手順\n2.Processing関連のファイルの管理\n3.AIを利用したプログラミング方法の紹介"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "第1週：\n・オリエンテーションと導入\n・Processingの準備\n1.インストールとプログラムの作成手順\n2.Processing関連のファイルの管理\n3.AIを利用したプログラミング方法の紹介"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "第2週：\n・処理の流れと関数\n1.プログラミン作業の手順\n2.Procssingスケッチ内部での基本的な実行順序\n・図形描画\n1.2次元座標系\n2.点\n3.線\n4.プリミティブ図形による画"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "第2週：\n・処理の流れと関数\n1.プログラミン作業の手順\n2.Procssingスケッチ内部での基本的な実行順序\n・図形描画\n1.2次元座標系\n2.点\n3.線\n4.プリミティブ図形による画"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "第3週\n・変数と条件分岐\n1.変数の宣言・初期化・代入\n2.グローバル変数とローカル変数\n3.基本データ型\n4.条件分岐\n5.複数の条件分岐の組合せ\n6.複数の条件判定式の組合せ"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "第3週\n・変数と条件分岐\n1.変数の宣言・初期化・代入\n2.グローバル変数とローカル変数\n3.基本データ型\n4.条件分岐\n5.複数の条件分岐の組合せ\n6.複数の条件判定式の組合せ"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "第4週\n・繰り返しと配列\n1. 繰り返し\n2. 繰り返しの途中終了\n3. 二重ループ\n4. 配列の宣言\n5. データ格納方法"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "第4週\n・繰り返しと配列\n1. 繰り返し\n2. 繰り返しの途中終了\n3. 二重ループ\n4. 配列の宣言\n5. データ格納方法"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "第5週\n・図形描画\n1. 自由曲線による図形\n2. 画像による表現\n3. 手続き型造形による図形\n4. 幾何学的変換"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "第5週\n・図形描画\n1. 自由曲線による図形\n2. 画像による表現\n3. 手続き型造形による図形\n4. 幾何学的変換"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "第6週\n・色\n1. 加法混色と減法混色\n2. RGBとHSB\n3. 図形の塗りと線\n4. グラデーションを描く\n5. 透明度を持つ重ね塗りの表現\n6. 配色"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "第6週\n・色\n1. 加法混色と減法混色\n2. RGBとHSB\n3. 図形の塗りと線\n4. グラデーションを描く\n5. 透明度を持つ重ね塗りの表現\n6. 配色"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "第7週\n・アニメーション\n1. 動画とfps\n2. 関数こうぞによる画面の描画\n3. 円を動かす"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "第7週\n・アニメーション\n1. 動画とfps\n2. 関数こうぞによる画面の描画\n3. 円を動かす"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "第8週\n・アニメーション\n1. 水滴の表現\n2. 数式を用いたアニメーション\n3. 物理法則と入力に応じたインタラクティブアニメーション"
+      },
+      {
+        "number": 16,
+        "topic": null,
+        "content": "第8週\n・アニメーション\n1. 水滴の表現\n2. 数式を用いたアニメーション\n3. 物理法則と入力に応じたインタラクティブアニメーション"
+      },
+      {
+        "number": 17,
+        "topic": null,
+        "content": "第9週\n・サウンド\n1. サウンドファイルの追加とライブラリの準備\n2. サウンドファイルの再生\n3. 再生スピードの操作\n4. 音量を視覚化"
+      },
+      {
+        "number": 18,
+        "topic": null,
+        "content": "第9週\n・サウンド\n1. サウンドファイルの追加とライブラリの準備\n2. サウンドファイルの再生\n3. 再生スピードの操作\n4. 音量を視覚化"
+      },
+      {
+        "number": 19,
+        "topic": null,
+        "content": "第10週\n・インタラクション１（マウスとキーボード）\n1. 関数定義方法の詳細\n2. 組み込み関数とプログラマ定義関数\n3. 関数のパラメータ\n4. Processingで使用可能なインタラクション\n5. システム変数によるインタラクション\n6. イベントによるインタラクション\n7. マウスを追いかける物体\n8. 生成的なドローイング"
+      },
+      {
+        "number": 20,
+        "topic": null,
+        "content": "第10週\n・インタラクション１（マウスとキーボード）\n1. 関数定義方法の詳細\n2. 組み込み関数とプログラマ定義関数\n3. 関数のパラメータ\n4. Processingで使用可能なインタラクション\n5. システム変数によるインタラクション\n6. イベントによるインタラクション\n7. マウスを追いかける物体\n8. 生成的なドローイング"
+      },
+      {
+        "number": 21,
+        "topic": null,
+        "content": "第12週\n・インタラクション２の紹介（ボタン、センサなど）\n1. ボタン、センサ値の取得\n2. 閾値の設定\n3. Processingとの連携\n・iCoRP（⻑寿科学財団プロジェクト）の紹介\n・最終課題の設定"
+      },
+      {
+        "number": 22,
+        "topic": null,
+        "content": "第12週\n・インタラクション２の紹介（ボタン、センサなど）\n1. ボタン、センサ値の取得\n2. 閾値の設定\n3. Processingとの連携\n・iCoRP（⻑寿科学財団プロジェクト）の紹介\n・最終課題の設定"
+      },
+      {
+        "number": 23,
+        "topic": null,
+        "content": "第13週\n・3Dプリンタを用いたプロトタイピング\n※ 外部講師による講義となる可能性があります。"
+      },
+      {
+        "number": 24,
+        "topic": null,
+        "content": "第13週\n・3Dプリンタを用いたプロトタイピング\n※ 外部講師による講義となる可能性があります。"
+      },
+      {
+        "number": 25,
+        "topic": null,
+        "content": "第14週\n・p5.jsの紹介と体験"
+      },
+      {
+        "number": 26,
+        "topic": null,
+        "content": "第14週\n・p5.jsの紹介と体験"
+      },
+      {
+        "number": 27,
+        "topic": null,
+        "content": "第14週\n・実習と質問対応"
+      },
+      {
+        "number": 28,
+        "topic": null,
+        "content": "第14週\n・実習と質問対応"
+      },
+      {
+        "number": 29,
+        "topic": null,
+        "content": "第15週\n・発表会"
+      },
+      {
+        "number": 30,
+        "topic": null,
+        "content": "第15週\n・発表会"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        57,
+        58,
+        59,
+        60
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "project-introduction": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "プロジェクト入門",
+    "classFormat": "演習",
+    "courseCode": "IPJ1510001",
+    "credits": 2.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "石村 源生",
+    "overview": "本科目では、2年次に配属されるLabでのプロジェクト遂行に必要な基礎的なスキルを学び、実践を通じてその理解を深める。コミュニケー\nション、ファシリテーション、チームビルディング、リーダーシップ、プロジェクトマネジメントといった要素を体系的に学習し、協働して成\n果を生み出す力を養う。講義、演習、iUtopiaへの参加、Lab訪問などを通じて、実践的に学ぶ。",
+    "objectives": "・プロジェクトにおけるグループワークの基本を理解し、協働のためのスキルを身につける。\n・効果的な話し合いの進め方を学び、意思決定の質を向上できるようになる。\n・会議のファシリテーションやドキュメンテーションの技術を習得し、チームの成果を最大化できるようになる。\n・チームビルディングの理論を理解し、実際のプロジェクトで応用できるようになる。\n・シェアド・リーダーシップの概念を学び、メンバー全員が主体的に関与するチーム運営を実践できるようになる。\n・プロジェクトマネジメントの基本を習得し、計画立案、進捗管理、タスク調整などを適切に行えるようになる。",
+    "grading": "- 講義\n- 課題（49％）\n- 授業への貢献（14％ 加点要素）\n- iUtopia（ちょもろー）の見学（25％）\n- Lab説明会（6％）\n- Lab見学（20％）",
+    "preparation": "予習（各回90分）：\n第1回から第7回までは、授業で扱うテーマについて、文献やインターネットを用いて自分なりに調べ、不明点・疑問点を整理しておくこ\nと。また、事前課題が提示された場合は、必ず取り組むこと。\n第8回以降は、自身の興味・関心や2年次以降のLab配属後にどのようなプロジェクトに取り組みたいかを整理するとともに、配属希望のLab\nを検討すること。\n復習（各回90分）：\n第1回から第7回までは、授業内容を振り返り、学習内容の定着を図るとともに、興味・関心のある点について、各自でさらに調べ、理解を\n深めること。\n第8回以降は、提示される事後課題に必ず取り組むこと。",
+    "textbooks": "書名：指定なし",
+    "references": "授業で適宜指示",
+    "notes": null,
+    "previousYearReflection": "より実践的な授業内容に改善する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "イントロダクション\n・本授業の導入として、受講生に「プロジェクト入門」の目的や進め方を説明する。\n・まず、講師の自己紹介を行い、授業の趣旨や到達目標を共有する。\n・続いて、プロジェクトとは何かについて基本概念を解説し、チームで成果を生み出すことの重要性を理解してもらう。\n・加えて、授業の進め方や成績評価基準についても説明し、受講生が学習の流れを把握できるようにする。\n・グループワークに必要下記の要素について理解する。\n-コミュニケーション\n-- 自分を知る\n-- 相手を知る\n-- 相手から見た自分を知る\n-- 自分から見た相手を伝える\n-- 話す\n-- 聞く\n-コラボレーション\n-- 合意する\n-- 協力する\n-ファシリテーション"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "話し合いの作法\nプロジェクトを成功させるためには、効果的な話し合いのスキルが欠かせない。本回では、日本人が話し合いを苦手とする背景について学\nぶ。特に、集団の同質性が高いことや、話し合いに対する期待が低いこと、そして正解主義に陥りやすいことが問題であることを理解し、\nこれらを克服するための方法を考える。さらに、話し合いが今後ますます重要になる理由についても触れ、良い話し合いのプロセスとして\n「対話」と「決断」のバランスを理解する。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "会議ファシリテーションとドキュメンテーション\nプロジェクトにおける会議は、単なる情報共有の場ではなく、意思決定や合意形成を行う重要な機会である。本回では、会議の質を向上さ\nせるためのファシリテーション技術を学ぶ。議論を円滑に進めるための工夫や、参加者の意見を引き出しながら論点を整理する方法につい\nて、具体的な事例を交えながら解説する。また、ドキュメンテーションの重要性にも焦点を当て、議事録の効果的な書き方や記録の残し方\nを学ぶ。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "チームビルディング\nプロジェクトにおいて、個々のメンバーが力を発揮するためには、まずチームとしての基盤を築く必要がある。本回では、チームビルディ\nングの初期段階に焦点を当て、チームの形成（Forming）から混乱期（Storming）までのプロセスを学ぶ。タックマンモデルを用いて、チ\nームがどのように成⻑していくのかを理論的に理解するとともに、心理的安全性の確保がいかに重要であるかを考察する。また、リーダー\nの役割についても学び、コンサルタント型、ティーチャー型、マエストロ型、ファシリテーター型のリーダーシップの違いを理解する。\n次にチームが成熟し、実際に成果を出すまでのプロセスに焦点を当てる。タックマンモデルのNorming（規範形成）とPerforming（成果創\n出）の段階について学び、チームの一体感を高める方法や、効果的なコラボレーションのポイントを理解する。特に、個々のメンバーの強\nみを活かしながらチームとしての成果を最大化する方法について考え、実際の事例を交えながら学習する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "リーダーシップ\nチームを成功へ導くためには、リーダーシップが不可欠である。しかし、現代の組織では、一人のリーダーが全てを担う従来のスタイルで\nはなく、メンバー全員がリーダーシップを発揮する「シェアド・リーダーシップ」が求められている。リーダーシップとは何か、リーダー\nシップの要素にはどのようなものがあるのかを理解し、自分自身がどのような形でリーダーシップを発揮できるのかを考える。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "プロジェクトマネジメント\nプロジェクトを成功させるためには、適切な計画と進捗管理が欠かせない。本回では、プロジェクトの基本構造を学ぶ。プロジェクトの要\n素として、人員、最終成果物、中間成果物、予算、時間、情報、コミュニケーションなどを整理し、それぞれがどのように影響し合うのか\nを理解する。また、タスクの相互依存関係についても学び、タスク管理の方法を実践的に学習する。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "まとめと振り返り\n最終回では、これまでの学びを振り返り、自身の成⻑を確認するとともに、今後のプロジェクト活動にどのように活かしていくかを考え\nる。受講生それぞれが印象に残ったことや難しかったことを振り返りながら、自身の強みや課題を明確にする。最後に、プロジェクト遂行\nの本質や、チームワークとリーダーシップの重要性について再確認し、受講生が今後のLabでの学びやキャリアに活かせるようにする。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "iUtopia（ちょもろー）への参加"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "iUtopia（ちょもろー）への参加"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "iUtopia（ちょもろー）への参加"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "iUtopia（ちょもろー）への参加"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "Lab説明会への参加"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "Lab見学"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "Lab見学"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "Lab見学"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        105,
+        106
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "business-english-practicum-2a": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "展開科目",
+    "courseName": "[旧]ビジネス英語実習Ⅱ／[新]ビジネス英語実習Ⅱa",
+    "classFormat": "実習",
+    "courseCode": "EA21410001",
+    "credits": 1.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "Joe Hug、平野 麻紀子、田中 亮子、横井 博文",
+    "overview": "This Business English course uses authentic content to bring real-world business concepts for pre-intermediate level studies. The\ncourse focuses on developing all English communication skills through project-based learning (PBL) ̶featuring case studies, role plays,\nand group discussions. It is designed for students at the CEFR A1 to A2 level who are learning business English.\nこのビジネス英語コースは、実際のビジネス概念を中級レベルの学習者に分かりやすく伝えるため、本物のコンテンツを使用しています。ケ\nーススタディ、ロールプレイ、グループディスカッションなどを取り入れたプロジェクト型学習（PBL）を通して、あらゆる英語コミュニケ\nーションスキルを育成することに重点を置いています。CEFR A1〜A2レベルのビジネス英語学習者を対象としています。",
+    "objectives": "1.Expand business English vocabulary and concepts.\n2.Develop practical business English communication skills.\n3.Enhance Business English comprehension.\n1.ビジネス英語の語彙と概念を拡大する。\n2.実践的なビジネス英語のコミュニケーションスキルを身につける。\n3.ビジネス英語の読解力を向上させる。",
+    "grading": "• Class participation and engagement: 5%\n• Completion of weekly speeches, presentations, and assignments: 15%\n• Midterm (Reviews) Presentation x3: 30%\n• Final Presentation: 50%\n• 授業への参加度：5％\n• 毎週のスピーチとプレゼンテーションの完了：15％\n• 中間プレゼンテーション：30％\n• 期末プレゼンテーション：50%",
+    "preparation": "1. Practice delivering speeches without relying on notes or slides to improve spontaneity and confidence.\n2. Focus on using effective body language, maintaining good posture, and making consistent eye contact with the audience.\n3. Rehearse presentations multiple times, refining content and delivery to ensure clarity and impact.\n1. メモやスライドに頼らずにスピーチを練習して、自発性と自信を高めます。\n2. 効果的なボディランゲージの使用、良い姿勢の維持、聴衆との一貫したアイコンタクトに重点を置きます。\n3. プレゼンテーションを何度もリハーサルして、内容と伝え方を洗練させ、明瞭性とインパクトを確保します。\n• The slides used in class will be distributed via Google Classroom, so be sure to read them in advance.\n• 授業で使用するスライドは Google Classroom で配布されるので、事前にスライドを読んでおくこと。\n（あわせて各回45分程度）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": "• You need to become familiar with and utilize AI tools (e.g., Notebook LM, Canva, ChatGPT, etc.).\n• AIツール（例：Notebook LM、Canva、ChatGPTなど）に精通し、活用できるようになる必要があります。\n• The difficulty of the lectures will vary depending on the way of basic explanations and the use of terms and expressions. Opportunities\nwill be given to improve speaking and listening skills.\n• Classes will be structured efficiently and intensively to minimize lecture time and allow students to focus on group discussions and\npresentations.\n• Students are expected to actively participate in activities and reflect autonomous leadership and teamwork.\n• 授業の難易度は、基本的な説明の仕方、用語や表現の使い方によって変わります。スピーキングとリスニングのスキルを向上させる機会が\n与えられます。\n• 授業は、講義時間を最小限に抑えながら、グループディスカッションとプレゼンテーションに集中できるように、効率的かつ集中的に構成\nされます。\n• 履修者は、活動に積極的に参加し、自律的なリーダーシップとチームワークを反映させることが望まれます。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "CAREERS: Talk about your future career plan\n•LANGUAGE: Career moves; Modals 1 ‒ ability, requests and offers\n•SKILL: Telephoning ‒ making contacts"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "COMPANIES: Talk about companies\n•LANGUAGE: Describing companies; Present simple and present continuous\n•SKILL: Presenting your company"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "SELLING: Talk about shopping habits\n•LANGUAGE: Making sales; Modals 2 ‒ must, need to, have to, should\n•SKILL: Negotiating ‒ reaching agreement"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "REVIEW: Week 1 to 3\nWorking Across Cultures: Saying ʻNoʼ politely"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "IDEAS: Discuss what makes a great idea\n•LANGUAGE: Verb and noun combinations; Past simple and past continuous\n•SKILL: Successful meetings"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "STRESS: Discuss stressful situations and activities\n•LANGUAGE: Stress in the workplace; Pas simple and present perfect\n•SKILL: Participating in discussions"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "ENTERTAINING: Discuss corporate entertaining\n•LANGUAGE: Eating and drinking; Multiword verbs\n•SKILL: Socializing ‒ greetings and small talk"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "REVIEW: Week 4 to 6\nWorking Across Cultures: Doing Business Internationally"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "NEW BUSINESS: Discuss new businesses and business sectors\n•LANGUAGE: Economic terms; Time clauses\n•SKILL: Dealing with numbers"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "MARKETING: Talk about the marketing mix and marketing campaigns\n• LANGUAGE: Word partnerships; Questions\n• SKILL: Telephoning ‒ exchanging information"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "PLANNING: Discuss how and when to plan\n• LANGUAGE: Making plans; Talking about future plans\n• SKILL: Meetings ‒ interrupting and clarifying"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "REVIEW: Week 7 to 9\nWorking Across Cultures: International Conference Calls"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "MANAGING PEOPLE: Discuss the qualities of a good manager\n• LANGUAGE: Verbs and prepositions; Reported speech\n• SKILL: Socializing and entertaining"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "CONFLICT: Talk about managing conflict\n• LANGUAGE: Word building; Conditionals\n• SKILL: Negotiating ‒ dealing with conflict"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "FINAL PRESENTATION\nPRODUCTS: Discuss products\n• LANGUAGE: Describing products; Passives\n• SKILL: Presenting a product"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        166,
+        167,
+        168
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "business-english-practicum-2b": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "展開科目",
+    "courseName": "[旧]ビジネス英語実習Ⅱ／[新]ビジネス英語実習Ⅱb",
+    "classFormat": "実習",
+    "courseCode": "EB21410001",
+    "credits": 1.0,
+    "requiredElective": "必修",
+    "activeLearning": "実施する",
+    "instructor": "Joe Hug、平野 麻紀子、田中 亮子、横井 博文",
+    "overview": "This Business English course uses authentic content to bring real-world business concepts for pre-intermediate level studies. The\ncourse focuses on developing all English communication skills through project-based learning (PBL) ̶featuring case studies, role plays,\nand group discussions. It is designed for students at the CEFR A1 to A2 level who are learning business English.\nこのビジネス英語コースは、実際のビジネス概念を中級レベルの学習者に分かりやすく伝えるため、本物のコンテンツを使用しています。ケ\nーススタディ、ロールプレイ、グループディスカッションなどを取り入れたプロジェクト型学習（PBL）を通して、あらゆる英語コミュニケ\nーションスキルを育成することに重点を置いています。CEFR A1〜A2レベルのビジネス英語学習者を対象としています。",
+    "objectives": "1.Expand business English vocabulary and concepts.\n2.Develop practical business English communication skills.\n3.Enhance Business English comprehension.\n1.ビジネス英語の語彙と概念を拡大する。\n2.実践的なビジネス英語のコミュニケーションスキルを身につける。\n3.ビジネス英語の読解力を向上させる。",
+    "grading": "• Class participation and engagement: 5%\n• Completion of weekly speeches, presentations, and assignments: 15%\n• Midterm (Reviews) Presentation x3: 30%\n• Final Presentation: 50%\n• 授業への参加度：5％\n• 毎週のスピーチとプレゼンテーションの完了：15％\n• 中間プレゼンテーション：30％\n• 期末プレゼンテーション：50％",
+    "preparation": "1. Practice delivering speeches without relying on notes or slides to improve spontaneity and confidence.\n2. Focus on using effective body language, maintaining good posture, and making consistent eye contact with the audience.\n3. Rehearse presentations multiple times, refining content and delivery to ensure clarity and impact.\n1. メモやスライドに頼らずにスピーチを練習して、自発性と自信を高めます。\n2. 効果的なボディランゲージの使用、良い姿勢の維持、聴衆との一貫したアイコンタクトに重点を置きます。\n3. プレゼンテーションを何度もリハーサルして、内容と伝え方を洗練させ、明瞭性とインパクトを確保します。\n• The slides used in class will be distributed via Google Classroom, so be sure to read them in advance.\n• 授業で使用するスライドは Google Classroom で配布されるので、事前にスライドを読んでおくこと。\n（あわせて各回45分程度）",
+    "textbooks": "書名：指定なし",
+    "references": null,
+    "notes": "• You need to become familiar with and utilize AI tools (e.g., Notebook LM, Canva, ChatGPT, etc.).\n• AIツール（例：Notebook LM、Canva、ChatGPTなど）に精通し、活用できるようになる必要があります。",
+    "previousYearReflection": "• The difficulty of the lectures will vary depending on the way of basic explanations and the use of terms and expressions. Opportunities\nwill be given to improve speaking and listening skills.\n• Classes will be structured efficiently and intensively to minimize lecture time and allow students to focus on group discussions and\npresentations.\n• Students are expected to actively participate in activities and reflect autonomous leadership and teamwork.\n• 授業の難易度は、基本的な説明のしかた、用語や表現の使い方によって変わります。スピーキングとリスニングのスキルを向上させる機会\nが与えられます。\n• 授業は、講義時間を最小限に抑えながら、グループディスカッションとプレゼンテーションに集中できるように、効率的かつ集中的に構成\nされます。\n• 履修者は、活動に積極的に参加し、自律的なリーダーシップとチームワークを反映させることが望まれます。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "CAREERS: Talk about your future career plan\nCase Study: Youjuice:\nDecide on the successful candidate for a job\nWriting: e-mail"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "COMPANIES: Talk about companies\nCase Study: Dino Conti Ice Cream:\nDecide on the best way to invest in a company's future\nWriting: proposal"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "SELLING: Talk about shopping habits\nCase Study: A partnership agreement:\nWork on a proposed partnership between a jet charter company and a hotel group\nWriting: letter"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "REVIEW: Week 1 to 3\nUnit A: Revision"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "IDEAS: Discuss what makes a great idea\nCase Study: The new attraction:\nDecide on the best idea for a new attraction\nWriting: report"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "STRESS: Discuss stressful situations and activities\nCase Study: Davies-Miller Advertising:\nSuggest ways of reducing stress amongst staff\nWriting: report"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "ENTERTAINING: Discuss corporate entertaining\nCase Study: Organizing a conference:\nChoose the location for a sales conference\nWriting: e-mail"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "REVIEW: Week 4 to 6\nUnit B: Revision"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "NEW BUSINESS: Discuss new businesses and business sectors\nCase Study: Taka Shimizu Cycles:\nChoose the location for a new factory\nWriting: e-mail"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "MARKETING: Talk about the marketing mix and marketing campaigns\nCase Study: Wincote International:\nDevise a plan to improve sales at an outdoor-clothing company\nWriting: e-mail"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "PLANNING: Discuss how and when to plan\nCase Study: European Press and Media Corporation:\nPlan a new issue of a magazine\nWriting: letter"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "REVIEW: Week 7 to 9\nUnit C: Revision"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "MANAGING PEOPLE: Discuss the qualities of a good manager\nCase Study: Ashley Cooper Search Agency:\nAdvise on improving staff relations at a property company\nWriting: report"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "CONFLICT: Talk about managing conflict\nCase Study: Herman & Corrie Teas:\nDecide whether a company should accept a buy-out offer\nWriting: letter"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "FINAL PRESENTATION\nPRODUCTS: Discuss products\nCase Study: The George Marshall Awards:\nChoose the winner of a product-innovation competition\nWriting: report"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        169,
+        170,
+        171
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "market-innovation": {
+    "grade": "カリキュラムにより\n異なります。",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "[旧]マーケティング応用／[新]マーケット・イノベーション",
+    "classFormat": "講義",
+    "courseCode": "MK21220001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "佐々木 ⻯介",
+    "overview": "市場にイノベーションを起こした製品やサービス等のケーススタディを行う。ケースがどのように成功に至ったかを講師が分析・解説する\n「基礎」、提示されたケースについて成功の要因をグループでディスカッションする「実践」、受講者が成功したと考えるケースを一つ選び、\nその要因を分析、プレゼンテーションを行う「応用」（グループワーク）、の3段階で行う。",
+    "objectives": "「基礎」では、マーケティングの理論や手法を現実にあった意思決定との関係の中で学ぶとともに、成功を導いた要因の分析力を養う。\n「実践」では、グループワークにより分析の実践を行うとともに、協力のもと結論を導き出す力を習得する。\n「応用」では分析に加え、その前段でのイノベーションの発見、ケース選択の意思決定、データ収集までも行う。\n以上により、市場の情報収集力、経営課題やサービス・ビジネス創出の機会の発見力を身に付ける。",
+    "grading": "各回授業への参加度、貢献度：20％\n各回で出題する課題：50％\n11、12回授業における参加態度：10％\nケーススタディ応用の参加態度、発表内容：20％",
+    "preparation": "【予習】（90分程度）\n基礎：各回授業で次回取り上げる内容について資料を配布、課題を出題するので、レポートを提出。\n実践：各回授業で次回取り上げる内容について資料を配布するので、自分なりに整理、分析を行っておく。\n応用：プレゼンテーションの準備を行う。\n【復習】（90分程度）\n事前学習での自分の分析について、授業を受けた上での答え合わせを行う。",
+    "textbooks": "書名：指定なし",
+    "references": "配布資料を基に授業を進めます。資料は毎回授業前にグーグルクラスルームを通じて配布します。\n参考書が必要な場合は、適宜指定します。",
+    "notes": "授業クラスごとにグーグルクラスルームを設定し、最初の授業時にURLないしは授業コードをお知らせしますので、速やかに登録してくださ\nい。そちらを通じて資料を配布、また課題を提出してもらいます。\n課題について、提出された中からいくつかを選び次回授業で紹介しますので、それを前提に取り組んでください。\nなお記載されたケース、内容、授業の順番は変更となる場合があります。",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "イントロダクション\n-講義の進め方\n-マーケット・イノベーションとは"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "マーケティングの基礎理論\n-STP、4P等"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "ケーススタディ 基礎①\n-カルビー「フルグラ」"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "ケーススタディ 基礎②\n-アキレス「瞬足」"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "ケーススタディ 基礎③\n-アイリスオーヤマ"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "ケーススタディ 基礎④\n-スノーピーク"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "ケーススタディ 基礎⑤\n-相模屋食料"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "ケーススタディ 実践①（グループディスカッション）\n-関あじ、関さば"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "ケーススタディ 実践②（グループディスカッション）\n-ヤッホーブルーイング"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "ケーススタディ 応用①（グループワーク）\n-「市場にイノベーションを起こした」と感じた事例を選び、どこがイノベーティブだったかを分析、発表する。\n1回目-ケースの選定"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "ケーススタディ 応用②（グループワーク）\n-「市場にイノベーションを起こした」と感じた事例を選び、どこがイノベーティブだったかを分析、発表する。\n2回目-ケースの分析、発表資料の作成"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "ケーススタディ 応用③（グループワーク）\n-「市場にイノベーションを起こした」と感じた事例を選び、どこがイノベーティブだったかを分析、発表する。\n3回目-発表資料のまとめ、発表"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "ケーススタディ 応用-講評\n-マーケティング応用の発表内容に関し、受講者および講師が講評を行う。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "もう一つのケーススタディ\n-ソニー「ベータ・マックス」、コカ・コーラ「ニューコーク」"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ\n-授業全体の振り返り"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        39,
+        40
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "operating-systems-intro": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "オペレーティングシステム入門",
+    "classFormat": "演習",
+    "courseCode": "OPS1320001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "韓 旭",
+    "overview": "情報システムの形成に必要なオペレーティングシステムの役割、基本的概念および実現方式を理解する。\n実際にPC、Linuxを利用し、CUIでの操作を修得する。基本的な概念を説明した後、実機演習を通じて操作を学ぶ。具体的にはコマンドを用\nいた操作、OS操作や管理、簡単なプログラムを用いたプロセスの自動化などを演習形式で行う。オペレーティングシステムの技術や知識の\n習得を通じて、コンピュータシステムの動作原理に対する理解を深める。",
+    "objectives": "OSの構成要素とそれぞれの役割について説明できるようになる。\nテキストエディタによるテキスト編集、コマンドラインによるOS操作、スクリプトによるプロセスの自動化を行えるようになる。\nリモートサーバ上で簡単なWebページやWebアプリを作成できるようになる。\n仮想環境（コンテナ型）を用いて、簡単なサーバの構築やIoTデバイスの作成ができるようになる。",
+    "grading": "・授業内演習（Linux）の各回テーマの完成状況：30％\n・課題の提出状況と、その内容の評価：70％",
+    "preparation": "予習（標準学習時間：90分）\n・Webサイト等を閲覧し、基本的な用語・概念について理解をしたうえで授業に臨むこと\n復習（標準学習時間：90分）\n・各授業で示したWebサイト、演習課題等について振り返り、着実に理解した上で次回の授業につなげる",
+    "textbooks": "書名：指定なし",
+    "references": "参考文献：\n『IT Text オペレーティングシステム 改訂2版』野口健一郎、オーム社、2018/01/24\n『オペレーティングシステムの仕組み』河野健二（著）、朝倉書店、2019/12/25\n『組込みエンジニアの教科書』渡辺登（著）、牧野進二（著）、C&R研究所、2020/2/25\n『IoTの基本・仕組み・重要事項が全部わかる教科書』八子知礼（著）、杉山恒司（著）、竹之下航洋（著）、松浦真弓（著）、土本寛子\n（著）、SBクリエイティブ、2017/10/19",
+    "notes": "この講義ではOSとしてLinuxを例に、使い方を中心に学びます。\nまずは知るところ、経験するところから始めましょう！",
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "・オリエンテーション\n・ソフトウェアの概要と種類\nオペレーティングシステムの役割、構成、基本機能"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "・OSのインタフェース\n・PCの準備と基本操作\nWindowsあるいはmacOSでコマンドラインインタフェースに触れる。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "・ファイルシステム\n目的、種類と名前、構造と型、制御ブロック、ディレクトリ"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "・コマンドによるファイル、ディレクトリの操作（1） ディレクトリ、ファイルの作成\nWindows、あるいはmacOSでのファイル操作を理解する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "・SSH（Secure Shell）\nSSH接続、秘密鍵の生成、演習用Linuxをリモートからログイン\n・Linuxの紹介"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "・コマンドによるファイル、ディレクトリの操作（2） ディレクトリ、ファイルの操作\n1.Linuxのコマンドラインでのファイル操作を理解する。\n2.パーミッションの概念を理解し、実際にファイル、ディレクトリを操作する。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "・テキストエディタの基礎：nano, viテキストエディタ"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "・シェルとシェルスクリプト"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "・テキストエディタ（2）\n条件分岐、繰り返し、関数"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "・ファイル管理用アプリの作成\n・プロセス管理とスケジューリング\n・プロセスの確認、一時停止、再開、終了"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "・演習用LinuxでWebページを作成する\n1.SCPを用いたファイルのアップロードとダウンロード\n2.自己紹介用ページを作成する"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "・CGI（Common Gateway Interface）とは\n・Bash CGI\n1.動作確認\n2.簡単なCGIアプリを作成する\n3.ログ管理およびソフトウェアのログの参照方法"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "・Ruby CGI\n1.動作確認\n2.簡単なCGIアプリを作成する"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "・仮想環境の構成\n・SSHサーバを立てる"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "・組み込み機器用ソフトウェアとIoT"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        63,
+        64
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "applied-information-mathematics-b": {
+    "grade": "カリキュラムにより\n異なります。",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "情報系数学応用B",
+    "classFormat": "講義",
+    "courseCode": "MIB1320001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "韓 旭",
+    "overview": "本科目では、数理論理学や計算理論を中心に、関連する議論も含め、ICT技術を支える中核的な数学的理論の基礎を広く学修する。各理論／\n概念については具体的な応用先の例もあわせて学ぶことで、理解をより深いものとする。ソフトウェアを形式的に特徴づけたり解析するため\nには、計算や論理に関する知識が不可欠である。\n具体的には、集合・論理・関係・写像・代数系・数え上げ・グラフ理論についてその入門的な内容（用語・定義・記法、基本的概念・原\n理、応用先の例など）を順次学ぶことで、論理的、数理的に課題解決へのアプローチができるようになることを目指す。",
+    "objectives": "・数理論理学や計算理論等の基礎知識を修得し、説明できるようになる。\n・上記知識を用い、実際の課題についてソフトウェアを用いて解決する際に、必要に応じて自らより深く調べる手がかりとして、得た知識を\n課題解決に活用できるようになる。",
+    "grading": "・授業内での発言・発表：20％\n・課題の提出状況とその内容の評価：40％\n・授業内テスト（最終試験、15回目）：40％",
+    "preparation": "予習（標準学習時間：90分）\n・教科書、Webサイト等を閲覧し、基本的な用語・概念について理解をしたうえで授業に臨むこと\n復習（標準学習時間：90分）\n・教科書、Webサイトなどを閲覧しながら、自分なりに内容を消化する\n・小課題に取り組む",
+    "textbooks": "書名：応用事例とイラストでわかる\n離散数学：カンタンな数学で\nAIも理解できる!?（第2版）\n著者：延原肇\n出版社：共立出版\nISBN：978-4320114685",
+    "references": "『イラストで学ぶ 離散数学』伊藤（著）、KS情報科学専門書、講談社、2019",
+    "notes": null,
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "コース導入\nコース全体の概要、授業の進め方を理解する。\n集合（1）\n集合の基礎知識として、集合の定義、集合の数学的表現方法、いろいろな集合とその性質、集合に対する基本的演算などを学ぶ。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "集合（2）\n引き続き集合の基礎知識として、ベン図による複数の集合の間の関係の表現方法、包除原理などを学ぶ。また実課題で用いられている集\n合の応用事例をいくつか紹介する。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "論理（1）\n論理学の基礎知識として、命題の定義、命題に対する演算としての論理演算、条件付き命題、命題関数／述語などを学ぶ。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "論理（2）\n推論の定義、推論の枠組みにおける必要条件と十分条件、全称記号と存在記号などを学ぶ。また実課題で用いられている論理の応用事例\nをいくつか紹介する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "関係（1）\n関係の定義を直積集合から理解する。関係を表現する方法として関係グラフ・隣接行列・有向グラフを学び、関係の合成についても学\nぶ。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "関係（2）\n関係の上で定義できる基本的な性質（反射的・対称的・反対称的・推移的）を学び、集合の分割、同値関係、剰余類などを学ぶ。また実\n課題で用いられている関係の応用事例をいくつか紹介する。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "写像（1）\n写像の定義、単射・全射・全単射・逆写像、写像の合成について学び、鳩の巣原理を理解する。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "写像（2）\n写像の特別な形としての置換、集合の濃度、写像による集合の表現方法などについて学ぶ。また実課題で用いられている写像の応用事例\nをいくつか紹介する。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "代数系（1）\n代数系の基礎知識として、二項演算および代数系の定義、結合律と交換律、剰余和と剰余積、単位元と逆元などについて学ぶ。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "代数系（2）\n代数系の構造として、半群・モノイド・群について学ぶ。また、群の構造を比較する方法として、準同型写像と同型写像について学ぶ。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "計算の複雑さ・数え上げ\n巡回セールスマン問題や分割問題を紹介し、数え上げの原理を学ぶ。また順列および二項係数について理解する。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "順序集合から束へ（1）\n半順序関係の定義、半順序集合・比較可能・比較不能・全順序集合などについて学び、半順序集合の要素の関係を図式化するハッセ図の\n描画方法を理解する。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "順序集合から束へ（2）\n最大元・最小元、極大元・極小元、上界と上限・下界と下限、束、分配束と可補束などについて学ぶ。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "グラフ理論（1）\nグラフ理論の基礎的知識として、グラフの数学的定義、グラフの表現方法として隣接行列・接続行列、特別なグラフとして完全グラフ・\n正則グラフ・2部グラフ、グラフにおける経路・連結・非連結・閉路などについて学ぶ。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "・グラフ理論（2）\nグラフの応用事例として、オイラーグラフ、ハミルトン閉路、平面グラフなどを紹介する。\n・授業内テスト（最終試験）"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        69,
+        70
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "database": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "データベース",
+    "classFormat": "演習",
+    "courseCode": "DBM1340001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施しない",
+    "instructor": "片桐 雅二",
+    "overview": "ソフトウェアシステムを構築する上で欠かせないデータベースについて講義と実習を組み合わせる形で学修する。\nデータベースに関する一通りの知識を講義により学ぶとともに、実習により基本的な操作および設計を体験し知識を活用する実践力を体得す\nる。\nデータベースの基本について、仕組み・構成要素・基本的機能から、トランザクション処理・同時実行制御、障害復旧、設計の仕方などを知\n識として講義形式にて学ぶとともに、知識を実践し理解を深めるために、SQL問い合わせ、トランザクション処理・同時実行制御、設計・正\n規化などについての実習を行う。\nまた、NoSQLなどの最近のデータベースおよび将来に向けたデータベースの重要性について学ぶ。",
+    "objectives": "データベースの原理・考え方や基本構造について理解し、説明できるようになる。\nSQLを用いたデータベースの基本的な操作方法を習得し、使うことができるようになる。\n小規模な関係データベースを設計構築する基礎的な能力を体験的に獲得する。",
+    "grading": "実習レポートの内容（15％×3）、問題演習の内容（15％×3）、受講態度等（10％）により評価する。",
+    "preparation": "授業範囲について教科書および講義前日より閲覧可能となる授業資料（PDFファイル）により（必要に応じて参考書等も活用して）予習する\nことが望ましい（60分／回）\n講義の内容について、復習によって自分なりに消化することが大切である。特にSQLによる操作を伴うものについては、指定された内容を盲\n目的に実行するだけでなく、自ら意図を持ってSQL文を作成し実行しその結果が意図通りとなっていたかを確認することで、その理解が深ま\nるとともにスキルを修得することができる（90分／回）\n項目毎に、演習問題または実習結果に基づいたレポート課題を設定する（60−120分×7回）",
+    "textbooks": "書名：データベース―基礎からネッ\nト社会での応用まで―\n著者：三木光範・田中美里\n出版社：共立出版\nISBN：978-4-320-12406-6\n備考：情報工学テキストシリーズ\n※ 電子書籍可",
+    "references": "「SQL第2版ゼロからはじめるデータベース操作」、ミック（著）、翔泳社、2016\n「基本がわかるSQL入門」、⻄村（著）、技術評論社、2020\n「おうちで学べるデータベースのきほん」、ミック・木村（著）、翔泳社、2015\n「SQLデータ分析・活用入門」、⻄（著）、ソシム、2019",
+    "notes": "＊本科目は、ICT関連の研究職としての実務経験のある教員による授業科目です。",
+    "previousYearReflection": "昨年度からの改善点：講義形式の説明パートをより探求的な内容とすることで、より主体的な授業参加を促す。実習取組み中の指導や支援の\n方法を工夫することで、履修者のエンゲージメントを高める。レポートについてはタイムリーに返却するよう努める。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "データベースとは（1）\nコースのイントロダクション。データベースシステムとはどのようなものか、日頃利用している実例などにより理解する。また歴史的な\n発展を知り、その位置付けについて学ぶ。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "データベースとは（2）\nデータベースとは何かを理解するために、DBMS、データモデル、SQLなどの概要を学ぶ。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "SQL問い合わせ（1）\nSQL言語を用いてデータベースを操作する方法の基本（SELECT、FROM、*、AS、DISTINCT、WHERE）について学び、簡単なSQL問\nい合わせの実行を体験する。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "SQL問い合わせ（2）\nSQL言語を用いてデータベースを操作する方法の基本（算術式、集約関数、GROUP BY、HAVING、ORDER BY ）について学び、簡単な\nSQL問い合わせの実行を体験する。\nリレーショナルデータモデルにおいてデータ操作を行うための基本となる関係代数（射影・選択・和・差・共通）について、その概要と\nSQLにおける利用法を理解する。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "SQL問い合わせ（3）\nリレーショナルデータモデルにおいてデータ操作を行うための基本となる関係代数（結合・直積・商）について、その概要とSQLにおけ\nる利用法を理解する。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "SQL問い合わせ（4）\nSQL言語を用いてデータベースを操作する実習を行う。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "データベースの基本要素\nデータベースの構成要素と基本的機能を学ぶ。データベースにおける三層スキーマとは何かを理解する。データの一貫性の維持や安全性\n（セキュリティ）の確保の必要性を理解し、それらを実現する仕組みの概要を学ぶ。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "データの一貫性（1）\nトランザクション処理とは何か、同時実行制御とは何かを理解する。それぞれを実現するために用いられる基本的な仕組みついて概要を\n理解する。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "データの一貫性（2）\nトランザクション処理および同時実行制御について、その動作を確認する実習を行う。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "障害対策\n実際のデータベースの運用において重要となる、障害対策の基本について学ぶ。想定される障害の種類や、対策として用いられている代\n表的な方策について、その概要を理解する。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "設計・正規化（1）\nデータベースの設計とは、どのようなものかを学ぶ。概念スキーマの設計、および論理スキーマの設計について概要および基本的な手順\nを理解する。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "設計・正規化（2）\n概念スキーマ設計としてE-R図を用いた設計、論理スキーマ設計としてリレーションへの変換の実習を行う。（机上演習）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "設計・正規化（3）\n論理スキーマ設計として正規化の実習を行う。（机上演習）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "データベース応用（1）\nNoSQLと呼ばれ近年注目を集めている新しいタイプのデータベースについて、その概要と特徴を理解する。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "データベース応用（2）\n様々な分野で用いられているデータベースについて特徴的なものを理解し、今後どのような応用の発展が考えられるかをその重要性とと\nもに学ぶ。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        73,
+        74
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "interaction-design-intro": {
+    "grade": "カリキュラムにより\n異なります。",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "[旧]インタラクティブ・システムデザイン／[新]インタラクションデザイン入門",
+    "classFormat": "演習",
+    "courseCode": "ISD1350001",
+    "credits": 2.0,
+    "requiredElective": "選択",
+    "activeLearning": "実施する",
+    "instructor": "Kim Jieun",
+    "overview": "本科目では理論と実習を通じてインタラクションデザインに対する本質を学ぶ。\nデザインの歴史に対する学びを通じてデザインの流れと現在のインタラクションデザインがなぜ重要なのかを理解し、そのためのデザイン方\n法論とリサーチ、ワークショップを通じてデザイナーの力量を育てる。",
+    "objectives": "ワークショップとチームプロジェクトを通じてデザインプロセスを学び、なぜインタラクションデザインが重要なのか、どのようにインタラ\nクティブなデザインを創造できるのかについて理解し説明できる。",
+    "grading": "受講態度：20％\n中間試験：30％\n期末試験：30％\nワークショップへの参加度と課題：20％",
+    "preparation": "デザイン感覚を高めるために展示や書籍をたくさん見て、アドビプログラムを先行学習すると役に立つ。（各回の授業に対し180分程度）",
+    "textbooks": "書名：指定なし",
+    "references": "Design for a Better World: Meaningful, Sustainable, Humanity Centered Author: Donald A. Norman",
+    "notes": null,
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "Orientation"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "History of Design 1"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "History of Design 2"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "What is Interaction Design? Design Methodology"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "Workshop: brainstorming: Choosing a topic"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "Workshop: brainstorming: Choosing a topic"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "Workshop: brainstorming: Choosing a topic"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "Mid-term Review"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "Workshop: Ideation"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "Workshop: Ideation"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "Workshop: Define concept"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "Workshop: Concept development"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "Workshop: Concept development"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "Workshop: Concept development"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "Final presentation"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        84
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "network-technology": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "職業専門科目",
+    "courseName": "ネットワーク技術",
+    "classFormat": "講義",
+    "courseCode": "NWT1330001",
+    "credits": 2.0,
+    "requiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修",
+    "activeLearning": "実施する",
+    "instructor": "山内 正人",
+    "overview": "現在多くのシステムがインターネットに繋がり、コンピュータネットワークは社会システムの基盤として動作している。本科目では、その根\n幹となる情報通信技術の基礎についてコンピュータネットワークの歴史や成り立ち、発展の経緯から通信をする上で重要となる標準化とその\n方法、階層化と各階層におけるプロトコル、LANの基礎、ネットワークサービス、ネットワークセキュリティの基礎、最新技術動向など幅広\nく解説し、インターネットがどのように構成され、動作するかを理解する。また、現在インターネットで広く使用されているIPv4のみなら\nず、今後広く使われていくと考えられるIPv6についても解説し、社会に出ても役立つネットワーク技術について体系的に学ぶ。",
+    "objectives": "通信における階層化及び各層で構成される各種プロトコル等について理解し、説明できることを目的とする。\n通信における階層化の概念を理解し説明できる、各層で構成される各種プロトコル等について理解し説明できる、ネットワークに関する最新\n動向を把握し説明できることを目標とする。",
+    "grading": "最終レポート（30％）と、課題への取り組み（70％）で評価する。",
+    "preparation": "授業における資料や教材を用いて予習・復習を行う。\nまた、演習課題については授業外の時間も活用し課題を完了させること。\n（あわせて各回180分）",
+    "textbooks": "書名：指定なし",
+    "references": "適宜プリントを配布する。\n参考文献：\n『マスタリングTCP／IP 入門編 第5版』竹下 隆史、村松 公保、荒井 透、苅田 幸雄（著）、オーム社、2012年\n『コンピュータネットワーク 第5版』アンドリュー・S・タネンバウム、デイビッド・J・ウエザロ（著）、日経BP社、2013年\n『プロフェッショナルIPv6』小川 晃通（著）、ラムダノート、2018年",
+    "notes": null,
+    "previousYearReflection": null,
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "ネットワークの基礎（1）（コンピュータネットワークの成り立ちや目的、構成について学ぶ）"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "ネットワークの基礎（2）（通信メディアを作成し、その規格や仕組みを理解する）"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "TCP／IPの基礎（各階層におけるプロトコルが果たす役割について理解することでTCP／IPでどのように通信が行われているかについて学\nぶ）"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "データリンク（1）（データリンクの役割及び技術、イーサネット等について学ぶ）"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "データリンク（2）（MACアドレスやその役割等について学ぶ）"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "IPプロトコル（1）（IPの基礎及びIPアドレスの基礎について学ぶ）"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "IPプロトコル（2）（IPアドレス及びサブネットマスクについて学ぶ）"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "IPプロトコル（3）（経路制御について学ぶ）"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "IPプロトコル（4）（IPヘッダのヘッダチェックサムについて学ぶ）"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "IPプロトコル（5）（IPv6について学ぶ）"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "IPプロトコル（6）（DNSやDHCPなどIPに関連する技術について学ぶ）"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "TCPとUDP（1）（トランスポート層の役割及びポート番号、TCPなどについて学ぶ）"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "TCPとUDP（2）（UDP、NAT／NAPTなどについて学ぶ）"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "アプリケーションプロトコル（E-mailやWWWなどで使用されるアプリケーションプロトコルについて学ぶ）"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "まとめ（総まとめ及び最新のネットワーク技術の動向について学ぶ）"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        91,
+        92
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  },
+  "social-research-methods": {
+    "grade": "1年",
+    "semester": "後期",
+    "category": "基礎科目",
+    "courseName": "[旧]リサーチ入門／[新]社会調査法",
+    "classFormat": "演習",
+    "courseCode": "SRB1120001",
+    "credits": 2.0,
+    "requiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修",
+    "activeLearning": "実施する",
+    "instructor": "石村 源生",
+    "overview": "社会科学の調査・分析の手法をもとに社会調査の基本を学ぶ。\n社会調査の基本的な考え方と方法、資料やデータの収集と分析の具体的な方法とその特徴について習得する。\nそれを通じて、今後の様々な科目の学習やビジネス実践の基礎となる考え方、知識、スキル、経験を身につける。",
+    "objectives": "・社会調査における真のイシュー（達成すべき課題／解決すべき問題）を明らかにすることの重要性とそのための方法論を理解できるように\nなる。\n・社会調査は、イシューに取り組むための「手段」であることを理解できるようになる。\n・さまざまな社会調査手法の概要と目的、それらの特徴や実施方法、活用例を説明できるようになる。\n・資料やデータの収集と分析に必要となる知識やスキルを身につける。",
+    "grading": "・授業貢献度（発言等）：45％（加点要素）\n・授業課題：75％\n・期末課題：25％",
+    "preparation": "・講義資料を再読して講義の内容の理解を深め、知識を定着させる。\n・講義で紹介された参考文献や教材などを活用して発展的な学習を行う。\n（各回180分）",
+    "textbooks": "書名：指定なし",
+    "references": "『大学生のためのリサーチリテラシー入門：研究のための8つの力』\n山田剛史、 林創（著）、ミネルヴァ書房、2011年\n『イシューからはじめよ――知的生産の「シンプルな本質」』\n安宅和人（著）、英治出版、2010年\n『基本がわかる 実践できる マーケティングリサーチの手順と使い方［定量調査編］』\n蛭川速、吉原慶（著）、日本能率協会マネジメントセンター、2020年\n『基本がわかる 実践できる マーケティングリサーチの手順と使い方［定性調査編］』\n石井栄造（著）、日本能率協会マネジメントセンター、2019年\n『EXCELマーケティングリサーチ＆データ分析［ビジテク］2013/2010/2007対応』\n千野直志他（著）、翔泳社、2014年\n『EXCELビジネス統計分析［ビジテク］第3版 2016/2013/2010対応』\n末吉正成、末吉美喜（著）、翔泳社、2017年\n『電通現役戦略プランナーのヒットをつくる「調べ方」の教科書』\n阿佐見綾香（著）、PHP研究所、2021年\n『独学大全』\n読書猿（著）、ダイヤモンド社、2020年\n『問題解決大全』\n読書猿（著）、フォレスト出版、2017年\n『最新版 論文の教室』\n戶田山和久（著）、NHK教室、2022年",
+    "notes": null,
+    "previousYearReflection": "積極的に授業に貢献する学生を増やすために、授業デザインを改善する。",
+    "academicYear": 2026,
+    "lessonPlan": [
+      {
+        "number": 1,
+        "topic": null,
+        "content": "イントロダクション\n・本授業科目の概要と目的を理解する。\n・本授業科目の進め方を理解する。\n・「社会調査とは何か？」について考えるきっかけをつかむ。"
+      },
+      {
+        "number": 2,
+        "topic": null,
+        "content": "社会調査の基本\n・社会調査とは何であるかについて、その基本的な考え方を学ぶ。\n・社会調査の定義、対象、目的、社会調査への関わり方、社会調査を問題解決・課題達成に結びつけるプロセスなどについての基本的な知\n識を習得する。"
+      },
+      {
+        "number": 3,
+        "topic": null,
+        "content": "ケースメソッド「受験生獲得」\n・ケースメソッド「受験生獲得」を通じて社会調査の基本的な考え方を学ぶ。\n・社会調査の上位目的と手順について学ぶ。"
+      },
+      {
+        "number": 4,
+        "topic": null,
+        "content": "問題構造分析\n・問題解決の手法を通じて、問題構造分析の思考法を学ぶ。\n・それによって、社会調査の上流工程を適切に行えるようになることを目す。"
+      },
+      {
+        "number": 5,
+        "topic": null,
+        "content": "アンケート調査1\n・アンケート調査に関する一般的、基本的手順と考え方を学ぶ。\n・定量データを有効に活用して社会調査を効果的に実施できるようになる。"
+      },
+      {
+        "number": 6,
+        "topic": null,
+        "content": "アンケート調査2\n・アンケート調査に関する一般的、基本的手順と考え方を学ぶ。\n・定量データを有効に活用して社会調査を効果的に実施できるようになる。"
+      },
+      {
+        "number": 7,
+        "topic": null,
+        "content": "仮説形成から施策立案までのプロセス\n・価値のある結果に結びつく仮説を立てられるようになる。\n・仮説形成から施策提案までの一連のプロセスを理解する。\n・二重クロス集計の限界を理解する。"
+      },
+      {
+        "number": 8,
+        "topic": null,
+        "content": "データ分析手法\n・アンケート調査のデータを調査目的に即して集計・分析できるようになる。"
+      },
+      {
+        "number": 9,
+        "topic": null,
+        "content": "調査テーマの分解とイシュー\n・特定の調査テーマを与えられたとき、調査テーマを適切に分解して理解するための方法を学ぶ。\n・社会調査において重要な、「イシュー」の考え方を理解する。"
+      },
+      {
+        "number": 10,
+        "topic": null,
+        "content": "問題構造分析（演習）1\n・問題構造分析の手法を実際に活用できるようになる。\n・生成AIを分析の支援ツールとして活用できるようになる。"
+      },
+      {
+        "number": 11,
+        "topic": null,
+        "content": "問題構造分析（演習）２\n・問題構造分析の手法を実際に活用できるようになる。\n・生成AIを分析の支援ツールとして活用できるようになる。\n・分解チャートに従って適切な社会調査を構想できるようになる。"
+      },
+      {
+        "number": 12,
+        "topic": null,
+        "content": "リサーチの種類と既存情報の調査\n・代表的な社会調査手法を概観することによって、社会調査の全体像をつかむ。\n・個々の社会調査手法の特徴を理解し、目的に応じて適切な手法を選択できるようにする。\n・さらに、文献などの既存情報の調査に関する一般的、基本的手順と考え方を学ぶことによって、既存情報を有効に活用して社会調査を効\n果的に実施できるようになる。\n・加えて、科学情報の信頼性を適切に評価できるようになる。"
+      },
+      {
+        "number": 13,
+        "topic": null,
+        "content": "インタビュー調査\n・インタビュー調査に関する一般的、基本的手順と考え方を学ぶことによって、定性データを有効に活用して社会調査を効果的に実施でき\nるようになる。"
+      },
+      {
+        "number": 14,
+        "topic": null,
+        "content": "社会調査倫理／生成AIと社会調査\n・社会調査において遵守しなければならない倫理を学び、社会に対する責任を果たすことのできる職業人になる。\n・社会調査における生成AI利用の可能性を提案できるようになる。"
+      },
+      {
+        "number": 15,
+        "topic": null,
+        "content": "社会調査能力の向上\n・これまで学んできたことを順に振り返りながら、自らの社会調査力をさらに高めていくための方法と考え方を学ぶ。"
+      }
+    ],
+    "source": {
+      "type": "official_syllabus",
+      "academicYear": 2026,
+      "documentName": "2026shirabasu.pdf",
+      "pages": [
+        27,
+        28
+      ],
+      "sha256": "4f1a83440899bbc7a47095e5464ecbf269e64d503c9251f6d2dceb3739e36062"
+    }
+  }
+}

@@ -4,7 +4,9 @@ import {
   graduationRequirements,
 } from "../data/2026/coursePlanning";
 import { courseCatalog } from "../data/2026/requiredTimetable";
+import { getSyllabusByCourseId } from "../data/2026/syllabus";
 import type { Course } from "../domain/course";
+import type { SyllabusData } from "../domain/syllabus";
 import { resolveCandidateOffering } from "../domain/coursePlanning";
 import { getLotteryStatusLabel } from "../domain/lottery";
 import type { CourseOffering, RegistrationMethod, TimeSlot } from "../domain/timetable";
@@ -21,7 +23,7 @@ export type CourseDetail = {
   lotteryStatus: string | null;
   warnings: string[];
   cap: { creditsAfterAdding: number | null; limit: number } | null;
-  syllabus: null;
+  syllabus: SyllabusData | null;
 };
 
 const previousStatusLabels = {
@@ -97,6 +99,6 @@ export function selectCourseDetail(state: AppState, courseId: string): CourseDet
     lotteryStatus,
     warnings,
     cap,
-    syllabus: null,
+    syllabus: getSyllabusByCourseId(course.id),
   };
 }

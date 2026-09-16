@@ -1,7 +1,13 @@
 import type { UserCourseRecord } from "../domain/user";
 import type { AppState } from "../state/initialState";
+import { plannableCurriculumCourses } from "../data/2026/curriculum";
+import { isGraduationSemesterId } from "../domain/graduationPlanning";
 
 type UnknownRecord = Record<string, unknown>;
+
+const plannableGraduationCourseIds = new Set(
+  plannableCurriculumCourses.map((course) => course.courseId),
+);
 
 export type LegacyLotteryApplication = {
   courseId: string;
@@ -52,8 +58,15 @@ export type LegacyInnovationMethodStateV3 = {
   };
 };
 
-export type AppStateV3 = Omit<
+export type AppStateV4 = Omit<
   AppState,
+  "schemaVersion" | "graduationPlan"
+> & {
+  schemaVersion: 4;
+};
+
+export type AppStateV3 = Omit<
+  AppStateV4,
   "schemaVersion" | "innovationLecture" | "innovationMethod"
 > & {
   schemaVersion: 3;
@@ -390,6 +403,25 @@ function isUi(value: unknown): boolean {
   );
 }
 
+function isGraduationPlan(value: unknown): boolean {
+  if (!isRecord(value) || !Array.isArray(value.entries)) return false;
+  const seenCourseIds = new Set<string>();
+  return value.entries.every((entry) => {
+    if (
+      !isRecord(entry) ||
+      typeof entry.courseId !== "string" ||
+      !plannableGraduationCourseIds.has(entry.courseId) ||
+      !isGraduationSemesterId(entry.semesterId) ||
+      (entry.status !== undefined && entry.status !== "planned") ||
+      seenCourseIds.has(entry.courseId)
+    ) {
+      return false;
+    }
+    seenCourseIds.add(entry.courseId);
+    return true;
+  });
+}
+
 function hasValidAppStateBody(
   value: UnknownRecord,
   lotteryVersion: "legacy" | "current",
@@ -411,7 +443,22 @@ function hasValidAppStateBody(
   );
 }
 
+export function isAppStateV5Base(
+  value: unknown,
+): value is Omit<AppState, "graduationPlan"> & { graduationPlan?: unknown } {
+  return (
+    isRecord(value) &&
+    value.schemaVersion === 5 &&
+    isFirstSemester(value.firstSemester, 4) &&
+    hasValidAppStateBody(value, "current", "current")
+  );
+}
+
 export function isAppState(value: unknown): value is AppState {
+  return isAppStateV5Base(value) && isGraduationPlan(value.graduationPlan);
+}
+
+export function isAppStateV4(value: unknown): value is AppStateV4 {
   return (
     isRecord(value) &&
     value.schemaVersion === 4 &&

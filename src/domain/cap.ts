@@ -5,6 +5,30 @@ export type RegistrationRules = {
   academicYear: 2026;
   grade: 1;
   annualCap: number;
+  capRules: AnnualCapRule[];
+  capExceptions: CapExceptionRule[];
+  source: {
+    documentName: string;
+    section: string;
+    page: number;
+  };
+};
+
+export type CapGrade = 1 | 2 | 3 | 4;
+
+export type AnnualCapRule = {
+  grade: CapGrade;
+  period: "annual";
+  limit: number | null;
+  sourceConfirmed: boolean;
+};
+
+export type CapExceptionRule = {
+  id: "required-course-retake" | "excellent-academic-performance";
+  additionalPerSemester: number;
+  additionalAnnual: number;
+  automatic: false;
+  note: string;
 };
 
 export type CapResult = {

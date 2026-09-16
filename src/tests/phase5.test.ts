@@ -439,7 +439,7 @@ describe("Phase 5 lottery state", () => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(legacyState));
 
     const migrated = loadState();
-    expect(migrated.schemaVersion).toBe(4);
+    expect(migrated.schemaVersion).toBe(5);
     expect(migrated.user).toMatchObject({
       timetableModel: "C",
       englishTrack: "advanced",

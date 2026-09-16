@@ -1,5 +1,6 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import type { RequirementType } from "../domain/course";
+import type { SyllabusData } from "../domain/syllabus";
 import type { RegistrationMethod, TimeSlot, Weekday } from "../domain/timetable";
 import { selectCourseDetail } from "../state/courseDetailSelector";
 import { useAppState } from "../state/useAppState";
@@ -21,6 +22,95 @@ function formatSlots(slots: readonly TimeSlot[]) {
   return slots.length > 0
     ? slots.map((slot) => `${weekdayLabels[slot.day]}曜${slot.period}限`).join("・")
     : "未設定";
+}
+
+function syllabusValue(value: string | number | null, suffix = "") {
+  return value === null || value === "" ? "未登録" : `${value}${suffix}`;
+}
+
+function SyllabusTextSection({
+  heading,
+  value,
+  initiallyOpen = false,
+}: {
+  heading: string;
+  value: string | null;
+  initiallyOpen?: boolean;
+}) {
+  if (!value) return null;
+  return (
+    <details className="syllabus-details" open={initiallyOpen}>
+      <summary>{heading}</summary>
+      <div className="syllabus-copy">{value}</div>
+    </details>
+  );
+}
+
+function SyllabusSection({ syllabus }: { syllabus: SyllabusData }) {
+  const sourcePages = syllabus.source.pages.join("、");
+  return (
+    <section className="course-detail-card syllabus-card" aria-labelledby="syllabus-heading">
+      <div className="syllabus-heading-row">
+        <div>
+          <p className="section-kicker">Official source · {syllabus.academicYear}</p>
+          <h2 id="syllabus-heading">シラバス</h2>
+        </div>
+        <span className="syllabus-source-badge">2026年度</span>
+      </div>
+
+      <p className="syllabus-official-note">
+        2026年度公式シラバスをもとに表示しています。最新情報はUNIPA・大学公式資料を確認してください。このアプリは非公式です。
+      </p>
+
+      <dl className="syllabus-facts">
+        <div><dt>担当教員</dt><dd>{syllabusValue(syllabus.instructor)}</dd></div>
+        <div><dt>単位数</dt><dd>{syllabusValue(syllabus.credits, "単位")}</dd></div>
+        <div><dt>開講学期</dt><dd>{syllabusValue(syllabus.semester)}</dd></div>
+        <div><dt>授業形態</dt><dd>{syllabusValue(syllabus.classFormat)}</dd></div>
+        <div><dt>科目コード</dt><dd>{syllabusValue(syllabus.courseCode)}</dd></div>
+      </dl>
+
+      <details className="syllabus-details syllabus-details--metadata">
+        <summary>シラバス基本情報を詳しく見る</summary>
+        <dl className="syllabus-facts syllabus-facts--secondary">
+          <div><dt>シラバス上の科目名</dt><dd>{syllabus.courseName}</dd></div>
+          <div><dt>配当学年</dt><dd>{syllabusValue(syllabus.grade)}</dd></div>
+          <div><dt>科目分類</dt><dd>{syllabusValue(syllabus.category)}</dd></div>
+          <div><dt>必修・選択の別</dt><dd>{syllabusValue(syllabus.requiredElective)}</dd></div>
+          <div><dt>アクティブ・ラーニング</dt><dd>{syllabusValue(syllabus.activeLearning)}</dd></div>
+        </dl>
+      </details>
+
+      <div className="syllabus-sections">
+        <SyllabusTextSection heading="授業概要" value={syllabus.overview} initiallyOpen />
+        <SyllabusTextSection heading="到達目標" value={syllabus.objectives} initiallyOpen />
+        {syllabus.lessonPlan && syllabus.lessonPlan.length > 0 && (
+          <details className="syllabus-details syllabus-plan-details">
+            <summary>授業計画（{syllabus.lessonPlan.length}回）</summary>
+            <ol className="syllabus-plan">
+              {syllabus.lessonPlan.map((lesson, index) => (
+                <li key={`${lesson.number ?? "unknown"}-${index}`}>
+                  <h3>{lesson.number === null ? "回数未登録" : `第${lesson.number}回`}</h3>
+                  {lesson.topic && <p className="syllabus-topic">{lesson.topic}</p>}
+                  {lesson.content && <div className="syllabus-copy">{lesson.content}</div>}
+                </li>
+              ))}
+            </ol>
+          </details>
+        )}
+        <SyllabusTextSection heading="成績評価" value={syllabus.grading} />
+        <SyllabusTextSection heading="事前・事後学習" value={syllabus.preparation} />
+        <SyllabusTextSection heading="教科書" value={syllabus.textbooks} />
+        <SyllabusTextSection heading="参考書" value={syllabus.references} />
+        <SyllabusTextSection heading="注意事項" value={syllabus.notes} />
+        <SyllabusTextSection heading="前年度からの振り返り" value={syllabus.previousYearReflection} />
+      </div>
+
+      <p className="syllabus-source">
+        出典：{syllabus.source.documentName}（PDF {sourcePages}ページ）
+      </p>
+    </section>
+  );
 }
 
 export function CourseDetailPage() {
@@ -81,11 +171,15 @@ export function CourseDetailPage() {
           </section>
         )}
 
-        <section className="course-detail-card" aria-labelledby="syllabus-heading">
-          <h2 id="syllabus-heading">シラバス</h2>
-          <p>シラバス情報は未登録です。</p>
-          <p>最新情報は公式シラバス・UNIPAで確認してください。</p>
-        </section>
+        {detail.syllabus ? (
+          <SyllabusSection syllabus={detail.syllabus} />
+        ) : (
+          <section className="course-detail-card" aria-labelledby="syllabus-heading">
+            <h2 id="syllabus-heading">シラバス</h2>
+            <p>2026年度シラバスデータ未登録</p>
+            <p>未登録は、科目が存在しない・開講されないことを意味しません。最新情報は公式シラバス・UNIPAで確認してください。</p>
+          </section>
+        )}
       </div>
     </main>
   );

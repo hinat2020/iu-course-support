@@ -1,0 +1,639 @@
+[
+  {
+    "courseId": "innovation-spirit",
+    "courseName": "イノベーションの志",
+    "status": "matched",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "pdfCourseName": "イノベーションの志",
+    "courseCode": "AIV1110001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "business-introduction",
+    "courseName": "ビジネス入門",
+    "status": "matched",
+    "pages": [
+      6,
+      7
+    ],
+    "pdfCourseName": "ビジネス入門",
+    "courseCode": "IBZ1110001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "english-core-skills-1",
+    "courseName": "英語コア・スキルズⅠ",
+    "status": "matched",
+    "pages": [
+      10,
+      11
+    ],
+    "pdfCourseName": "英語コア・スキルズⅠ",
+    "courseCode": "EC11120001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "study-skills",
+    "courseName": "スタディスキル",
+    "status": "matched",
+    "pages": [
+      23,
+      24
+    ],
+    "pdfCourseName": "スタディスキル",
+    "courseCode": "SSK1110001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "management-foundations",
+    "courseName": "マネジメント（経営学基礎）",
+    "status": "matched",
+    "pages": [
+      29
+    ],
+    "pdfCourseName": "マネジメント（経営学基礎）",
+    "courseCode": "IMG1210001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "marketing-foundations",
+    "courseName": "マーケティング基礎",
+    "status": "matched",
+    "pages": [
+      37,
+      38
+    ],
+    "pdfCourseName": "マーケティング基礎",
+    "courseCode": "MK11220001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "ict-introduction",
+    "courseName": "ICT入門",
+    "status": "matched",
+    "pages": [
+      53,
+      54
+    ],
+    "pdfCourseName": "[旧]コンピュータとソフトウェア基礎／[新]ICT入門",
+    "courseCode": "CSW1310001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "programming-fundamentals-practicum",
+    "courseName": "プログラミング基礎実習",
+    "status": "matched",
+    "pages": [
+      55,
+      56
+    ],
+    "pdfCourseName": "[旧]プログラミングⅠ／[新]プログラミング基礎実習",
+    "courseCode": "PG11310005",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "business-english-practicum-1a",
+    "courseName": "ビジネス英語実習Ⅰa",
+    "status": "matched",
+    "pages": [
+      160,
+      161,
+      162
+    ],
+    "pdfCourseName": "[旧]ビジネス英語実習Ⅰ／[新]ビジネス英語実習Ⅰa",
+    "courseCode": "EA11410001",
+    "masterCredits": 1,
+    "pdfCredits": 1.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "business-english-practicum-1b",
+    "courseName": "ビジネス英語実習Ⅰb",
+    "status": "matched",
+    "pages": [
+      163,
+      164,
+      165
+    ],
+    "pdfCourseName": "[旧]ビジネス英語実習Ⅰ／[新]ビジネス英語実習Ⅰb",
+    "courseCode": "EB11410001",
+    "masterCredits": 1,
+    "pdfCredits": 1.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "computer-architecture",
+    "courseName": "コンピュータアーキテクチャ",
+    "status": "matched",
+    "pages": [
+      61,
+      62
+    ],
+    "pdfCourseName": "コンピュータアーキテクチャ",
+    "courseCode": "CAT1310001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "data-structures-and-processing",
+    "courseName": "データ構造と処理法",
+    "status": "matched",
+    "pages": [
+      65,
+      66
+    ],
+    "pdfCourseName": "データ構造と処理法",
+    "courseCode": "ADS1340001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修"
+  },
+  {
+    "courseId": "applied-information-mathematics-a",
+    "courseName": "情報系数学応用A",
+    "status": "matched",
+    "pages": [
+      67,
+      68
+    ],
+    "pdfCourseName": "情報系数学応用A",
+    "courseCode": "MIA1320001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "design-introduction",
+    "courseName": "デザイン入門",
+    "status": "matched",
+    "pages": [
+      82,
+      83
+    ],
+    "pdfCourseName": "デザイン入門",
+    "courseCode": "IDE1320001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "esports",
+    "courseName": "eスポーツ",
+    "status": "matched",
+    "pages": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "pdfCourseName": "eスポーツ",
+    "courseCode": "ESP1120001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "first",
+    "pdfSemester": "前期",
+    "masterRequirementType": "elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "english-core-skills-2",
+    "courseName": "英語コア・スキルズⅡ",
+    "status": "matched",
+    "pages": [
+      12,
+      13
+    ],
+    "pdfCourseName": "英語コア・スキルズⅡ",
+    "courseCode": "EC21120001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "basic-mathematics",
+    "courseName": "数学基礎",
+    "status": "matched",
+    "pages": [
+      25,
+      26
+    ],
+    "pdfCourseName": "[旧]数学基礎C／[新]数学基礎",
+    "courseCode": "FMC1130001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "2025年度以降\n入学者：必修\n2024年度以前\n入学者：選択"
+  },
+  {
+    "courseId": "corporate-law-basics",
+    "courseName": "企業法務基礎",
+    "status": "matched",
+    "pages": [
+      49,
+      50
+    ],
+    "pdfCourseName": "[旧]法務リテラシーⅠ／[新]企業法務基礎",
+    "courseCode": "LL11230001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "accounting-introduction",
+    "courseName": "アカウンティング入門",
+    "status": "matched",
+    "pages": [
+      41,
+      42
+    ],
+    "pdfCourseName": "アカウンティング入門",
+    "courseCode": "AC11230001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "prototyping-practicum",
+    "courseName": "プロトタイピング実習",
+    "status": "matched",
+    "pages": [
+      57,
+      58,
+      59,
+      60
+    ],
+    "pdfCourseName": "プロトタイピング実習",
+    "courseCode": "PRT1310003",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "project-introduction",
+    "courseName": "プロジェクト入門",
+    "status": "matched",
+    "pages": [
+      105,
+      106
+    ],
+    "pdfCourseName": "プロジェクト入門",
+    "courseCode": "IPJ1510001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "business-english-practicum-2a",
+    "courseName": "ビジネス英語実習Ⅱa",
+    "status": "matched",
+    "pages": [
+      166,
+      167,
+      168
+    ],
+    "pdfCourseName": "[旧]ビジネス英語実習Ⅱ／[新]ビジネス英語実習Ⅱa",
+    "courseCode": "EA21410001",
+    "masterCredits": 1,
+    "pdfCredits": 1.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "business-english-practicum-2b",
+    "courseName": "ビジネス英語実習Ⅱb",
+    "status": "matched",
+    "pages": [
+      169,
+      170,
+      171
+    ],
+    "pdfCourseName": "[旧]ビジネス英語実習Ⅱ／[新]ビジネス英語実習Ⅱb",
+    "courseCode": "EB21410001",
+    "masterCredits": 1,
+    "pdfCredits": 1.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required",
+    "pdfRequiredElective": "必修"
+  },
+  {
+    "courseId": "market-innovation",
+    "courseName": "マーケット・イノベーション",
+    "status": "matched",
+    "pages": [
+      39,
+      40
+    ],
+    "pdfCourseName": "[旧]マーケティング応用／[新]マーケット・イノベーション",
+    "courseCode": "MK21220001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "operating-systems-intro",
+    "courseName": "OS入門",
+    "status": "matched",
+    "pages": [
+      63,
+      64
+    ],
+    "pdfCourseName": "オペレーティングシステム入門",
+    "courseCode": "OPS1320001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "applied-information-mathematics-b",
+    "courseName": "情報系数学応用B",
+    "status": "matched",
+    "pages": [
+      69,
+      70
+    ],
+    "pdfCourseName": "情報系数学応用B",
+    "courseCode": "MIB1320001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "database",
+    "courseName": "データベース",
+    "status": "matched",
+    "pages": [
+      73,
+      74
+    ],
+    "pdfCourseName": "データベース",
+    "courseCode": "DBM1340001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "interaction-design-intro",
+    "courseName": "インタラクションデザイン入門",
+    "status": "matched",
+    "pages": [
+      84
+    ],
+    "pdfCourseName": "[旧]インタラクティブ・システムデザイン／[新]インタラクションデザイン入門",
+    "courseCode": "ISD1350001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "選択"
+  },
+  {
+    "courseId": "network-technology",
+    "courseName": "ネットワーク技術",
+    "status": "matched",
+    "pages": [
+      91,
+      92
+    ],
+    "pdfCourseName": "ネットワーク技術",
+    "courseCode": "NWT1330001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "required_elective",
+    "pdfRequiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修"
+  },
+  {
+    "courseId": "social-research-methods",
+    "courseName": "社会調査法",
+    "status": "matched",
+    "pages": [
+      27,
+      28
+    ],
+    "pdfCourseName": "[旧]リサーチ入門／[新]社会調査法",
+    "courseCode": "SRB1120001",
+    "masterCredits": 2,
+    "pdfCredits": 2.0,
+    "masterSemester": "second",
+    "pdfSemester": "後期",
+    "masterRequirementType": "elective",
+    "pdfRequiredElective": "2025年度以降\n入学者：選択\n2024年度以前\n入学者：必修"
+  },
+  {
+    "courseId": "innovation-lecture-a",
+    "courseName": "イノベーション特講a",
+    "status": "ambiguous",
+    "pages": [
+      111,
+      112
+    ],
+    "reason": "a／b共通項目・2単位の記載と各1単位のマスタの対応、クラス別適用範囲が未確定。自動紐付けしない。"
+  },
+  {
+    "courseId": "innovation-lecture-b",
+    "courseName": "イノベーション特講b",
+    "status": "ambiguous",
+    "pages": [
+      111,
+      112
+    ],
+    "reason": "a／b共通項目・2単位の記載と各1単位のマスタの対応、クラス別適用範囲が未確定。自動紐付けしない。"
+  },
+  {
+    "courseId": "innovation-method-a",
+    "courseName": "イノベーション技法a",
+    "status": "unmatched",
+    "pages": [
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153
+    ],
+    "reason": "技法a/bそれぞれの通常シラバス項目なし。個別講座・イベントのシラバスをa/bへ転用しない。"
+  },
+  {
+    "courseId": "innovation-method-b",
+    "courseName": "イノベーション技法b",
+    "status": "unmatched",
+    "pages": [
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153
+    ],
+    "reason": "技法a/bそれぞれの通常シラバス項目なし。個別講座・イベントのシラバスをa/bへ転用しない。"
+  }
+]

@@ -253,9 +253,9 @@ describe("Phase 7 CourseDetail", () => {
     expect(selectCourseDetail(readyState(), "not-a-course")).toBeNull();
   });
 
-  it("syllabus未登録を推測せず表示する", () => {
+  it("登録済みシラバスを公式ソースの注意とともに表示する", () => {
     render(<AppStateContext.Provider value={{ state: readyState(), dispatch: vi.fn() }}><MemoryRouter initialEntries={["/courses/database"]}><Routes><Route path="/courses/:courseId" element={<CourseDetailPage />} /></Routes></MemoryRouter></AppStateContext.Provider>);
     expect(screen.getByRole("heading", { name: "データベース" })).toBeInTheDocument();
-    expect(screen.getByText("シラバス情報は未登録です。")).toBeInTheDocument();
+    expect(screen.getByText(/2026年度公式シラバスをもとに表示しています/)).toBeInTheDocument();
   });
 });

@@ -324,7 +324,7 @@ describe("v3からv4 migration", () => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(legacy));
 
     const migrated = loadState();
-    expect(migrated.schemaVersion).toBe(4);
+    expect(migrated.schemaVersion).toBe(5);
     expect(migrated.user).toMatchObject({ timetableModel: "C", englishTrack: "advanced" });
     expect(migrated.firstSemester.courses.database.status).toBe("earned");
     expect(migrated.plannedCourses.database.selected).toBe(true);

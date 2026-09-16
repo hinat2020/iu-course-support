@@ -10,6 +10,10 @@ import type {
 } from "../domain/innovation";
 import type { TimetableModel } from "../domain/timetable";
 import type {
+  GraduationPlanEntry,
+  GraduationSemesterId,
+} from "../domain/graduationPlanning";
+import type {
   EnglishTrack,
   PreviousCourseStatus,
 } from "../domain/user";
@@ -137,5 +141,14 @@ export type AppAction =
       type: "SET_INNOVATION_METHOD_ESTIMATED_HOURS";
       payload: number | undefined;
     }
+  | {
+      type: "ADD_GRADUATION_PLAN_COURSE";
+      payload: GraduationPlanEntry;
+    }
+  | {
+      type: "MOVE_GRADUATION_PLAN_COURSE";
+      payload: { courseId: string; semesterId: GraduationSemesterId };
+    }
+  | { type: "REMOVE_GRADUATION_PLAN_COURSE"; payload: string }
   | { type: "SET_SETUP_COMPLETED"; payload: boolean }
   | { type: "RESET_APP" };

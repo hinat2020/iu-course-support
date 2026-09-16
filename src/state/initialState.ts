@@ -7,10 +7,14 @@ import {
   createInitialInnovationMethodState,
 } from "../domain/innovation";
 import type { LotteryApplication } from "../domain/lottery";
+import {
+  createEmptyGraduationPlan,
+  type GraduationPlan,
+} from "../domain/graduationPlanning";
 import type { UserProfile, FirstSemesterState } from "../domain/user";
 
 export type AppState = {
-  schemaVersion: 4;
+  schemaVersion: 5;
   setupCompleted: boolean;
   user: UserProfile;
   firstSemester: FirstSemesterState;
@@ -18,6 +22,7 @@ export type AppState = {
   lotteries: Record<string, LotteryApplication>;
   innovationLecture: InnovationLectureState;
   innovationMethod: InnovationMethodState;
+  graduationPlan: GraduationPlan;
   ui: {
     lastVisitedPage?: string;
   };
@@ -25,7 +30,7 @@ export type AppState = {
 
 export function createInitialState(): AppState {
   return {
-    schemaVersion: 4,
+    schemaVersion: 5,
     setupCompleted: false,
     user: {
       academicYear: 2026,
@@ -49,6 +54,7 @@ export function createInitialState(): AppState {
     lotteries: {},
     innovationLecture: createInitialInnovationLectureState(),
     innovationMethod: createInitialInnovationMethodState(),
+    graduationPlan: createEmptyGraduationPlan(),
     ui: {},
   };
 }

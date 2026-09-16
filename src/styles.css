@@ -44,9 +44,938 @@ button:hover,
 
 button:focus-visible,
 .button:focus-visible,
-input:focus-visible + span {
+input:focus-visible + span,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
   outline: 3px solid #75b8d8;
   outline-offset: 3px;
+}
+
+.graduation-plan-page {
+  min-height: 100vh;
+  padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
+  background: #f3f6fa;
+}
+
+.graduation-plan-shell {
+  width: min(90rem, 100%);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.graduation-plan-header,
+.graduation-board-heading,
+.graduation-dialog > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.graduation-plan-header,
+.graduation-credit-summary,
+.graduation-plan-checks,
+.graduation-overview-section,
+.graduation-semester-card {
+  border: 1px solid #d8e1e8;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgb(26 55 75 / 6%);
+}
+
+.graduation-plan-header,
+.graduation-credit-summary,
+.graduation-plan-checks,
+.graduation-overview-section {
+  margin-bottom: 1rem;
+  padding: 1.1rem;
+}
+
+.graduation-section-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.15rem 0 0.35rem;
+  overflow-x: auto;
+}
+
+.graduation-section-nav button {
+  min-width: max-content;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+}
+
+.graduation-plan-checks {
+  border-left: 0.4rem solid #245d78;
+}
+
+.graduation-plan-checks__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+
+.graduation-plan-checks__heading h2 {
+  margin-bottom: 0.35rem;
+}
+
+.graduation-plan-checks__totals {
+  display: grid;
+  gap: 0.3rem;
+  min-width: min(100%, 13rem);
+}
+
+.graduation-plan-checks__totals strong,
+.graduation-plan-checks__totals span {
+  border-radius: 0.55rem;
+  padding: 0.45rem 0.65rem;
+  background: #eef4f7;
+}
+
+.graduation-plan-checks__lead,
+.graduation-plan-checks__clear,
+.graduation-plan-checks__context {
+  margin: 0.75rem 0 0;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+.graduation-plan-checks__clear {
+  color: #1d654f;
+}
+
+.graduation-plan-checks__context {
+  border-left: 0.3rem solid #a86f13;
+  padding: 0.55rem 0.7rem;
+  color: #65460d;
+  background: #fff9e9;
+}
+
+.graduation-plan-checks__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.8rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-plan-checks__categories li {
+  border: 1px solid #cbd8e1;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  background: #f7fafc;
+  font-size: 0.83rem;
+  font-weight: 800;
+}
+
+.graduation-plan-checks__details {
+  margin-top: 0.75rem;
+  border-top: 1px solid #d5dfe7;
+  padding-top: 0.75rem;
+}
+
+.graduation-plan-checks__details > summary {
+  min-height: 2.75rem;
+  color: #174e70;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.graduation-plan-checks__list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-plan-check {
+  min-width: 0;
+  border: 1px solid #d1dce4;
+  border-left: 0.3rem solid #a54336;
+  border-radius: 0.7rem;
+  padding: 0.75rem;
+  background: #fff6f3;
+  overflow-wrap: anywhere;
+}
+
+.graduation-plan-check--unknown {
+  border-left-color: #696f79;
+  background: #f5f6f7;
+}
+
+.graduation-plan-check--info {
+  border-left-color: #397992;
+  background: #f0f8fb;
+}
+
+.graduation-plan-check > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.graduation-plan-check small {
+  color: #5c6b7a;
+  font-weight: 750;
+}
+
+.graduation-plan-check p {
+  margin: 0.35rem 0 0;
+  line-height: 1.55;
+}
+
+.graduation-plan-check .text-button {
+  min-height: 2.75rem;
+  margin-top: 0.35rem;
+}
+
+.graduation-plan-page [tabindex="-1"]:focus {
+  outline: 3px solid #75b8d8;
+  outline-offset: 4px;
+}
+
+.graduation-credit-summary dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.graduation-credit-summary dl > div {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background: #f1f6f8;
+}
+
+.graduation-credit-summary dt {
+  color: #5c6b7a;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.graduation-credit-summary dd {
+  margin: 0.2rem 0 0;
+  color: #102f44;
+  font-size: 1.15rem;
+  font-weight: 850;
+}
+
+.graduation-overview-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.graduation-overview-section p {
+  line-height: 1.6;
+}
+
+.graduation-overview-list,
+.graduation-requirement-list,
+.graduation-cap-grid {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-cap-grid {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 1rem;
+}
+
+.graduation-cap-card {
+  min-width: 0;
+  border: 1px solid #cfdbe4;
+  border-left: 0.35rem solid #43849b;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  background: #f7fafc;
+  overflow-wrap: anywhere;
+}
+
+.graduation-cap-card--at_limit {
+  border-left-color: #99720c;
+  background: #fff9e9;
+}
+
+.graduation-cap-card--over_limit {
+  border-left-color: #aa382f;
+  background: #fff2f0;
+}
+
+.graduation-cap-card--unknown {
+  border-left-color: #6c7280;
+  background: #f4f5f7;
+}
+
+.graduation-cap-card__heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem 0.8rem;
+}
+
+.graduation-cap-card p {
+  margin: 0.45rem 0 0;
+  line-height: 1.55;
+}
+
+.graduation-cap-card__total {
+  font-weight: 800;
+}
+
+.graduation-cap-card__warning {
+  color: #782c26;
+}
+
+.graduation-cap-warning {
+  margin-top: 0.75rem;
+  border-left: 0.3rem solid #aa382f;
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.75rem;
+  color: #782c26;
+  background: #fff2f0;
+}
+
+.graduation-cap-warning p {
+  margin-top: 0.35rem;
+}
+
+.graduation-overview-list li,
+.graduation-requirement-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  min-width: 0;
+  border-bottom: 1px solid #e1e6ec;
+  padding: 0.55rem 0;
+  overflow-wrap: anywhere;
+}
+
+.graduation-requirement-list li strong {
+  min-width: 2rem;
+}
+
+.graduation-requirements > p:first-of-type {
+  max-width: 58rem;
+}
+
+.graduation-requirement-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.8rem;
+  margin-top: 0.85rem;
+}
+
+.graduation-requirement-card {
+  min-width: 0;
+  border: 1px solid #cfdbe4;
+  border-left: 0.35rem solid #b46f18;
+  border-radius: 0.8rem;
+  padding: 0.9rem;
+  background: #fffaf0;
+  overflow-wrap: anywhere;
+}
+
+.graduation-requirement-card--satisfied {
+  border-left-color: #24735c;
+  background: #eef8f4;
+}
+
+.graduation-requirement-card--projected_satisfied {
+  border-left-color: #317b9c;
+  background: #eef7fb;
+}
+
+.graduation-requirement-card--unknown {
+  border-left-color: #6c7280;
+  background: #f4f5f7;
+}
+
+.graduation-requirement-card > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.45rem 0.8rem;
+}
+
+.graduation-requirement-card > header > div {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.graduation-requirement-card h3 {
+  margin: 0;
+  color: #17384d;
+  font-size: 1rem;
+}
+
+.graduation-requirement-symbol {
+  display: inline-grid;
+  width: 2rem;
+  min-height: 2rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  background: #204d68;
+  font-weight: 900;
+}
+
+.graduation-requirement-needed {
+  margin: 0.55rem 0;
+  font-weight: 850;
+}
+
+.graduation-requirement-card dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.graduation-requirement-card dl > div {
+  min-width: 0;
+  border-radius: 0.55rem;
+  padding: 0.55rem;
+  background: rgb(255 255 255 / 72%);
+}
+
+.graduation-requirement-card dt {
+  color: #5f6f7e;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.graduation-requirement-card dd {
+  margin: 0.2rem 0 0;
+  font-weight: 900;
+}
+
+.graduation-requirement-shortfall {
+  margin: 0.65rem 0 0;
+  color: #7f311d;
+  font-weight: 800;
+}
+
+.graduation-requirement-subheading {
+  margin: 1.4rem 0 0;
+  color: #17384d;
+  font-size: 1.05rem;
+}
+
+.graduation-requirement-notice,
+.graduation-shortfall-summary {
+  margin-top: 0.85rem;
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+  line-height: 1.6;
+}
+
+.graduation-requirement-notice {
+  border: 1px solid #e2c879;
+  color: #60480d;
+  background: #fff9e9;
+}
+
+.graduation-requirement-notice p {
+  margin: 0.35rem 0 0;
+}
+
+.graduation-requirement-notice ul,
+.graduation-shortfall-summary ul,
+.graduation-unplanned-required ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graduation-shortfall-summary {
+  border-left: 0.35rem solid #b04a38;
+  color: #722e20;
+  background: #fff3f0;
+}
+
+.graduation-shortfall-summary h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.graduation-unplanned-required {
+  margin-top: 0.7rem;
+  border-top: 1px solid #d7e0e6;
+  padding-top: 0.65rem;
+}
+
+.graduation-unplanned-required summary {
+  min-height: 2.75rem;
+  color: #174e70;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.graduation-board-heading {
+  margin: 1.5rem 0 0.8rem;
+  align-items: end;
+}
+
+.graduation-board {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.graduation-semester-card {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.graduation-semester-card > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e1e6ec;
+}
+
+.graduation-semester-card h3,
+.graduation-semester-credits strong {
+  margin: 0;
+}
+
+.graduation-semester-credits {
+  display: grid;
+  gap: 0.15rem;
+  color: #405267;
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+.graduation-empty,
+.muted-note {
+  color: #657386;
+}
+
+.graduation-empty {
+  margin: 1rem 0 0;
+}
+
+.graduation-course-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graduation-course-card {
+  min-width: 0;
+  border: 1px solid #dce4eb;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  background: #fbfcfd;
+  overflow-wrap: anywhere;
+}
+
+.graduation-course-card p {
+  margin: 0.35rem 0 0;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.graduation-course-name {
+  display: block;
+  margin-top: 0.35rem;
+  color: #123f5c;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.status-text {
+  display: inline-flex;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.status-text--earned { color: #1f684f; }
+.status-text--in_progress { color: #145b81; }
+.status-text--planned { color: #6f4d00; }
+.status-text--current { color: #145b81; }
+
+.graduation-course-actions {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.graduation-course-actions label,
+.graduation-filters label,
+.graduation-destination {
+  display: grid;
+  gap: 0.35rem;
+  color: #405267;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.graduation-course-actions select,
+.graduation-filters input,
+.graduation-filters select,
+.graduation-destination select {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid #aebdca;
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.7rem;
+  color: #172033;
+  background: #fff;
+}
+
+.text-button {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+}
+
+.text-button--danger {
+  color: #8a2e2a;
+}
+
+.graduation-source-note {
+  border-top: 1px dashed #d3dce4;
+  padding-top: 0.65rem;
+}
+
+.graduation-placement-warning {
+  margin-top: 0.75rem;
+  border-left: 0.3rem solid #b46b16;
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.75rem;
+  color: #65400d;
+  background: #fff7e8;
+}
+
+.graduation-placement-warning ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graduation-prerequisite {
+  margin-top: 0.75rem;
+  border: 1px solid #c8d7df;
+  border-radius: 0.65rem;
+  background: #f5fafb;
+}
+
+.graduation-prerequisite--warning {
+  border-color: #dfbd79;
+  background: #fff8e9;
+}
+
+.graduation-prerequisite > summary {
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  color: #22596a;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.graduation-prerequisite--warning > summary {
+  color: #75490b;
+}
+
+.graduation-prerequisite > summary:focus-visible {
+  outline: 3px solid #75b8d8;
+  outline-offset: 3px;
+}
+
+.graduation-prerequisite > p,
+.graduation-prerequisite > ul {
+  margin: 0;
+  padding: 0 0.75rem 0.65rem;
+}
+
+.graduation-prerequisite > ul {
+  display: grid;
+  gap: 0.4rem;
+  padding-left: 2rem;
+}
+
+.graduation-prerequisite-preview {
+  border-left: 0.3rem solid #288165;
+  border-radius: 0.45rem;
+  padding: 0.75rem;
+  color: #195642;
+  background: #edf8f3;
+}
+
+.graduation-prerequisite-preview ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graduation-open-button {
+  margin: 0 0 1rem;
+}
+
+.graduation-dialog-backdrop {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: end center;
+  padding: 1rem;
+  background: rgb(15 31 43 / 58%);
+}
+
+.graduation-dialog {
+  display: grid;
+  width: min(48rem, 100%);
+  max-height: calc(100dvh - 2rem);
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 25%);
+  overflow: auto;
+}
+
+.icon-button {
+  min-width: 3rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.graduation-filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.graduation-picker-results {
+  max-height: 19rem;
+  margin: 0;
+  border: 1px solid #d5dfe7;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+  overflow: auto;
+}
+
+.graduation-picker-results legend {
+  padding: 0 0.35rem;
+  font-weight: 850;
+}
+
+.graduation-picker-option {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: flex-start;
+  gap: 0.7rem;
+  border-radius: 0.65rem;
+  padding: 0.65rem;
+  cursor: pointer;
+}
+
+.graduation-picker-option:hover {
+  background: #eef5f8;
+}
+
+.graduation-picker-option input {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.18rem;
+}
+
+.graduation-picker-option span,
+.graduation-picker-option strong,
+.graduation-picker-option small {
+  display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.graduation-picker-option small {
+  margin-top: 0.2rem;
+  color: #657386;
+}
+
+.graduation-dialog-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.graduation-candidate-dialog {
+  width: min(70rem, 100%);
+}
+
+.graduation-candidate-notice,
+.graduation-candidate-special-note,
+.graduation-candidate-confirmation,
+.graduation-candidate-empty {
+  border: 1px solid #cbd9e3;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  line-height: 1.6;
+  background: #f5f9fb;
+}
+
+.graduation-candidate-notice p,
+.graduation-candidate-special-note p,
+.graduation-candidate-confirmation p {
+  margin: 0.35rem 0 0;
+}
+
+.graduation-candidate-checkbox {
+  display: flex !important;
+  min-height: 3rem;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.graduation-candidate-checkbox input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.graduation-candidate-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.graduation-candidate-summary > * {
+  border-radius: 999px;
+  padding: 0.4rem 0.65rem;
+  background: #edf3f7;
+  font-size: 0.86rem;
+}
+
+.graduation-candidate-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.8rem;
+}
+
+.graduation-candidate-card {
+  min-width: 0;
+  border: 1px solid #cedae3;
+  border-left: 0.35rem solid #2b765f;
+  border-radius: 0.85rem;
+  padding: 0.9rem;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+
+.graduation-candidate-card--attention {
+  border-left-color: #a96a13;
+  background: #fffaf0;
+}
+
+.graduation-candidate-card--unknown {
+  border-left-color: #6c7280;
+  background: #f7f8f9;
+}
+
+.graduation-candidate-card > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.graduation-candidate-card > header > div {
+  display: grid;
+  min-width: 0;
+  gap: 0.3rem;
+}
+
+.graduation-candidate-card h3,
+.graduation-candidate-card p {
+  margin: 0.45rem 0;
+}
+
+.graduation-candidate-reasons {
+  margin-top: 0.7rem;
+  border-radius: 0.65rem;
+  padding: 0.7rem;
+  background: #eef6fa;
+}
+
+.graduation-candidate-reasons ul,
+.graduation-candidate-constraints,
+.graduation-candidate-card details ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graduation-candidate-constraints {
+  display: grid;
+  gap: 0.25rem;
+  line-height: 1.5;
+}
+
+.graduation-candidate-card details {
+  margin: 0.75rem 0;
+}
+
+.graduation-candidate-card details summary {
+  min-height: 2.75rem;
+  color: #174e70;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.graduation-candidate-card > .button {
+  width: 100%;
+  margin-top: 0.65rem;
+}
+
+.graduation-candidate-confirmation {
+  margin-top: 0.75rem;
+  border-color: #d7a64f;
+  background: #fff7e7;
+}
+
+.graduation-candidate-confirmation > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.7rem;
+}
+
+@media (min-width: 640px) {
+  .graduation-plan-shell { padding: 2rem 1.5rem; }
+  .graduation-board { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graduation-dialog-backdrop { place-items: center; }
+  .graduation-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graduation-cap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graduation-plan-checks__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graduation-candidate-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1100px) {
+  .graduation-board { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .graduation-credit-summary dl { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .graduation-plan-checks__list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .graduation-candidate-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 button:disabled {
@@ -1934,7 +2863,7 @@ input:focus-visible {
 
 .app-navigation__inner {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   width: min(100%, 64rem);
   margin: 0 auto;
 }
@@ -1973,6 +2902,213 @@ input:focus-visible {
 
 .app-navigation__full {
   display: none;
+}
+
+.app-home-page,
+.graduation-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #102f44 0, #102f44 19rem, #eef3f7 19rem);
+}
+
+.app-home-shell,
+.graduation-shell {
+  width: min(100%, 76rem);
+  margin: 0 auto;
+  padding: 1.25rem 1rem calc(7rem + env(safe-area-inset-bottom, 0px));
+}
+
+.app-home-header,
+.graduation-header {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+}
+
+.app-home-header h1,
+.graduation-header h1 {
+  margin: 0.2rem 0 0.65rem;
+  color: #ffffff;
+  font-size: clamp(2.35rem, 10vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.app-home-header p:not(.home-brand),
+.graduation-header p:not(.eyebrow) {
+  max-width: 43rem;
+  margin: 0;
+  color: #d7e7ef;
+  line-height: 1.7;
+}
+
+.app-home-header p > span {
+  display: block;
+  margin-top: 0.2rem;
+  color: #8ce2d8;
+  font-weight: 850;
+}
+
+.app-home-notice {
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid rgb(140 226 216 / 58%);
+  border-radius: 0.9rem;
+  padding: 0.9rem 1rem;
+  color: #f5fffd;
+  background: rgb(255 255 255 / 9%);
+  line-height: 1.55;
+}
+
+.app-home-section,
+.graduation-roadmap,
+.graduation-status,
+.graduation-notice {
+  border: 1px solid #d9e1e8;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 0.55rem 1.4rem rgb(34 55 78 / 7%);
+}
+
+.app-home-section-heading h2,
+.graduation-section-heading h2 {
+  margin-bottom: 1rem;
+  color: #12364d;
+  font-size: 1.25rem;
+}
+
+.app-home-service-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.app-home-service {
+  display: grid;
+  min-width: 0;
+  min-height: 16rem;
+  align-content: start;
+  border: 1px solid #cbd8e2;
+  border-radius: 1rem;
+  padding: 1.15rem;
+  color: #18364b;
+  background: #f7fafc;
+  text-decoration: none;
+  transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+
+.app-home-service:hover {
+  border-color: #1b8d82;
+  box-shadow: 0 0.7rem 1.5rem rgb(30 62 81 / 11%);
+  transform: translateY(-2px);
+}
+
+.app-home-service--registration {
+  border-color: #85cfc8;
+  background: linear-gradient(145deg, #e9f8f5, #ffffff 66%);
+}
+
+.app-home-service--graduation {
+  background: linear-gradient(145deg, #edf3f8, #ffffff 66%);
+}
+
+.app-home-service__label,
+.app-home-service__status {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  color: #0e5e5d;
+  background: #dff3ef;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.app-home-service > strong {
+  margin: 1rem 0 0.55rem;
+  color: #102f44;
+  font-size: clamp(1.35rem, 5vw, 1.8rem);
+}
+
+.app-home-service p {
+  margin: 0 0 1rem;
+  color: #536578;
+  line-height: 1.7;
+}
+
+.app-home-service__status {
+  margin: auto 0 0.9rem;
+  color: #555f6d;
+  background: #e7edf2;
+}
+
+.app-home-service__action {
+  margin-top: auto;
+  color: #0d6768;
+  font-weight: 900;
+}
+
+.graduation-status {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  border-left: 0.35rem solid #318ca0;
+  color: #23465a;
+}
+
+.graduation-status span {
+  color: #607083;
+  line-height: 1.6;
+}
+
+.graduation-semester-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: semester;
+}
+
+.graduation-semester-grid li {
+  display: grid;
+  min-width: 0;
+  gap: 0.35rem;
+  border: 1px solid #dce4eb;
+  border-radius: 0.8rem;
+  padding: 0.9rem;
+  background: #f5f8fa;
+  counter-increment: semester;
+}
+
+.graduation-semester-grid li::before {
+  content: counter(semester, decimal-leading-zero);
+  color: #388390;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.graduation-semester-grid li > span {
+  color: #173e57;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.graduation-semester-grid li > strong {
+  color: #657487;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.graduation-notice {
+  margin-top: 1rem;
+  border-color: #e2c879;
+  color: #644b0c;
+  background: #fff9e9;
+}
+
+.graduation-notice p {
+  margin-bottom: 0;
+  line-height: 1.7;
 }
 
 .home-page {
@@ -2369,6 +3505,147 @@ input:focus-visible {
   line-height: 1.65;
 }
 
+.syllabus-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.syllabus-heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.syllabus-source-badge {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  color: #0b5558;
+  background: #e5f6f3;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.syllabus-official-note {
+  border-left: 0.3rem solid #1b8d82;
+  border-radius: 0.6rem;
+  padding: 0.8rem 0.9rem;
+  color: #254b57;
+  background: #edf8f6;
+  line-height: 1.65;
+}
+
+.syllabus-facts {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.syllabus-facts > div {
+  display: grid;
+  gap: 0.25rem;
+  border-bottom: 1px solid #e3e9ef;
+  padding: 0 0 0.6rem;
+}
+
+.syllabus-facts dt {
+  color: #607083;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.syllabus-facts dd {
+  min-width: 0;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.syllabus-sections {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.syllabus-details {
+  border: 1px solid #d8e1e8;
+  border-radius: 0.75rem;
+  background: #fbfcfd;
+}
+
+.syllabus-details > summary {
+  min-height: 3rem;
+  padding: 0.85rem 2.3rem 0.8rem 0.9rem;
+  color: #153e57;
+  font-weight: 850;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.syllabus-details > summary:focus-visible {
+  outline: 3px solid #75b8d8;
+  outline-offset: 3px;
+}
+
+.syllabus-details[open] > summary {
+  border-bottom: 1px solid #dfe6ec;
+  background: #f2f7f8;
+}
+
+.syllabus-details--metadata {
+  margin-top: 0.75rem;
+}
+
+.syllabus-details--metadata .syllabus-facts {
+  margin: 0;
+  padding: 0.9rem;
+}
+
+.syllabus-copy {
+  padding: 0.9rem;
+  white-space: pre-line;
+  line-height: 1.75;
+}
+
+.syllabus-plan {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.9rem;
+  list-style: none;
+}
+
+.syllabus-plan li {
+  min-width: 0;
+  border-left: 0.25rem solid #9fb8ca;
+  border-radius: 0.45rem;
+  padding: 0.75rem;
+  background: #ffffff;
+}
+
+.syllabus-plan h3 {
+  margin-bottom: 0.35rem;
+  color: #153e57;
+  font-size: 0.95rem;
+}
+
+.syllabus-plan .syllabus-copy {
+  padding: 0;
+}
+
+.syllabus-topic {
+  margin-bottom: 0.45rem;
+  font-weight: 800;
+}
+
+.syllabus-source {
+  margin: 1rem 0 0;
+  color: #68778a;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
 .error-card .button {
   display: inline-flex;
   margin-top: 0.5rem;
@@ -2379,16 +3656,38 @@ input:focus-visible {
   .page-shell,
   .home-shell,
   .review-shell,
-  .course-detail-shell {
+  .course-detail-shell,
+  .app-home-shell,
+  .graduation-shell {
     padding: 2rem 1.5rem calc(7rem + env(safe-area-inset-bottom, 0px));
   }
 
   .page-header,
   .home-hero,
-  .review-header {
+  .review-header,
+  .app-home-header,
+  .graduation-header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .app-home-header,
+  .graduation-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .app-home-notice {
+    max-width: 24rem;
+  }
+
+  .app-home-service-grid,
+  .graduation-semester-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .graduation-requirement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .home-official-note {
@@ -2418,9 +3717,25 @@ input:focus-visible {
   .course-detail-facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .syllabus-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .syllabus-facts > div:last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
 }
 
 @media (min-width: 960px) {
+  .graduation-requirement-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .graduation-semester-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .home-dashboard-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

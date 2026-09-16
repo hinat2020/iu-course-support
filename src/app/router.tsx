@@ -1,13 +1,14 @@
+import { lazy, Suspense } from "react";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AppErrorBoundary } from "../components/AppErrorBoundary";
 import { AppNavigation } from "../components/AppNavigation";
 import { BasicSetupPage } from "../pages/BasicSetupPage";
 import { CoursePlanningPage } from "../pages/CoursePlanningPage";
-import { CourseDetailPage } from "../pages/CourseDetailPage";
 import { DebugPage } from "../pages/DebugPage";
 import { FirstSemesterElectivesPage } from "../pages/FirstSemesterElectivesPage";
 import { FirstSemesterRequiredPage } from "../pages/FirstSemesterRequiredPage";
 import { FinalReviewPage } from "../pages/FinalReviewPage";
+import { GraduationPlanningIntroPage } from "../pages/GraduationPlanningIntroPage";
 import { HomePage } from "../pages/HomePage";
 import { InnovationLecturePage } from "../pages/InnovationLecturePage";
 import { InnovationMethodPage } from "../pages/InnovationMethodPage";
@@ -15,19 +16,36 @@ import { InnovationMethodSetupPage } from "../pages/InnovationMethodSetupPage";
 import { LotteryApplicationPage } from "../pages/LotteryApplicationPage";
 import { LotteryResultPage } from "../pages/LotteryResultPage";
 import { RequiredTimetablePage } from "../pages/RequiredTimetablePage";
+import { RegistrationHomePage } from "../pages/RegistrationHomePage";
 import { RootPage } from "../pages/RootPage";
 import { SettingsPage } from "../pages/SettingsPage";
 import { SetupCompletePage } from "../pages/SetupCompletePage";
 import { SetupReviewPage } from "../pages/SetupReviewPage";
 import { SpecialCoursesPage } from "../pages/SpecialCoursesPage";
 
+const CourseDetailPage = lazy(() =>
+  import("../pages/CourseDetailPage").then((module) => ({
+    default: module.CourseDetailPage,
+  })),
+);
+const GraduationPlanPage = lazy(() =>
+  import("../pages/GraduationPlanPage").then((module) => ({
+    default: module.GraduationPlanPage,
+  })),
+);
+
 export function AppRouter() {
   return (
     <HashRouter>
       <AppErrorBoundary>
+        <Suspense fallback={<main className="page-shell"><p role="status">画面を読み込んでいます…</p></main>}>
         <Routes>
           <Route path="/" element={<RootPage />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/registration" element={<Navigate to="/registration/2026-fall" replace />} />
+          <Route path="/registration/2026-fall" element={<RegistrationHomePage />} />
+          <Route path="/graduation" element={<GraduationPlanningIntroPage />} />
+          <Route path="/graduation/plan" element={<GraduationPlanPage />} />
           <Route path="/review" element={<FinalReviewPage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/courses/:courseId" element={<CourseDetailPage />} />
@@ -64,6 +82,7 @@ export function AppRouter() {
           )}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        </Suspense>
       </AppErrorBoundary>
       <AppNavigation />
     </HashRouter>

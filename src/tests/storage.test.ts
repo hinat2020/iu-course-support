@@ -80,7 +80,7 @@ describe("LocalStorage", () => {
 
     const loaded = loadState();
 
-    expect(loaded.schemaVersion).toBe(4);
+    expect(loaded.schemaVersion).toBe(5);
     expect(loaded.firstSemester.innovationMethod.confirmedByUser).toBe(false);
     expect(loaded.firstSemester.innovationMethod.moduleType).toBeNull();
   });

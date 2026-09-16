@@ -8,15 +8,27 @@ import {
 } from "../domain/innovation";
 import { createInitialState, type AppState } from "../state/initialState";
 import {
+  isAppStateV4,
   isAppState,
+  isAppStateV5Base,
   isAppStateV1,
   isAppStateV2,
   isAppStateV3,
+  type AppStateV4,
   type AppStateV1,
   type AppStateV2,
   type AppStateV3,
   type LegacyLotteryApplication,
 } from "./schema";
+import { plannableCurriculumCourses } from "../data/2026/curriculum";
+import {
+  createEmptyGraduationPlan,
+  sanitizeGraduationPlan,
+} from "../domain/graduationPlanning";
+
+const plannableGraduationCourseIds = new Set(
+  plannableCurriculumCourses.map((course) => course.courseId),
+);
 
 function migrateLottery(
   legacy: LegacyLotteryApplication,
@@ -49,8 +61,18 @@ function migrateLottery(
   };
 }
 
-function migrateV3(state: AppStateV3): AppState {
+function migrateV4(state: AppStateV4): AppState {
   const migrated: AppState = {
+    ...state,
+    schemaVersion: 5,
+    graduationPlan: createEmptyGraduationPlan(),
+  };
+
+  return isAppState(migrated) ? migrated : createInitialState();
+}
+
+function migrateV3(state: AppStateV3): AppState {
+  const migrated: AppStateV4 = {
     ...state,
     schemaVersion: 4,
     innovationLecture: {
@@ -60,7 +82,7 @@ function migrateV3(state: AppStateV3): AppState {
     innovationMethod: createInitialInnovationMethodState(),
   };
 
-  return isAppState(migrated) ? migrated : createInitialState();
+  return isAppStateV4(migrated) ? migrateV4(migrated) : createInitialState();
 }
 
 function migrateV2(state: AppStateV2): AppState {
@@ -98,6 +120,16 @@ function migrateV1(state: AppStateV1): AppState {
 
 export function migrateState(raw: unknown): AppState {
   if (isAppState(raw)) return raw;
+  if (isAppStateV5Base(raw)) {
+    return {
+      ...raw,
+      graduationPlan: sanitizeGraduationPlan(
+        raw.graduationPlan,
+        plannableGraduationCourseIds,
+      ),
+    };
+  }
+  if (isAppStateV4(raw)) return migrateV4(raw);
   if (isAppStateV3(raw)) return migrateV3(raw);
   if (isAppStateV2(raw)) return migrateV2(raw);
   if (isAppStateV1(raw)) return migrateV1(raw);
